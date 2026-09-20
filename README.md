@@ -10,7 +10,10 @@ Open `index.html` in a browser, or run any static file server from this director
 
 - Free-text decision input
 - Three honesty levels
+- Separate Judge My Decision and Rude Chatbot sections
+- Side-by-side three-mode comparison
 - Decision-category matching
+- Expanded knowledge domains covering Qalipu Mi'kmaq and Indigenous relations, AuDHD, executive-function barriers, land-based skills, DIY, animals, space, justice, hobbies, purchases, and projects
 - Four-point future timeline
 - Consequence and failure analysis
 - One tiny next action
