@@ -958,7 +958,7 @@ function switchMode(mode) {
   document.querySelector('#chat-tab').classList.toggle('active', chatting);
   document.querySelector('#decision-tab').setAttribute('aria-selected', String(!chatting));
   document.querySelector('#chat-tab').setAttribute('aria-selected', String(chatting));
-  document.querySelector('#hero-mode').textContent = chatting ? 'RUDE CHATBOT' : 'JUDGE MY DECISION';
+  document.querySelector('#hero-mode').textContent = chatting ? 'CHAT WITH S-BOT' : 'JUDGE MY DECISION';
   document.querySelector('#hero-intro').textContent = chatting
     ? 'Ask me something. I’ll provide information, judgment, and the bedside manner of a cornered raccoon.'
     : 'Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.';
