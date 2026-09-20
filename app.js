@@ -1,5 +1,6 @@
 const decisionInput = document.querySelector('#decision');
 const results = document.querySelector('#results');
+const comparison = document.querySelector('#comparison');
 const error = document.querySelector('#error');
 
 const badIdeas = [
@@ -485,24 +486,17 @@ document.querySelector('#surprise').addEventListener('click', () => {
 });
 
 document.querySelector('#simulate').addEventListener('click', simulate);
+document.querySelector('#compare').addEventListener('click', compareAll);
 decisionInput.addEventListener('keydown', event => {
   if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') simulate();
 });
 
 function simulate() {
   const decision = decisionInput.value.trim();
-  if (!decision) {
-    error.textContent = 'I cannot judge an empty void. Give me the questionable decision.';
-    decisionInput.focus();
-    return;
-  }
+  if (!validateDecision(decision)) return;
   error.textContent = '';
-  const profile = profiles.find(item => item.match.test(decision));
   const honesty = document.querySelector('input[name="honesty"]:checked').value;
-  const tone = honesty === 'honest' ? profile : toneScripts[profile.id][honesty];
-  const scoreShift = honesty === 'honest' ? 0 : tone.scoreShift;
-  const wobble = [...decision].reduce((total, char) => total + char.charCodeAt(0), 0) % 9 - 4;
-  const score = Math.max(4, Math.min(96, profile.score + scoreShift + wobble));
+  const { profile, tone, score } = judge(decision, honesty);
 
   document.querySelector('#snip').textContent = snippyAnswers[profile.id][honesty];
   document.querySelector('#verdict').textContent = tone.verdict;
@@ -517,9 +511,58 @@ function simulate() {
     .map(([time, copy]) => `<article><small>${time.toUpperCase()}</small><p>${copy}</p></article>`)
     .join('');
 
+  comparison.classList.add('hidden');
   results.classList.remove('hidden');
   requestAnimationFrame(() => { document.querySelector('#meter-fill').style.width = `${score}%`; });
   results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function validateDecision(decision) {
+  if (decision) return true;
+  error.textContent = 'I cannot judge an empty void. Give me the questionable decision.';
+  decisionInput.focus();
+  return false;
+}
+
+function judge(decision, honesty) {
+  const profile = profiles.find(item => item.match.test(decision));
+  const tone = honesty === 'honest' ? profile : toneScripts[profile.id][honesty];
+  const scoreShift = honesty === 'honest' ? 0 : tone.scoreShift;
+  const wobble = [...decision].reduce((total, char) => total + char.charCodeAt(0), 0) % 9 - 4;
+  const score = Math.max(4, Math.min(96, profile.score + scoreShift + wobble));
+  return { profile, tone, score };
+}
+
+function compareAll() {
+  const decision = decisionInput.value.trim();
+  if (!validateDecision(decision)) return;
+  error.textContent = '';
+  const labels = {
+    gentle: 'GENTLE SUPPORT',
+    honest: 'SAVANNAH HONEST',
+    brutal: 'BRUTAL: NO SURVIVORS'
+  };
+
+  document.querySelector('#comparison-grid').innerHTML = ['gentle', 'honest', 'brutal']
+    .map(honesty => {
+      const { profile, tone, score } = judge(decision, honesty);
+      return `
+        <article class="mode-card ${honesty}">
+          <p class="mode-name">${labels[honesty]}</p>
+          <p class="mode-snip">${snippyAnswers[profile.id][honesty]}</p>
+          <h3>${tone.verdict}</h3>
+          <p class="mode-summary">${tone.summary}</p>
+          <div class="mode-score"><span>Worth the chaos?</span><strong>${score}%</strong></div>
+          <div class="mode-detail"><small>PRESENT-DAY CHORE</small><p>${tone.chore}</p></div>
+          <div class="mode-detail"><small>LIKELY POINT OF DEATH</small><p>${tone.failure}</p></div>
+          <div class="mode-detail"><small>TINY NEXT STEP</small><p class="mode-step">${tone.step}</p></div>
+        </article>`;
+    })
+    .join('');
+
+  results.classList.add('hidden');
+  comparison.classList.remove('hidden');
+  comparison.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 document.querySelector('#copy-step').addEventListener('click', async event => {
