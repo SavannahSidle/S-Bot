@@ -11,7 +11,7 @@
     <main>
       <header class="hero">
         <div class="status"><span></span> FUTURE SAVANNAH IS RELUCTANTLY ONLINE</div>
-        <p class="eyebrow">A QUESTIONABLE DECISION ENGINE</p>
+        <p class="eyebrow">JUDGE MY DECISION</p>
         <h1>S<span>-</span>BOT</h1>
         <p class="intro">Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.</p>
       </header>
@@ -32,7 +32,10 @@
             <label><input type="radio" name="honesty" value="honest" checked /> Savannah honest</label>
             <label><input type="radio" name="honesty" value="brutal" /> Brutal: no survivors</label>
           </fieldset>
-          <button class="primary" id="simulate" type="button">Consult Future Me</button>
+          <div class="action-buttons">
+            <button class="compare-button" id="compare" type="button">Compare All 3</button>
+            <button class="primary" id="simulate" type="button">Judge My Decision</button>
+          </div>
         </div>
         <p class="error" id="error" role="alert"></p>
       </section>
@@ -72,6 +75,14 @@
           </div>
           <button class="secondary" id="copy-step" type="button">Copy tiny step</button>
         </div>
+      </section>
+
+      <section class="comparison hidden" id="comparison" aria-live="polite">
+        <div class="comparison-heading">
+          <p class="eyebrow">THE THREE-SAVANNAH TRIBUNAL</p>
+          <h2>Same decision. Wildly different emotional damage.</h2>
+        </div>
+        <div class="comparison-grid" id="comparison-grid"></div>
       </section>
     </main>
     <footer>S-Bot cannot prevent consequences. Apparently nobody can.</footer>
