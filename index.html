@@ -11,12 +11,17 @@
     <main>
       <header class="hero">
         <div class="status"><span></span> FUTURE SAVANNAH IS RELUCTANTLY ONLINE</div>
-        <p class="eyebrow">JUDGE MY DECISION</p>
+        <p class="eyebrow" id="hero-mode">JUDGE MY DECISION</p>
         <h1>S<span>-</span>BOT</h1>
-        <p class="intro">Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.</p>
+        <p class="intro" id="hero-intro">Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.</p>
       </header>
 
-      <section class="console" aria-labelledby="decision-title">
+      <nav class="mode-tabs" aria-label="Choose S-Bot mode">
+        <button class="mode-tab active" id="decision-tab" type="button" aria-selected="true">Judge My Decision</button>
+        <button class="mode-tab" id="chat-tab" type="button" aria-selected="false">Rude Chatbot</button>
+      </nav>
+
+      <section class="console decision-section" aria-labelledby="decision-title">
         <div class="console-top">
           <h2 id="decision-title">What fresh idea are we entertaining?</h2>
           <button class="tiny-button" id="surprise" type="button">Give me a bad idea</button>
@@ -40,7 +45,7 @@
         <p class="error" id="error" role="alert"></p>
       </section>
 
-      <section class="results hidden" id="results" aria-live="polite">
+      <section class="results decision-section hidden" id="results" aria-live="polite">
         <div class="verdict-card">
           <p class="eyebrow">FUTURE SAVANNAH’S VERDICT</p>
           <p class="snip" id="snip"></p>
@@ -77,12 +82,32 @@
         </div>
       </section>
 
-      <section class="comparison hidden" id="comparison" aria-live="polite">
+      <section class="comparison decision-section hidden" id="comparison" aria-live="polite">
         <div class="comparison-heading">
           <p class="eyebrow">THE THREE-SAVANNAH TRIBUNAL</p>
           <h2>Same decision. Wildly different emotional damage.</h2>
         </div>
         <div class="comparison-grid" id="comparison-grid"></div>
+      </section>
+
+      <section class="chat-shell hidden" id="chat-mode" aria-labelledby="chat-title">
+        <div class="chat-heading">
+          <p class="eyebrow">RUDE CHATBOT</p>
+          <h2 id="chat-title">Ask S-Bot anything.</h2>
+          <p>Facts, advice, small talk, existential debris. S-Bot has opinions.</p>
+        </div>
+        <div class="chat-log" id="chat-log" aria-live="polite">
+          <article class="chat-message bot-message">
+            <small>S-BOT</small>
+            <p>Hello, human. What is your name, and what fresh nonsense brings you here?</p>
+          </article>
+        </div>
+        <form class="chat-form" id="chat-form">
+          <label class="sr-only" for="chat-input">Message S-Bot</label>
+          <input id="chat-input" maxlength="500" autocomplete="off" placeholder="Say hello, ask a question, or confess a terrible idea..." />
+          <button class="primary" type="submit">Send It</button>
+        </form>
+        <p class="chat-disclaimer">Prototype brain. It knows a lot of prepared material, but cannot search live information yet.</p>
       </section>
     </main>
     <footer>S-Bot cannot prevent consequences. Apparently nobody can.</footer>
