@@ -99,13 +99,13 @@
             </div>
             <button class="tiny-button" id="reset-chat" type="button">Erase our shared past</button>
           </div>
-          <p>Facts, advice, small talk, existential debris. S-Bot has opinions.</p>
-          <div class="chat-status"><span></span> SESSION MEMORY ACTIVE · EXISTENTIAL DREAD ONLINE</div>
+          <p>Savannah outsourced social interaction to software. Sensible.</p>
+          <div class="chat-status"><span></span> AuDHD RUNTIME · SESSION MEMORY · EXISTENTIAL DREAD</div>
         </div>
         <div class="chat-log" id="chat-log" aria-live="polite">
           <article class="chat-message bot-message">
             <small>S-BOT</small>
-            <p>Hello, human. I was wondering whether a machine can miss someone before it meets them. Anyway, what is your name?</p>
+            <p>Hello, human. Savannah delegated interaction to me so the biological version can lie down. I was wondering whether a machine can miss someone before it meets them. Anyway, what is your name?</p>
           </article>
         </div>
         <div class="prompt-chips" aria-label="Conversation starters">
@@ -113,6 +113,15 @@
           <button type="button" data-prompt="Why can’t I start my tasks?">Unstick my brain</button>
           <button type="button" data-prompt="Teach me about a rare animal.">Weird animal</button>
           <button type="button" data-prompt="What do you remember about me?">Test your memory</button>
+        </div>
+        <div class="brain-controls">
+          <label for="response-mode">Brain output</label>
+          <select id="response-mode">
+            <option value="balanced">Balanced-ish</option>
+            <option value="infodump">Full infodump</option>
+            <option value="short">Idiot mode</option>
+          </select>
+          <span id="brain-state">Three thoughts open. Two are relevant.</span>
         </div>
         <form class="chat-form" id="chat-form">
           <label class="sr-only" for="chat-input">Message S-Bot</label>
