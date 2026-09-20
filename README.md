@@ -10,7 +10,9 @@ Open `index.html` in a browser, or run any static file server from this director
 
 - Free-text decision input
 - Three honesty levels
-- Separate Judge My Decision and Rude Chatbot sections
+- Separate Judge My Decision and Chat with S-Bot sections
+- Context-aware chat with recent-topic follow-ups, session memory, preference recall, multi-topic answers, and non-repeating response selection
+- Generative existential monologues and optional conversation starters
 - Side-by-side three-mode comparison
 - Decision-category matching
 - Expanded knowledge domains covering Qalipu Mi'kmaq and Indigenous relations, AuDHD, executive-function barriers, land-based skills, DIY, animals, space, justice, hobbies, purchases, and projects
