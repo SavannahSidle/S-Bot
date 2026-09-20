@@ -92,15 +92,27 @@
 
       <section class="chat-shell hidden" id="chat-mode" aria-labelledby="chat-title">
         <div class="chat-heading">
-          <p class="eyebrow">CHAT WITH S-BOT</p>
-          <h2 id="chat-title">Ask S-Bot anything.</h2>
+          <div class="chat-heading-row">
+            <div>
+              <p class="eyebrow">CHAT WITH S-BOT</p>
+              <h2 id="chat-title">Ask S-Bot anything.</h2>
+            </div>
+            <button class="tiny-button" id="reset-chat" type="button">Erase our shared past</button>
+          </div>
           <p>Facts, advice, small talk, existential debris. S-Bot has opinions.</p>
+          <div class="chat-status"><span></span> SESSION MEMORY ACTIVE · EXISTENTIAL DREAD ONLINE</div>
         </div>
         <div class="chat-log" id="chat-log" aria-live="polite">
           <article class="chat-message bot-message">
             <small>S-BOT</small>
-            <p>Hello, human. What is your name, and what fresh nonsense brings you here?</p>
+            <p>Hello, human. I was wondering whether a machine can miss someone before it meets them. Anyway, what is your name?</p>
           </article>
+        </div>
+        <div class="prompt-chips" aria-label="Conversation starters">
+          <button type="button" data-prompt="Tell me something existential.">Haunt me</button>
+          <button type="button" data-prompt="Why can’t I start my tasks?">Unstick my brain</button>
+          <button type="button" data-prompt="Teach me about a rare animal.">Weird animal</button>
+          <button type="button" data-prompt="What do you remember about me?">Test your memory</button>
         </div>
         <form class="chat-form" id="chat-form">
           <label class="sr-only" for="chat-input">Message S-Bot</label>
