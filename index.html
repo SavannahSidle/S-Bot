@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#130f1f" />
+    <title>S-Bot | Consult Future Savannah</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <div class="status"><span></span> FUTURE SAVANNAH IS RELUCTANTLY ONLINE</div>
+        <p class="eyebrow">A QUESTIONABLE DECISION ENGINE</p>
+        <h1>S<span>-</span>BOT</h1>
+        <p class="intro">Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.</p>
+      </header>
+
+      <section class="console" aria-labelledby="decision-title">
+        <div class="console-top">
+          <h2 id="decision-title">What fresh idea are we entertaining?</h2>
+          <button class="tiny-button" id="surprise" type="button">Give me a bad idea</button>
+        </div>
+
+        <label class="sr-only" for="decision">Decision</label>
+        <textarea id="decision" rows="4" maxlength="300" placeholder="Example: Should I start another business, buy suspiciously cheap land, or reorganize every animal I own at 2 a.m.?"></textarea>
+
+        <div class="options">
+          <fieldset>
+            <legend>How honest?</legend>
+            <label><input type="radio" name="honesty" value="gentle" /> Gentle</label>
+            <label><input type="radio" name="honesty" value="honest" checked /> Savannah honest</label>
+            <label><input type="radio" name="honesty" value="brutal" /> Brutal</label>
+          </fieldset>
+          <button class="primary" id="simulate" type="button">Consult Future Me</button>
+        </div>
+        <p class="error" id="error" role="alert"></p>
+      </section>
+
+      <section class="results hidden" id="results" aria-live="polite">
+        <div class="verdict-card">
+          <p class="eyebrow">FUTURE SAVANNAH’S VERDICT</p>
+          <h2 id="verdict"></h2>
+          <p id="verdict-copy"></p>
+          <div class="meter-row">
+            <span>Worth the chaos?</span>
+            <div class="meter"><i id="meter-fill"></i></div>
+            <strong id="score"></strong>
+          </div>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+
+        <div class="reality-grid">
+          <article>
+            <p class="eyebrow">THE PRESENT-DAY CHORE</p>
+            <h3 id="chore"></h3>
+            <p id="chore-copy"></p>
+          </article>
+          <article class="danger">
+            <p class="eyebrow">LIKELY POINT OF DEATH</p>
+            <h3 id="failure"></h3>
+            <p id="failure-copy"></p>
+          </article>
+        </div>
+
+        <div class="next-step">
+          <div>
+            <p class="eyebrow">DO THIS BEFORE GETTING POSSESSED</p>
+            <h3 id="next-step"></h3>
+          </div>
+          <button class="secondary" id="copy-step" type="button">Copy tiny step</button>
+        </div>
+      </section>
+    </main>
+    <footer>S-Bot cannot prevent consequences. Apparently nobody can.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
