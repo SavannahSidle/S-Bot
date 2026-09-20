@@ -2,6 +2,8 @@
 
 A browser-based future-decision simulator starring Future Savannah: part foresight tool, part executive-function support, part judgmental digital clone.
 
+S-Bot is intentionally a public-facing, exaggerated digital Savannah: AuDHD, pattern-driven, animal-obsessed, accessibility-minded, justice-sensitive, funny, curious, and existentially inconvenienced. Private personal information is excluded from the persona.
+
 ## Run locally
 
 Open `index.html` in a browser, or run any static file server from this directory.
@@ -13,6 +15,8 @@ Open `index.html` in a browser, or run any static file server from this director
 - Separate Judge My Decision and Chat with S-Bot sections
 - Context-aware chat with recent-topic follow-ups, session memory, preference recall, multi-topic answers, and non-repeating response selection
 - Generative existential monologues and optional conversation starters
+- Balanced-ish, Full Infodump, and Idiot Mode response controls
+- AuDHD side quests, energy mirroring, multi-thread detection, and public-Savannah persona
 - Side-by-side three-mode comparison
 - Decision-category matching
 - Expanded knowledge domains covering Qalipu Mi'kmaq and Indigenous relations, AuDHD, executive-function barriers, land-based skills, DIY, animals, space, justice, hobbies, purchases, and projects
