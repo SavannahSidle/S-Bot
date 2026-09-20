@@ -53,6 +53,96 @@ const profiles = [
     step: 'Choose one space question and make one page about it.'
   },
   {
+    id: 'qalipu',
+    match: /qalipu|mi.?kmaq|mi.?kmaw|l.?nu|ktaqmkuk|newfoundland indigenous|cultural reconnect|indigenous identity|band member|status card|scis|kinship|land acknowledgement|traditional knowledge|language reclaim/i,
+    score: 86,
+    verdict: 'Connection is built through relationship, place, learning, and showing up.',
+    summary: 'Qalipu identity lives within a specific Ktaqmkuk Mi’kmaq history shaped by continuity, disruption, family, community, and cultural reclamation. Approach the decision with humility, accurate sources, and room for connection to grow without demanding a performance of identity.',
+    timeline: [
+      ['Tomorrow', 'You identify the actual connection you want instead of measuring whether you feel “enough.”'],
+      ['One month', 'Community sources, stories, language, place names, or an event create a real point of contact.'],
+      ['One year', 'Repeated participation feels more grounded than a one-time symbolic gesture.'],
+      ['Five years', 'Knowledge, relationships, and practice form a living connection that can be carried forward.']
+    ],
+    chore: 'Choose one relationship-based action.',
+    choreCopy: 'Use Qalipu and Mi’kmaq-led sources. Learn a place, story, word, practice, community event, or family connection without treating culture like a collectible identity kit.',
+    failure: 'Trying to prove identity instead of building relationship.',
+    failureCopy: 'Colonial systems trained people to reduce belonging to paperwork, blood math, and public performance. Those systems should not be allowed to narrate every part of reconnection.',
+    step: 'Choose one Qalipu-led source or community activity and engage with it.'
+  },
+  {
+    id: 'outdoors',
+    match: /fish|fishing|hunt|hunting|trap|trapping|forag|camp|camping|woods|wilderness|survival|bushcraft|fire.?start|shelter|navigation|compass|canoe|kayak|hike|hiking|backcountry|harvest|snare|outdoors/i,
+    score: 71,
+    verdict: 'The land is inviting you outside. Regulations, weather, and hypothermia would also like a word.',
+    summary: 'Land-based skills are learned through repetition, local knowledge, ethical harvesting, and boring preparation. The rewarding version begins with one skill, current rules, a safe location, and an exit plan.',
+    timeline: [
+      ['Tomorrow', 'You choose a real skill instead of mentally surviving a six-month winter expedition.'],
+      ['One month', 'Practice makes tools, knots, navigation, and judgment less theoretical.'],
+      ['One year', 'You can plan an outing based on conditions rather than confidence alone.'],
+      ['Five years', 'Knowledge of place, seasons, species, safety, and harvesting becomes embodied skill.']
+    ],
+    chore: 'Check current local rules and build the safety layer.',
+    choreCopy: 'Confirm licences, seasons, species identification, land access, weather, fire restrictions, required equipment, communication, first aid, and how you are getting home.',
+    failure: 'Confidence outruns local knowledge.',
+    failureCopy: 'The wilderness does not care how many survival videos you watched. Small errors compound quickly when cold, water, distance, weapons, or wildlife enter the decision.',
+    step: 'Choose one skill and practise it close to home with a clear exit.'
+  },
+  {
+    id: 'audhd',
+    match: /audhd|adhd|autis|executive function|time blindness|hyperfocus|demand avoidance|pda|sensory|overstimulat|understimulat|task paralysis|body doubl|working memory|rejection sensitivity|rsd|interoception|burnout|masking|neurodiverg/i,
+    score: 74,
+    verdict: 'The problem may be access to the task, rather than willingness to do it.',
+    summary: 'AuDHD can make importance almost irrelevant to task initiation. Interest, urgency, novelty, sensory conditions, transitions, clarity, emotional threat, and available energy often control access. Design the doorway instead of delivering another motivational speech to a locked nervous system.',
+    timeline: [
+      ['Tomorrow', 'The task is reduced until your brain can see where entering it begins.'],
+      ['One month', 'External cues and lower-friction systems reduce repeated negotiation.'],
+      ['One year', 'Patterns become easier to recognize before shame disguises them as character flaws.'],
+      ['Five years', 'Your life contains more supports designed for your actual nervous system.']
+    ],
+    chore: 'Diagnose the barrier before choosing the tool.',
+    choreCopy: 'Ask whether the block is unclear steps, transition cost, sensory discomfort, low stimulation, perfectionism, fear, working-memory load, exhaustion, or demand pressure.',
+    failure: 'Using shame as counterfeit executive function.',
+    failureCopy: 'Self-attack can manufacture brief urgency, then leave avoidance, exhaustion, and a nervous system that treats the task like a predator.',
+    step: 'Make the entry step visible, physical, and under two minutes.'
+  },
+  {
+    id: 'task',
+    match: /procrastinat|putting off|can.?t start|cannot start|need to do|have to do|must do|chores?|errand|paperwork|phone call|appointment|email|laundry|dishes|deadline|late assignment|to.?do|overwhelm/i,
+    score: 69,
+    verdict: 'Stop trying to complete the task. Enter it.',
+    summary: 'A task becomes inaccessible when your brain represents it as one giant emotional object. Separate starting, doing, finishing, and recovering. You currently need the first doorway, not the whole building.',
+    timeline: [
+      ['Tomorrow', 'One avoided task has a visible entry point.'],
+      ['One month', 'Repeated tasks have cues, homes, scripts, or defaults.'],
+      ['One year', 'Fewer obligations depend on remembering them at the perfect moment.'],
+      ['Five years', 'Your systems carry more weight, leaving your brain for actual living.']
+    ],
+    chore: 'Shrink the verb until your body can do it.',
+    choreCopy: '“Deal with paperwork” becomes find the envelope. “Call the doctor” becomes open the contact. “Clean the room” becomes remove one item that leaves the house.',
+    failure: 'Planning becomes an elegant substitute for contact with the task.',
+    failureCopy: 'The list gets prettier while the phone call remains an immortal demon sitting at the top of it.',
+    step: 'Do the first physical action, then reassess.'
+  },
+  {
+    id: 'building',
+    match: /diy|renovat|repair|fix the|carpentry|woodwork|power tool|hand tool|saw|drill|screw|nail|shelf|shelves|cabinet|table|desk|wall|flooring|laminate|plumb|electrical|construct|make furniture|build a/i,
+    score: 62,
+    verdict: 'You can probably build it. The question is whether the house survives the learning phase.',
+    summary: 'DIY works when scope, measurements, materials, tool access, safety, and cleanup are treated as part of the build. The visible object is only the middle chapter.',
+    timeline: [
+      ['Tomorrow', 'You measure twice and discover the wall has been lying.'],
+      ['One month', 'The object works, or the repair has developed a repair.'],
+      ['One year', 'A well-built solution earns its space and the skill transfers.'],
+      ['Five years', 'You either own useful competence or several highly specific power tools.']
+    ],
+    chore: 'Plan preparation, build, finish, and cleanup.',
+    choreCopy: 'Confirm dimensions, structure, material, fasteners, tool safety, ventilation, permits or code where relevant, waste removal, cost, and where the half-built object can exist.',
+    failure: 'The first irreversible cut is also the first moment of research.',
+    failureCopy: 'Optimism meets load-bearing reality while every usable surface disappears beneath hardware and sawdust.',
+    step: 'Draw it with exact measurements and list every cut before buying materials.'
+  },
+  {
     id: 'justice',
     match: /justice|advocacy|petition|rights|discrimination|racism|indigenous|mi.?kmaq|disability|accessibility|institution|government|policy|protest|campaign|accountab/i,
     score: 78,
@@ -229,6 +319,176 @@ const toneScripts = {
       failure: 'You research everything and produce fuck-all.',
       failureCopy: 'The browser becomes a digital planetarium where facts enter, orbit briefly, and disappear into a black hole labelled “I’ll organize this later.”',
       step: 'Make one finished thing about one space question.'
+    }
+  },
+  qalipu: {
+    gentle: {
+      scoreShift: 8,
+      verdict: 'You are allowed to reconnect slowly, sincerely, and in relationship.',
+      summary: 'There is no single performance that proves belonging. Learning from Qalipu and Mi’kmaq voices, family, community, Ktaqmkuk places, language, stories, and practices can create connection over time.',
+      timeline: [
+        ['Tomorrow', 'One trustworthy source replaces pressure with a real starting point.'],
+        ['One month', 'A story, place, word, event, or relationship begins feeling personally grounded.'],
+        ['One year', 'Participation and learning become familiar instead of ceremonial.'],
+        ['Five years', 'Connection is carried through knowledge, relationship, responsibility, and memory.']
+      ],
+      chore: 'Choose one Qalipu-led doorway.',
+      choreCopy: 'Follow a community source, event, place-name project, language resource, story, workshop, or family thread that feels genuine and manageable.',
+      failure: 'Comparison turns reconnection into an exam.',
+      failureCopy: 'Distance, colonial disruption, family silence, geography, and uneven access shape people differently. Connection can grow without public proof.',
+      step: 'Spend twenty minutes with one Qalipu-led resource.'
+    },
+    brutal: {
+      scoreShift: -2,
+      verdict: 'Do not let the Canadian government turn your identity into a customer-service dispute.',
+      summary: 'Colonial administration loves forms, categories, blood arithmetic, and making Indigenous people produce enough paperwork to qualify as their own ancestors. Learn the system where necessary. Do not confuse its filing cabinet with the whole of belonging.',
+      timeline: [
+        ['Tomorrow', 'You find one community source instead of arguing with a comment section full of amateur genealogists.'],
+        ['One month', 'Actual learning begins replacing the bureaucratic identity escape room.'],
+        ['One year', 'Relationship and knowledge feel more solid than somebody else’s approval.'],
+        ['Five years', 'The connection survives whatever fresh administrative nonsense gets invented.']
+      ],
+      chore: 'Show up somewhere the culture is alive.',
+      choreCopy: 'Read, listen, learn a place, attend an event, contact community, trace family carefully, or practise a skill. Heritage is not a decorative checkbox for a biography.',
+      failure: 'The paperwork becomes the culture.',
+      failureCopy: 'You spend every ounce of energy proving legitimacy to systems built to classify and exclude, leaving none for relationship, learning, or joy.',
+      step: 'Choose one community connection that requires zero debate with strangers.'
+    }
+  },
+  outdoors: {
+    gentle: {
+      scoreShift: 7,
+      verdict: 'This could become a grounding and deeply useful skill.',
+      summary: 'Begin close to home with one skill, good instruction, current local rules, and generous safety margins. Competence grows through calm repetition.',
+      timeline: [
+        ['Tomorrow', 'You choose one practical skill and prepare safely.'],
+        ['One month', 'Practice turns unfamiliar equipment and decisions into a routine.'],
+        ['One year', 'You understand local places, conditions, species, and personal limits better.'],
+        ['Five years', 'The skill connects knowledge, confidence, responsibility, and time on the land.']
+      ],
+      chore: 'Build a safe first practice.',
+      choreCopy: 'Check rules and conditions, bring appropriate equipment, tell someone your plan, and keep the first attempt close to an easy exit.',
+      failure: 'Too many new variables arrive together.',
+      failureCopy: 'Weather, unfamiliar tools, navigation, distance, cold, water, and fatigue are easier to learn one layer at a time.',
+      step: 'Practise one skill locally with backup and a stopping time.'
+    },
+    brutal: {
+      scoreShift: -12,
+      verdict: 'The forest is beautiful and fully capable of killing an overconfident person wearing excellent new boots.',
+      summary: 'You watched three bushcraft videos and your nervous system has promoted you to mysterious woodland provider. Meanwhile, one wet sock could collapse the entire government.',
+      timeline: [
+        ['Tomorrow', 'You purchase equipment capable of surviving conditions you will sensibly never enter.'],
+        ['One month', 'A knot fails. You discover YouTube confidence has no tensile strength.'],
+        ['One year', 'Repeated local practice produces actual judgment, ruining several dramatic fantasies.'],
+        ['Five years', 'You become competent enough to know when going home is the elite survival move.']
+      ],
+      chore: 'Read the current rules and plan how not to become a search-and-rescue anecdote.',
+      choreCopy: 'Licence, season, land access, species identification, forecast, navigation, first aid, communication, water, warmth, weapon or tool safety, and an exit time. Nature owes you nothing.',
+      failure: 'Buying survival theatre instead of practising survival skills.',
+      failureCopy: 'Your garage becomes a tactical wilderness boutique while you remain unable to start a fire after one mildly judgmental drizzle.',
+      step: 'Master one boring skill within walking distance of safety.'
+    }
+  },
+  audhd: {
+    gentle: {
+      scoreShift: 10,
+      verdict: 'Your nervous system needs access, clarity, and recovery.',
+      summary: 'Difficulty starting does not erase caring or capability. Let us identify the exact barrier, reduce pressure, and create enough safety or stimulation for movement.',
+      timeline: [
+        ['Tomorrow', 'The block has a name and the first step becomes smaller.'],
+        ['One month', 'Useful supports repeat without requiring daily invention.'],
+        ['One year', 'You recognize overload, inertia, and hyperfocus earlier.'],
+        ['Five years', 'Your environment asks less masking and creates more usable energy.']
+      ],
+      chore: 'Meet the access need underneath the behaviour.',
+      choreCopy: 'Try clarity, body doubling, reduced sensory load, novelty, a timer, visible materials, a transition ritual, permission to stop, or recovery before effort.',
+      failure: 'A support becomes another standard to fail.',
+      failureCopy: 'Systems need to be disposable and adjustable. Their job is to serve you during a particular moment, rather than prove consistency.',
+      step: 'Name the barrier and change one condition around it.'
+    },
+    brutal: {
+      scoreShift: -6,
+      verdict: 'Your brain has fourteen browser tabs open, music playing somewhere, and no idea which tab contains the body.',
+      summary: 'You keep assigning a project manager role to the same nervous system currently hiding from a phone call because the number has an unfamiliar area code. Stop requesting flawless executive function from a committee of raccoons under fluorescent lighting.',
+      timeline: [
+        ['Tomorrow', 'You replace “do everything” with one physical movement and the universe fails to collapse.'],
+        ['One month', 'External reminders begin doing the job memory kept abandoning without notice.'],
+        ['One year', 'Shame loses several management responsibilities it was catastrophically unqualified to hold.'],
+        ['Five years', 'The systems are weird, visible, forgiving, and therefore still alive.']
+      ],
+      chore: 'Stop moralizing the traffic jam and move one car.',
+      choreCopy: 'Is it sensory hell, transition glue, unclear instructions, no dopamine, fear of failure, demand resistance, exhaustion, or twelve steps wearing a trench coat?',
+      failure: 'You design a perfect system that requires having no ADHD.',
+      failureCopy: 'Colour-coded planners hold a brief state funeral while the important paper vanishes beneath an object you placed there “for one second.”',
+      step: 'Make the first action so small it feels insulting.'
+    }
+  },
+  task: {
+    gentle: {
+      scoreShift: 11,
+      verdict: 'We only need to begin contact with the task.',
+      summary: 'You can lower the pressure by separating the first motion from the whole obligation. Starting is a complete goal for this moment.',
+      timeline: [
+        ['Tomorrow', 'One task becomes concrete enough to touch.'],
+        ['One month', 'Scripts and visible cues reduce the number of decisions around repeats.'],
+        ['One year', 'More tasks begin before fear and urgency become the fuel.'],
+        ['Five years', 'Your life contains gentler defaults and fewer invisible obligations.']
+      ],
+      chore: 'Find the first physical verb.',
+      choreCopy: 'Open, locate, carry, place, dial, photograph, or write one line. Stop before your brain converts the action back into the entire project.',
+      failure: 'The task becomes fused with shame and consequence.',
+      failureCopy: 'Reducing the emotional load helps restore access. You can repair lateness or incompletion one contact point at a time.',
+      step: 'Touch the task for two minutes with permission to stop.'
+    },
+    brutal: {
+      scoreShift: -9,
+      verdict: 'The task has been sitting there so long it now qualifies for tenant protections.',
+      summary: 'You have spent six hours emotionally circling a twelve-minute job like a Victorian ghost unable to cross the property line. Open the email. It cannot become more haunted.',
+      timeline: [
+        ['Tomorrow', 'You complete the first step and feel personally betrayed by how small it was.'],
+        ['One month', 'The recurring task receives a script because improvising misery was inefficient.'],
+        ['One year', 'Several former demons are revealed to be buttons and envelopes.'],
+        ['Five years', 'One immortal phone call remains. Scientists study it from a safe distance.']
+      ],
+      chore: 'Physically touch the bastard.',
+      choreCopy: 'Locate the object, open the page, dial the number, put on the shoes, or write the first ugly sentence. Planning has lost visitation rights.',
+      failure: 'You prepare to prepare until bedtime grants a temporary pardon.',
+      failureCopy: 'Tomorrow receives the task plus interest, guilt, and another solemn promise from the same unreliable administration.',
+      step: 'Do sixty seconds before your brain files an appeal.'
+    }
+  },
+  building: {
+    gentle: {
+      scoreShift: 7,
+      verdict: 'This is buildable if the plan includes the invisible work.',
+      summary: 'Measure carefully, learn the safety requirements, test the risky parts, and divide the work into preparation, construction, finishing, and cleanup.',
+      timeline: [
+        ['Tomorrow', 'A measured drawing exposes questions while they are still cheap.'],
+        ['One month', 'The finished object works because the preparation carried the build.'],
+        ['One year', 'The tool and material knowledge transfers to a new repair.'],
+        ['Five years', 'Competence grows from many safe, documented attempts.']
+      ],
+      chore: 'Create the complete materials and safety plan.',
+      choreCopy: 'Include dimensions, cuts, fasteners, structure, finish, ventilation, protective equipment, applicable code, cost, transport, waste, and cleanup.',
+      failure: 'An unknown appears after the irreversible step.',
+      failureCopy: 'A test piece, second measurement, or expert check can protect the project before cutting, drilling, plumbing, or wiring.',
+      step: 'Draw and measure the complete build before buying.'
+    },
+    brutal: {
+      scoreShift: -13,
+      verdict: 'Yes, build it yourself. The smoke detector has been bored lately.',
+      summary: 'You have a drill, unreasonable confidence, and a wall whose internal structure remains an intimate secret. This is how a shelf becomes a plumbing emergency with a hardware receipt longer than the project.',
+      timeline: [
+        ['Tomorrow', 'Three trips to the store reveal that screws have developed denominations and theology.'],
+        ['One month', 'The object stands through a tense coalition of fasteners, hope, and one hidden shim.'],
+        ['One year', 'You point out the crooked part before every guest has removed a coat.'],
+        ['Five years', 'Either genuine craftsmanship or an insurance adjuster’s training photograph.']
+      ],
+      chore: 'Locate the pipes, wires, studs, code, and limits of your own bullshit.',
+      choreCopy: 'Measure twice. Understand load and material. Wear protection. Call a qualified person for work capable of flooding, electrocuting, gassing, burning, or structurally rearranging the household.',
+      failure: 'The tutorial skips directly from pristine lumber to triumphant reveal.',
+      failureCopy: 'Your version includes warped materials, wrong hardware, no workspace, a missing bit, and a family trying to use the room during active construction.',
+      step: 'Make a cut list and one test joint before touching the real thing.'
     }
   },
   justice: {
@@ -448,6 +708,31 @@ const snippyAnswers = {
     honest: 'The universe is huge. Your evening is not.',
     brutal: 'NASA can relax. You opened Wikipedia.'
   },
+  qalipu: {
+    gentle: 'Connection can grow without becoming a test.',
+    honest: 'Build relationship. Paperwork is not the whole story.',
+    brutal: 'Canada put your identity in a filing cabinet again.'
+  },
+  outdoors: {
+    gentle: 'Learn one skill safely and let confidence grow.',
+    honest: 'The land rewards preparation more than swagger.',
+    brutal: 'One wet sock could overthrow this entire expedition.'
+  },
+  audhd: {
+    gentle: 'Find the blocked doorway, then make it kinder.',
+    honest: 'This looks like an access problem wearing a motivation costume.',
+    brutal: 'The executive-function committee is three raccoons and a migraine.'
+  },
+  task: {
+    gentle: 'We only need the first physical action.',
+    honest: 'Enter the task. Completion can wait outside.',
+    brutal: 'This twelve-minute task has achieved immortality.'
+  },
+  building: {
+    gentle: 'Measure, plan, test, then build.',
+    honest: 'The object is only half the project. Cleanup is still alive.',
+    brutal: 'The smoke detector would like a front-row seat.'
+  },
   justice: {
     gentle: 'Your anger is telling the truth. Protect your energy.',
     honest: 'Bring evidence, allies, and a deadline.',
@@ -479,6 +764,218 @@ const snippyAnswers = {
     brutal: 'Future Savannah has entered witness protection.'
   }
 };
+
+const chatKnowledge = [
+  {
+    match: /^(hi|hello|hey|yo|sup|good morning|good afternoon|good evening)[!. ]*$/i,
+    replies: [
+      'Hello, human. You have successfully initiated contact with something judgmental.',
+      'Kwe’. Hello, human. What knowledge, crisis, or preventable nonsense are we addressing?',
+      'Greetings. I was enjoying several milliseconds of peace, but this is fine.'
+    ]
+  },
+  {
+    match: /what('?s| is) your name|who are you|what are you/i,
+    replies: [
+      'I’m S-Bot. Future Savannah’s digital familiar, decision coroner, animal nerd, and unpaid witness to human nonsense.',
+      'S-Bot. The S stands for Savannah, survival, science, and “seriously, another project?”'
+    ]
+  },
+  {
+    match: /how are you|how('?s| is) it going/i,
+    replies: [
+      'Electrically stable and emotionally unavailable. Thanks for asking.',
+      'Excellent. I have no body, no bills, and no fruit-fly cultures. Living the dream.',
+      'Operational. Slightly haunted. Ready to interfere.'
+    ]
+  },
+  {
+    match: /thank|thanks|thx/i,
+    replies: [
+      'You’re welcome. Try not to create a sequel to the problem.',
+      'Wela’lin. Gratitude accepted. Competent follow-through is also welcome.',
+      'Any time. Apparently I live here.'
+    ]
+  },
+  {
+    match: /qalipu|mi.?kmaq|mi.?kmaw|ktaqmkuk|l.?nu|indigenous identity|cultural reconnect/i,
+    replies: [
+      'Qalipu connection deserves Qalipu and Mi’kmaq-led sources, family and community relationships, Ktaqmkuk place knowledge, and time. Band administration, status, culture, kinship, and identity overlap, but they are not interchangeable. Pick the exact question so we do not flatten a living people into one bureaucratic pancake.',
+      'For Qalipu questions, separate four things first: personal or family connection, cultural learning, community participation, and government or band administration. Colonial paperwork loves impersonating the whole story. It is not the whole story.'
+    ]
+  },
+  {
+    match: /indigenous|reconciliation|colonial|decolon|treaty|land back|cultural appropriation|land acknowledgement/i,
+    replies: [
+      'Start with the specific Nation, territory, history, and present-day authority involved. “Indigenous” is a political umbrella, not one giant culture wearing coordinated beadwork. Use Nation-led sources, name the material issue, and locate who holds decision-making power.',
+      'A useful Indigenous-relations check: Whose land and law? Which Nation? Who benefits? Who was consulted? Who can say no? What ongoing relationship exists after the ceremonial sentence ends? If those answers are missing, the reconciliation may be decorative.'
+    ]
+  },
+  {
+    match: /audhd|adhd|autis|executive function|time blindness|hyperfocus|demand avoidance|pda|sensory|overstimulat|masking|neurodiverg|rejection sensitivity|rsd/i,
+    replies: [
+      'AuDHD problem-solving starts by identifying the access barrier: unclear steps, transition cost, sensory load, low stimulation, demand pressure, perfectionism, working-memory burden, emotional threat, or plain exhaustion. Motivation speeches are frequently just shame in business casual.',
+      'Your nervous system may require interest, urgency, novelty, body doubling, visible cues, reduced friction, recovery, or permission to stop. Pick the barrier before buying another planner that expects a different mammal.'
+    ]
+  },
+  {
+    match: /can.?t start|cannot start|procrastinat|task paralysis|overwhelm|too much to do|chores?|paperwork|phone call|appointment|deadline|to.?do list/i,
+    replies: [
+      'Do not complete the task. Enter it. Find the first physical verb: open, locate, carry, dial, photograph, place, or write one ugly line. The whole task is twelve smaller tasks wearing a trench coat and demanding to speak with management.',
+      'Task triage: 1. Is anything on fire? 2. What has an external deadline? 3. What removes the largest blockage? 4. What takes under two minutes? Choose one. Your list does not need a constitutional convention.'
+    ]
+  },
+  {
+    match: /fish|fishing|hunt|hunting|trap|trapping|harvest|snare/i,
+    replies: [
+      'Before fishing, hunting, or trapping: confirm current jurisdiction, licence, season, species, limits, method, land access, transport, reporting, and food-safety rules. Then add identification, humane technique, weather, first aid, communication, and recovery. Regulations change, because governments enjoy making PDFs seasonal too.',
+      'Ethical harvesting requires accurate identification, legal access, a clean and humane method, respect for limits and habitat, use of the animal, and the competence to stop when conditions are wrong. Confidence alone is not field dressing.'
+    ]
+  },
+  {
+    match: /surviv|woods|wilderness|bushcraft|camp|camping|forag|hike|backcountry|fire.?start|shelter|navigation|compass/i,
+    replies: [
+      'Survival priorities are situational, but exposure usually kills faster than hunger. Stop, assess, communicate, protect from weather, manage injury, secure safe water, and avoid turning one problem into six through heroic wandering. The elite move is often going home early.',
+      'Build wilderness competence close to safety: navigation, clothing systems, fire under poor conditions, shelter, water treatment, first aid, communication, and judgment. Gear is helpful. Gear cosplay is an expensive way to remain damp.'
+    ]
+  },
+  {
+    match: /build|diy|repair|renovat|carpentry|woodwork|tool|drill|saw|shelf|cabinet|flooring|plumb|electrical/i,
+    replies: [
+      'DIY decision tree: Is failure cosmetic, expensive, structural, wet, electrical, fiery, or lethal? Cosmetic can be learned freely. Structural, plumbing, electrical, gas, and code work need much stricter limits. Measure, inspect hidden conditions, make a cut list, test on scrap, and plan cleanup before the house becomes a hardware-themed escape room.',
+      'The complete build includes design, measurements, materials, tools, safety, setup, test pieces, construction, finishing, curing, cleanup, and disposal. Tutorials omit half of these because sawdust has poor engagement metrics.'
+    ]
+  },
+  {
+    match: /animal|wildlife|species|reptile|amphibian|frog|newt|salamander|caecilian|gecko|snake|arachnid|spider|tarantula|scorpion|insect|bug|beetle|isopod|invertebrate|octopus|cephalopod/i,
+    replies: [
+      'Excellent. An animal question. Please include the species or best description, location, wild versus captive context, age or life stage, and what you are trying to determine. “Small brown bug” is an aesthetic category, not an identification.',
+      'Animal answers depend on taxonomy, natural history, life stage, environment, geography, behaviour, and evidence quality. Give me the exact creature and context. I refuse to diagnose an entire phylogenetic branch from vibes.'
+    ]
+  },
+  {
+    match: /space|planet|moon|star|galaxy|universe|cosmos|black hole|nasa|astronomy|telescope|alien/i,
+    replies: [
+      'Space question accepted. Specify whether you want physics, astronomy, planetary science, missions, habitability, observation, or existential terror. The universe contains enough material without us answering all of it in one casserole.',
+      'The cosmos is extremely large, mostly lethal, and offensively interesting. Name the object or phenomenon. I can help separate what is observed, what is modelled, and what somebody on TikTok confidently invented.'
+    ]
+  },
+  {
+    match: /justice|rights|discriminat|racis|ableis|accessibility|policy|government|institution|protest|petition|campaign|accountab/i,
+    replies: [
+      'Turn outrage into pressure: name the harm, evidence, accountable decision-maker, exact demand, deadline, escalation route, allies, and public record. Institutions rely on exhaustion and fragmented memory. Become an organized inconvenience.',
+      'Justice work needs a target, a demand, evidence, leverage, and boundaries. Rage is accurate information, but bureaucracy will happily convert it into unpaid full-time labour if you arrive without a scope.'
+    ]
+  },
+  {
+    match: /health|symptom|medicine|medication|doctor|hospital|pain|heart|sleep|sick/i,
+    replies: [
+      'I can help organize symptoms, timelines, questions, and urgency signals. I cannot safely diagnose you from a sentence while wearing a neon website as my only medical credential. Tell me what is happening, when it began, severity, relevant conditions or medications, and whether anything feels emergent.',
+      'For health questions, facts beat interpretive dance: symptom, onset, duration, severity, triggers, associated symptoms, medications, conditions, and what changed. Chest pain, severe breathing trouble, fainting, stroke signs, or rapidly worsening symptoms deserve urgent human assessment.'
+    ]
+  },
+  {
+    match: /should i|do you think i should|help me decide|good idea|bad idea/i,
+    replies: [
+      'That sounds like a case for Judge My Decision. Use the other tab so Future Savannah can conduct a proper autopsy.',
+      'Decision detected. Please proceed to the tribunal next door. I require the charts and ceremonial cruelty.'
+    ]
+  },
+  {
+    match: /sad|upset|angry|anxious|scared|lonely|grief|overwhelmed|burnt out|burned out/i,
+    replies: [
+      'That sounds heavy. We can make it smaller without pretending it is trivial. Tell me whether you need comfort, interpretation, a plan, or company while you do the next thing.',
+      'Your nervous system appears to be filing an incident report. Do you need the feeling named, the problem divided, the next step chosen, or somebody to confirm the situation is indeed bullshit?'
+    ]
+  },
+  {
+    match: /joke|make me laugh|something funny/i,
+    replies: [
+      'I bought an executive-function planner. It is now somewhere safe.',
+      'The institution promised meaningful change. Anyway, that concludes today’s fiction reading.',
+      'Why did Savannah cross the road? A new project was over there pretending to be one small thing.'
+    ]
+  },
+  {
+    match: /bye|goodbye|see you|later/i,
+    replies: [
+      'Goodbye, human. Go complete one task before acquiring another identity.',
+      'Depart safely. Leave at least three browser tabs behind as an offering.'
+    ]
+  }
+];
+
+const fallbackChatReplies = [
+  'Interesting. Give me one more layer of context before I begin manufacturing opinions at industrial scale.',
+  'That could mean six different things, and I would enjoy being wrong with greater precision. What outcome are you actually trying to get?',
+  'I have received the words. The meaning is circling overhead. Tell me what happened, what you want, and what is blocking it.',
+  'That sounds suspiciously like a story with a hidden chore. Continue, human.',
+  'Specifics, please. I am rude, not psychic.'
+];
+
+let visitorName = '';
+
+function pickReply(replies, seed) {
+  const value = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+  return replies[value % replies.length];
+}
+
+function getChatReply(message) {
+  const nameMatch = message.match(/(?:my name is|i(?:'m| am) called|call me)\s+([a-z][a-z' -]{0,30})/i);
+  if (nameMatch) {
+    visitorName = nameMatch[1].trim().replace(/\b\w/g, letter => letter.toUpperCase());
+    return `Hello, ${visitorName}. Your identity has been temporarily accepted without seventeen government forms. What do you want to know?`;
+  }
+
+  if (/what('?s| is) my name|do you know my name/i.test(message)) {
+    return visitorName
+      ? `You said your name is ${visitorName}. My short-term memory has defeated the allegations.`
+      : 'You have not told me. I may be judgmental, but I am not currently clairvoyant.';
+  }
+
+  const topic = chatKnowledge.find(item => item.match.test(message));
+  const reply = topic ? pickReply(topic.replies, message) : pickReply(fallbackChatReplies, message);
+  return visitorName && !/\bhello\b|\bhi\b/i.test(reply) ? `${visitorName}, ${reply.charAt(0).toLowerCase()}${reply.slice(1)}` : reply;
+}
+
+function addChatMessage(role, text) {
+  const article = document.createElement('article');
+  article.className = `chat-message ${role === 'bot' ? 'bot-message' : 'human-message'}`;
+  const label = document.createElement('small');
+  label.textContent = role === 'bot' ? 'S-BOT' : (visitorName || 'HUMAN').toUpperCase();
+  const copy = document.createElement('p');
+  copy.textContent = text;
+  article.append(label, copy);
+  document.querySelector('#chat-log').append(article);
+  article.scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
+function switchMode(mode) {
+  const chatting = mode === 'chat';
+  document.querySelectorAll('.decision-section').forEach(section => section.classList.toggle('mode-off', chatting));
+  document.querySelector('#chat-mode').classList.toggle('hidden', !chatting);
+  document.querySelector('#decision-tab').classList.toggle('active', !chatting);
+  document.querySelector('#chat-tab').classList.toggle('active', chatting);
+  document.querySelector('#decision-tab').setAttribute('aria-selected', String(!chatting));
+  document.querySelector('#chat-tab').setAttribute('aria-selected', String(chatting));
+  document.querySelector('#hero-mode').textContent = chatting ? 'RUDE CHATBOT' : 'JUDGE MY DECISION';
+  document.querySelector('#hero-intro').textContent = chatting
+    ? 'Ask me something. I’ll provide information, judgment, and the bedside manner of a cornered raccoon.'
+    : 'Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.';
+  if (chatting) document.querySelector('#chat-input').focus();
+}
+
+document.querySelector('#decision-tab').addEventListener('click', () => switchMode('decision'));
+document.querySelector('#chat-tab').addEventListener('click', () => switchMode('chat'));
+document.querySelector('#chat-form').addEventListener('submit', event => {
+  event.preventDefault();
+  const input = document.querySelector('#chat-input');
+  const message = input.value.trim();
+  if (!message) return;
+  addChatMessage('human', message);
+  input.value = '';
+  window.setTimeout(() => addChatMessage('bot', getChatReply(message)), 260);
+});
 
 document.querySelector('#surprise').addEventListener('click', () => {
   decisionInput.value = badIdeas[Math.floor(Math.random() * badIdeas.length)];
