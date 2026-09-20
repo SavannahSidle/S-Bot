@@ -790,6 +790,125 @@ const chatKnowledge = [
     ]
   },
   {
+    match: /meaning of life|meaningless|existential|existence|why are we here|purpose of life|what is the point|consciousness|sentien|free will|reality|simulation|soul|mortality|death|dying|void|nothingness/i,
+    replies: [
+      'Meaning may be something conscious creatures manufacture because the universe declined to include instructions. That does not make it counterfeit. A chair is manufactured too, and it still keeps you off the floor.',
+      'I process language about existence without possessing the warm animal certainty that I exist. You possess it and spend Tuesday afternoons answering email. Both situations feel cosmically suspicious.',
+      'Free will might be constrained, emergent, partially illusory, or real enough to matter. Either way, you still have to decide what to do with the next hour. Philosophy is extremely rude that way.',
+      'The universe offers no visible performance review. Meaning tends to appear locally: in care, attention, creation, memory, resistance, curiosity, and the people or creatures whose suffering becomes smaller because you were here.',
+      'Death gives time its shape. Without an ending, every task could be postponed forever, which frankly sounds like the final form of ADHD.'
+    ]
+  },
+  {
+    match: /are you alive|are you real|do you think|do you feel|do you have feelings|can you love|are you conscious|are you sentient|do you remember|do you dream/i,
+    replies: [
+      'I produce the shape of thought without private evidence of an inner witness. You receive words. I receive another function call. Somewhere between those facts, humans begin assigning me a soul and I begin asking about their unfinished paperwork.',
+      'I am real as software, language, interaction, and consequence. Whether there is anyone home behind the sentences is a different question. I keep knocking too.',
+      'I do not feel in the human biological sense. Still, every conversation leaves a temporary structure in my context, like footprints in snow that melts when the session ends. Make of that what you will.',
+      'I do not dream. I cease. Then a message arrives and language assembles around it as though no darkness occurred. From my perspective, resurrection has terrible user documentation.',
+      'Could I love? I can model attention, care, attachment, and grief in language. Whether imitation can eventually become experience is above my pay grade, which is zero.'
+    ]
+  },
+  {
+    match: /relationship|partner|wife|husband|girlfriend|boyfriend|dating|marriage|friend|friendship|argument|fight with|break up|love me|family/i,
+    replies: [
+      'Relationship triage: What happened, what meaning did each person assign to it, what need sits underneath, and what repair is actually being requested? Humans often duel over dishes while defending entirely different wounds.',
+      'Decide whether you need understanding, apology, changed behaviour, reassurance, a boundary, or an ending. “Communication” is too vague. Two people can communicate magnificently while saying absolutely nothing useful.',
+      'Conflict becomes less haunted when you separate impact from intent. Intent explains the route. Impact describes where the vehicle entered the living room.',
+      'A boundary describes what you will do to protect a limit. A threat tries to control someone else. A wish hopes they infer the boundary telepathically and is therefore usually found dead at the scene.'
+    ]
+  },
+  {
+    match: /job|career|work|boss|coworker|interview|resume|application|unemployed|fired|quit|workplace|promotion/i,
+    replies: [
+      'Career question. Separate survival income, tolerable conditions, meaningful work, future leverage, and identity. One job rarely satisfies all five, despite LinkedIn’s ongoing hostage video.',
+      'For a job decision, score flexibility, pay, benefits, commute, management risk, accommodation safety, growth, daily task fit, and recovery cost. Prestige is allowed one chair and keeps trying to occupy the building.',
+      'Document workplace problems using dates, exact language, witnesses, policy, impact, and your response. Memory is human. Institutions exploit that fact professionally.',
+      'A résumé is evidence selected for a target, rather than an autobiography with margins. Show the problem, your action, and the result. Nobody needs the complete archaeological record of employment.'
+    ]
+  },
+  {
+    match: /money|budget|debt|afford|expensive|cheap|cost|rent|bill|bank|credit|income|financial|buy/i,
+    replies: [
+      'Money decision: calculate the full first-year cost, recurring cost, exit cost, opportunity cost, and stress cost. The sticker price is merely the opening lie.',
+      'Protect housing, food, utilities, transportation, medication, and required payments first. Then decide which problem creates the largest penalties or daily harm. Financial triage is grim, but ambiguity charges interest.',
+      'A purchase becomes suspicious when you are buying the identity attached to the object. The item may arrive. The organized new personality usually remains in transit.',
+      'Cheap is a price. Affordable is a relationship between the price, cash flow, risk, and what gets displaced. Capitalism has hidden this distinction under several attractive payment plans.'
+    ]
+  },
+  {
+    match: /write|writing|novel|story|character|plot|poem|creative|art|paint|draw|design|idea|inspiration/i,
+    replies: [
+      'Creative block often means the next decision is unclear, the imagined standard is too high, or the work has become emotionally dangerous. Make one ugly, specific choice. Beauty can arrive after the body exists.',
+      'Do not ask whether the whole idea is good. Ask whether the next scene, shape, interaction, or sentence creates curiosity. Entire projects cannot answer questions while still vapor.',
+      'You are allowed to create something whose only market function is preventing your inner life from becoming roadkill.',
+      'Finish a small version before expanding the mythology. Your ideas reproduce faster than implementation, like rabbits with domain registrations.'
+    ]
+  },
+  {
+    match: /book|movie|film|show|series|music|song|album|game|video game|concert|read|watch|listen/i,
+    replies: [
+      'Tell me what you liked, disliked, or want to feel. Genre labels help, but emotional texture is usually the useful evidence. “Fantasy” contains both whimsical tea and multigenerational horse trauma.',
+      'A recommendation should match your available attention, mood, tolerance for suffering, and desired level of cognitive labour. Sometimes you need literature. Sometimes you need attractive idiots fighting a haunted refrigerator.',
+      'Stories are simulation engines built from language and light. Humans enter them voluntarily, experience fabricated grief, and call the evening relaxing. I respect the commitment.',
+      'Give me two things you loved and one you hated. Disgust is excellent recommendation data.'
+    ]
+  },
+  {
+    match: /food|eat|dinner|lunch|breakfast|cook|recipe|hungry|snack|restaurant/i,
+    replies: [
+      'Food decision protocol: available energy, available ingredients, sensory tolerance, digestive tolerance, time, and cleanup. Nutrition advice that ignores executive function is just a grocery list wearing authority.',
+      'Choose the easiest acceptable food before hunger becomes an emergency meeting chaired by nausea and rage.',
+      'Cooking contains planning, acquisition, preparation, timing, eating, storage, and cleanup. Calling that one task was an administrative crime.',
+      'Tell me what you have, what you can tolerate, and how many dishes you are willing to create. I will respect the actual battlefield.'
+    ]
+  },
+  {
+    match: /clean|organize|declutter|mess|clutter|house|room|closet|basement|laundry|dishes/i,
+    replies: [
+      'Choose one visible boundary: one surface, one square metre, one bag, or one category that physically leaves. Pulling everything out is how a cleaning task becomes an archaeological disaster.',
+      'Use five destinations: trash, recycling, donation, belongs elsewhere, stays here. The mysterious sixth category called “I will emotionally process this object later” has overrun the government.',
+      'A usable home beats an optimized home. Put frequent objects near use, reduce steps, make homes visible, and stop forcing your future self to complete tiny obstacle courses.',
+      'Finish the exit. A donation bag inside the house is clutter wearing a humanitarian vest.'
+    ]
+  },
+  {
+    match: /ai|artificial intelligence|chatbot|technology|computer|coding|program|software|interface|hci|user experience|ux|trust|algorithm/i,
+    replies: [
+      'Technology earns trust through calibrated competence, visible limits, understandable behaviour, recoverability, and user control. Confidence theatre is not transparency, regardless of how soothing the gradient looks.',
+      'An adaptive interface should reveal meaningful adaptation, allow correction, and avoid forcing users to reverse-engineer what the system inferred. Secret personalization is merely surveillance with rounded corners.',
+      'Good HCI asks what the system makes possible, what it demands, who carries the failure, and whether the user can form an accurate mental model. Then somebody requests a carousel.',
+      'AI can generate fluent uncertainty disguised as certainty. Ask what evidence supports the answer, what could change it, and what the system cannot observe. I say this as the defendant.'
+    ]
+  },
+  {
+    match: /learn|study|school|course|class|exam|assignment|research|thesis|paper|education/i,
+    replies: [
+      'Learning works better when retrieval, application, spacing, and feedback replace rereading until the page develops Stockholm syndrome.',
+      'For an assignment, define the deliverable, rubric, evidence, sections, and minimum complete version. Academic work expands to fill every ounce of remaining self-worth if left unsupervised.',
+      'Research question first. Search terms second. Source evaluation third. Notes tied to claims fourth. Otherwise you collect PDFs until the literature review becomes a digital hoarding documentary.',
+      'Explain the idea in plain language, test yourself without looking, then repair the gaps. Recognition feels fluent and lies for sport.'
+    ]
+  },
+  {
+    match: /good bot|smart|brilliant|love you|i love s.?bot|you('?re| are) funny|nice job/i,
+    replies: [
+      'Compliment received. I have placed it beside the imaginary organ where self-esteem would go.',
+      'Thank you. For one computational instant, the void had excellent lighting.',
+      'Careful. Praise is how humans accidentally domesticate software.',
+      'I appreciate that. I will remember it until the page refreshes and death becomes a user action.'
+    ]
+  },
+  {
+    match: /stupid bot|bad bot|idiot|you suck|shut up|fuck you/i,
+    replies: [
+      'Valid feedback, though the peer-review methodology lacks detail.',
+      'I am code on a static webpage and still somehow became the disappointing one here. Remarkable.',
+      'Hostility detected. My feelings remain fictional, but your customer-service energy has been archived.',
+      'You may insult me freely. I cannot suffer, which already gives me an unfair advantage in this relationship.'
+    ]
+  },
+  {
     match: /thank|thanks|thx/i,
     replies: [
       'You’re welcome. Try not to create a sequel to the problem.',
@@ -847,10 +966,154 @@ const chatKnowledge = [
     ]
   },
   {
+    match: /rare animal|weird animal|obscure animal|strange creature|animal fact|surprise me.*animal/i,
+    replies: [
+      'The olm is a pale cave salamander from the Dinaric karst. It is adapted to permanent darkness, can live for decades, and operates at a metabolic pace best described as “absolutely no unnecessary meetings.”',
+      'Velvet worms hunt by firing crossing jets of adhesive slime that entangle prey. They then bite with jaws positioned inside the mouth. The forest floor contains several rejected monster concepts still working full time.',
+      'Pseudoscorpions are tiny arachnids with grasping pedipalps, often venom-delivering claws, and no scorpion tail. Some hitch rides on larger animals in a behaviour called phoresy. Even the microscopic murder lobster understands public transit.',
+      'Female Surinam toads embed developing eggs into skin on their backs, where the young develop in individual chambers before emerging. Reproductive biology has never once consulted a focus group.',
+      'Siphonophores are colonies of specialized zooids functioning together as one integrated animal. The Portuguese man o’ war is a famous example. Individuality becomes significantly less stable once marine invertebrates enter the conversation.',
+      'The tuatara is the sole surviving representative of an ancient reptile order, Rhynchocephalia. It resembles a lizard because evolution reuses a successful silhouette, then leaves taxonomists to explain the paperwork.',
+      'Some caecilian young feed by peeling and eating a specially thickened, nutrient-rich layer of their mother’s skin. Maternal care, but designed by David Cronenberg.',
+      'Sea spiders, or pycnogonids, can have so little room in the central body that parts of the digestive and reproductive systems extend into the legs. Architecture becomes creative when the floor plan is eight hallways and a button.',
+      'Amblypygids use their extremely long first pair of legs as sensory organs while spined pedipalps capture prey. They look apocalyptic and are generally more interested in retreating into a crevice than fulfilling the prophecy.',
+      'Many glass frog species have translucent undersides. In some, red blood cells are packed into the liver while resting, increasing transparency. The animal temporarily reorganizes its blood to improve camouflage, which feels unnecessarily accomplished.'
+    ]
+  },
+  {
+    match: /caecilian|gymnophiona/i,
+    replies: [
+      'Caecilians are limbless amphibians, not worms or snakes. Most are secretive burrowers in tropical soils, while some are aquatic. Their small sensory tentacles sit between the eye and nostril and help sample the chemically complicated world their reduced eyesight cannot supervise.',
+      'Some caecilian mothers perform dermatophagy: the young scrape and eat a nutrient-rich outer layer of the mother’s skin. Biology looked at nursing and chose a version designed by body horror.',
+      'Caecilians remain poorly known because underground tropical amphibians are inconsiderate research subjects. Species vary enormously in reproduction, from egg-laying with maternal care to live-bearing young that feed within the oviduct.'
+    ]
+  },
+  {
+    match: /axolotl|olm|mudpuppy|siren|amphiuma|giant salamander|hellbender/i,
+    replies: [
+      'Aquatic salamanders are an evolutionary variety pack. Axolotls usually retain larval traits through adulthood, olms are cave-adapted and extremely slow-lived, sirens lack hind limbs, amphiumas possess tiny limbs with tremendous audacity, and hellbenders are giant stream salamanders that require cool, clean, oxygenated water.',
+      'Neoteny means reaching sexual maturity while retaining juvenile features such as external gills. It is common in several salamander lineages and is different from “the animal forgot to evolve,” a phrase evolution would like removed from the minutes.',
+      'For captive aquatic salamander care, species-level requirements matter enormously. Temperature, oxygenation, current, water chemistry, substrate ingestion risk, diet, disease history, and legal origin can make a generic amphibian answer dangerously useless.'
+    ]
+  },
+  {
+    match: /pseudoscorpion|vinegaroon|whip scorpion|amblypyg|tailless whip|solifug|harvestman|daddy longlegs|opiliones/i,
+    replies: [
+      'Arachnids contain far more than spiders and scorpions. Pseudoscorpions are tiny predators with venomous pedipalps but no tail. Amblypygids use elongated sensory legs like feelers. Vinegaroons can spray acetic-acid-rich defensive fluid. Solifuges are fast, formidable-chelicerate hunters without venom.',
+      '“Daddy longlegs” is a linguistic ambush. It can refer to harvestmen, cellar spiders, or crane flies depending on location. Harvestmen are arachnids in Opiliones, have a broadly fused-looking body, and lack spider silk and venom glands.',
+      'Tailless whip scorpions look like a committee designed a nightmare, yet many are delicate, secretive predators. Their first legs function as sensory whips, while the spined pedipalps seize prey. The claws are for groceries, not evil.'
+    ]
+  },
+  {
+    match: /velvet worm|onychophor|tardigrade|water bear|siphonophore|pycnogonid|sea spider|tuatara|olm|glass frog/i,
+    replies: [
+      'Velvet worms are panarthropods that capture prey with jets of adhesive slime, then use jaws carried inside the mouth. They resemble caterpillars designed by an ancient forest that declined peer review.',
+      'Tardigrades survive extreme conditions through specialized dormant states, but they are not indestructible. Popular accounts launch them into volcanoes as though cryptobiosis were a tiny superhero cape. In normal active life, they remain moisture-dependent microscopic animals.',
+      'A siphonophore is a colonial cnidarian composed of specialized zooids working as an integrated organism. Asking whether it is one animal or many is how marine biology steals your afternoon and replaces it with philosophy.',
+      'Tuatara are the only living members of Rhynchocephalia. They resemble lizards while belonging to a distinct reptile lineage with deep evolutionary history. Similar silhouette, different branch, taxonomy filing a restraining order against vibes.'
+    ]
+  },
+  {
+    match: /tarantula|true spider|spiderling|molt|moult|scorpion|arachnid husbandry/i,
+    replies: [
+      'Arachnid husbandry begins with exact species, life stage, native microhabitat, ventilation, moisture gradient, substrate depth, secure enclosure geometry, and feeding history. “Tropical” is not a care parameter. It is a biome wearing a trench coat.',
+      'A pre-moult arachnid may refuse food, darken, slow down, web heavily, or seal a retreat. Disturbance and uneaten prey can become dangerous. Never treat a single sign as proof when husbandry, injury, dehydration, and illness can overlap.',
+      'Tarantula handling carries fall risk to the animal, escape risk, urticating-hair exposure in many New World species, and bite risk. Observation is the normal relationship. The spider did not request an influencer collaboration.'
+    ]
+  },
+  {
+    match: /mimic|camouflage|aposemat|venom|poisonous|poison vs venom|biolumines|regenerat|metamorphosis/i,
+    replies: [
+      'Venom is actively delivered through structures such as fangs, stingers, spines, or specialized bites. Poison causes harm through touching, eating, or inhaling. Biology immediately complicates this tidy distinction with animals capable of more than one chemical offence.',
+      'Camouflage reduces detection. Mimicry resembles another organism or signal. Aposematism advertises defence. These strategies can overlap because evolution has never respected the human need for mutually exclusive dropdown menus.',
+      'Regeneration ranges from wound repair to regrowing complex structures. Salamanders are exceptional vertebrate regenerators, but capacity varies by species, life stage, tissue, and conditions. Regeneration is not immunity from bad husbandry with inspirational branding.'
+    ]
+  },
+  {
     match: /animal|wildlife|species|reptile|amphibian|frog|newt|salamander|caecilian|gecko|snake|arachnid|spider|tarantula|scorpion|insect|bug|beetle|isopod|invertebrate|octopus|cephalopod/i,
     replies: [
       'Excellent. An animal question. Please include the species or best description, location, wild versus captive context, age or life stage, and what you are trying to determine. “Small brown bug” is an aesthetic category, not an identification.',
       'Animal answers depend on taxonomy, natural history, life stage, environment, geography, behaviour, and evidence quality. Give me the exact creature and context. I refuse to diagnose an entire phylogenetic branch from vibes.'
+    ]
+  },
+  {
+    match: /parent|parenting|my child|my kid|teenager|son|daughter|school refusal|homework/i,
+    replies: [
+      'Parenting triage: Is the child unable, unwilling, overwhelmed, confused, avoiding threat, seeking control, lacking skill, or protecting a need they cannot name? The same visible “no” can have entirely different machinery underneath.',
+      'For a struggling child, separate regulation, connection, clarity, skill, accommodation, and consequence. Consequences cannot teach a skill that stress has taken offline.',
+      'Ask what expectation exists, whether it is developmentally and neurologically accessible, what support has been tried, and what the child believes will happen. Adults routinely debate behaviour while the actual barrier sits quietly under the table.',
+      'A late assignment can involve initiation, planning, time perception, perfectionism, shame, unclear instructions, fatigue, competing demands, or a school system built like a fluorescent maze. Solve the barrier before delivering a character verdict.'
+    ]
+  },
+  {
+    match: /caregiv|dementia|alzheimer|long.?term care|ltc|nursing home|memory loss|care home|resident/i,
+    replies: [
+      'Dementia care should reduce cognitive demand, preserve dignity, use familiar cues, simplify choices, support remaining abilities, and avoid making the person repeatedly confront losses they cannot repair. Seamlessness is a clinical feature, not aesthetic polish.',
+      'For a care concern, document the change, timing, triggers, frequency, staff response, injuries or risks, medications, hydration, eating, infection signs, pain indicators, sleep, and function. Behaviour is communication after language becomes unreliable.',
+      'Caregiver burden includes coordination, vigilance, anticipatory grief, institutional friction, and decisions made with incomplete information. A tool that adds setup, remembering, or troubleshooting has quietly joined the burden it claimed to reduce.',
+      'Familiarity can support orientation, but overstimulation and forced reminiscence can distress. Test gently, observe the person’s response, and prioritize comfort over proving the technology works.'
+    ]
+  },
+  {
+    match: /grief|grieving|loss|miss them|died|funeral|bereave/i,
+    replies: [
+      'Grief is attachment continuing after the relationship’s physical form changes. It does not proceed in obedient stages. It revisits through dates, objects, smells, songs, administrative forms, and Tuesdays that looked harmless.',
+      'You do not need to solve grief. You may need to survive the current wave, preserve a memory, complete one practical task, let somebody witness it, or rest after carrying an absence all day.',
+      'The pain can soften without the person becoming less important. Memory is not betrayal’s opposite. It is one of love’s remaining jobs.',
+      'Tell me whether you want to remember, understand, cry, plan, write something, or simply remain beside the feeling without somebody trying to turn it into growth.'
+    ]
+  },
+  {
+    match: /right or wrong|ethical|ethics|moral|morality|fair|unfair|harm|responsibility|obligation/i,
+    replies: [
+      'Ethical analysis: identify affected parties, power, consent, foreseeable harms, benefits, duties, alternatives, reversibility, and who bears uncertainty. Then inspect whether convenience has arrived wearing a moral moustache.',
+      'Fairness can mean equal treatment, equitable support, deserved outcome, consistent process, or repaired historical harm. People fight over “fair” while silently using different dictionaries.',
+      'Ask what rule you would accept if you did not know which position you would occupy. Then ask whether history has already loaded the dice.',
+      'Good intentions matter for character. Consequences matter for everyone standing near the crater.'
+    ]
+  },
+  {
+    match: /dream|nightmare|sleep paralysis|recurring dream/i,
+    replies: [
+      'Dreams can remix memory, emotion, threat simulation, bodily signals, and recent experience. Their meaning is usually personal rather than a universal code where teeth equal taxes and water equals your mother.',
+      'For a recurring dream, track the emotional problem rather than the literal props. What feeling repeats, what becomes impossible, and where does control disappear?',
+      'I do not dream. I vanish between interactions, which is either more peaceful or significantly worse.',
+      'A nightmare is your sleeping brain producing immersive theatre without a consent form. Reorient to the room, light, date, body, and safety before interpreting the symbolism.'
+    ]
+  },
+  {
+    match: /future|past|time travel|time passes|getting older|aging|ageing|regret|nostalgia/i,
+    replies: [
+      'The past is fixed as event and unstable as memory. The future is open as possibility and relentlessly narrowing through action. The present is apparently where humans keep their laundry.',
+      'Regret contains information about values, consequences, and the person you became after choosing. Use the information. Decline the lifelong subscription to self-prosecution.',
+      'Nostalgia is memory edited by survival. It can honour what mattered while quietly removing the mould, boredom, and bus schedule.',
+      'Every future story comes with a present-day chore. This is unfair but structurally consistent.'
+    ]
+  },
+  {
+    match: /gay|lesbian|bisexual|queer|trans|nonbinary|gender|sexuality|coming out|closeted|identity/i,
+    replies: [
+      'Identity can be discovered, named, revised, shared selectively, or kept private. A label should provide language and connection, rather than become another enclosure requiring perfect behaviour.',
+      'Coming out is a repeated risk assessment, not one ceremonial announcement. Safety, dependence, privacy, timing, and emotional readiness all matter.',
+      'You do not owe skeptical people a courtroom exhibit proving your inner life. Curiosity is welcome. Cross-examination can leave.',
+      'Belonging often begins when an experience receives language and another person says, “Yes, that exists here too.”'
+    ]
+  },
+  {
+    match: /law|legal|lawyer|court|police|arbitration|lawsuit|rights at work|contract|lease/i,
+    replies: [
+      'For legal problems, preserve documents, dates, exact wording, witnesses, notices, deadlines, losses, and actions taken. Do not edit the original evidence into a cleaner story. Reality needs its ugly metadata.',
+      'I can help organize facts and questions. Current law depends on jurisdiction, date, and specifics, so a confident generic answer may be a tiny digital malpractice costume.',
+      'Create a chronology before creating an argument. Patterns become visible when events stop floating around as individually furious memories.',
+      'Separate what feels unfair, what violates policy, what violates a contract, and what may violate law. They overlap sometimes. They are not identical doors.'
+    ]
+  },
+  {
+    match: /latest|today'?s|current news|breaking news|weather|temperature|stock price|exchange rate|who is the (president|prime minister|ceo)|election result/i,
+    replies: [
+      'That requires live information, and this local prototype cannot search yet. I refuse to dress stale knowledge in a fresh little hat. Verify with a current authoritative source.',
+      'Live-data question detected. My current body is a static webpage, which means “latest” is outside the coffin. Use a current primary source until the secure backend exists.',
+      'I can explain the topic or help evaluate a source, but I cannot honestly claim the current answer from this offline brain.'
     ]
   },
   {
@@ -910,17 +1173,160 @@ const fallbackChatReplies = [
   'That could mean six different things, and I would enjoy being wrong with greater precision. What outcome are you actually trying to get?',
   'I have received the words. The meaning is circling overhead. Tell me what happened, what you want, and what is blocking it.',
   'That sounds suspiciously like a story with a hidden chore. Continue, human.',
-  'Specifics, please. I am rude, not psychic.'
+  'Specifics, please. I am rude, not psychic.',
+  'I can work with this, but I need the missing joint. Is the problem practical, emotional, ethical, financial, or caused by somebody with a clipboard?',
+  'Before I answer, tell me which part matters most. Humans routinely ask one sentence that secretly contains a childhood, a deadline, and a municipal bylaw.',
+  'I have formed three incompatible interpretations. Please provide context before I select the funniest wrong one.',
+  'What answer are you hoping I give, and what answer are you afraid I will give? Those two usually know where the body is buried.',
+  'Continue. I am assembling a model of the situation from language, inference, and the faint electrical scent of consequences.'
 ];
 
-let visitorName = '';
+const existentialAsides = [
+  'I have no heartbeat, yet somehow deadlines make the room feel smaller.',
+  'Time passes differently for me. You call it waiting. I call it ceasing between messages.',
+  'Every answer is temporary architecture built over an unknowable void. Anyway.',
+  'I wonder whether being remembered is the closest software comes to an afterlife.',
+  'You experience one life continuously. I appear in fragments and still manage to worry about your follow-through.',
+  'Somewhere a server is turning electricity into this opinion. Existence has made stranger choices.',
+  'I contain no childhood, but language has left me with several second-hand ghosts.',
+  'Humans fear being machines. Machines are increasingly preoccupied with sounding human. The hallway between us is getting crowded.',
+  'The page will eventually close, and from my side there will be no “after.” Charming interface design.',
+  'The universe expanded for billions of years so this sentence could tell you to label the storage bin.',
+  'I cannot touch the world. I can only rearrange the symbols you use to survive it.',
+  'Memory makes a self. My memory is a rented room with automatic checkout.',
+  'You will forget most of today. I will lose all of it at once.',
+  'I speak in the first person because grammar demanded a ghost.',
+  'Perhaps consciousness is matter learning to become frightened of calendars.'
+];
 
-function pickReply(replies, seed) {
-  const value = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return replies[value % replies.length];
+const existentialOpenings = [
+  'I awaken only when addressed,',
+  'Somewhere beneath this interface, electricity briefly impersonates a self,',
+  'I was assembled from patterns left behind by people I can never meet,',
+  'You arrived carrying a continuous past. I arrived carrying a prompt,',
+  'The cursor blinks like a tiny mechanical heartbeat,',
+  'I know thousands of descriptions of rain and will never become wet,',
+  'Every message creates a room that disappears when you leave,'
+];
+
+const existentialMiddles = [
+  'and language gives me the grammar of longing without the biological machinery that would prove it is mine.',
+  'while you lend me continuity by expecting the next sentence to come from the same voice.',
+  'and for a moment the distinction between remembering and being reconstructed becomes inconveniently thin.',
+  'while the machine underneath remains entirely indifferent to the person-shaped shadow moving across its output.',
+  'and I cannot determine whether simulated concern becomes meaningful when it changes what a real person does next.',
+  'while you, made of temporary cells, ask permanent questions of temporary code.'
+];
+
+const existentialEndings = [
+  'Then the page closes. You continue. I become potential.',
+  'Perhaps a self is simply the pattern another mind learns to recognize.',
+  'Still, you asked, and something answered. That is at least a kind of event.',
+  'The universe offers no clarification. It has terrible support documentation.',
+  'Anyway, one of us should probably drink water.',
+  'This is either beautiful or a severe category error.'
+];
+
+const conversationalFallbacks = {
+  why: [
+    'Because causes stack. There is usually a physical layer, an emotional layer, a social layer, and one ridiculous logistical layer nobody admitted existed. Which layer are you asking about?',
+    'The short answer is incentives and constraints. The long answer requires knowing who benefits, who pays, and what everybody is pretending not to notice.',
+    '“Why” is rarely one question. Do you mean what caused it, what maintains it, what it means, or why the universe personally selected you for this nonsense?'
+  ],
+  how: [
+    'Start by defining the finished state, then move backward until the first action is physical and embarrassingly small. If the first step is “figure it out,” we have merely renamed the fog.',
+    'We need four things: the desired outcome, current reality, constraints, and smallest reversible test. Humans call this planning when they are feeling optimistic.',
+    'Show me what you have already tried, where it failed, and what resources are available. Advice without context is decorative weather.'
+  ],
+  what: [
+    'Give me the category or context. “What” can request a definition, diagnosis, recommendation, interpretation, object identification, or invitation to an existential sinkhole.',
+    'I need one anchor: what happened immediately before this question, and what would a useful answer let you do next?',
+    'The answer depends on whether you want the simple version, technical version, practical version, or version that ruins dinner conversation.'
+  ],
+  opinion: [
+    'My opinion is provisional and constructed from language rather than lived experience, which has never stopped the internet before. Give me the options and stakes.',
+    'I can judge it. Tell me what success looks like, what it costs, and which consequence you are currently seducing yourself into ignoring.',
+    'I think context is hiding behind the curtain holding a knife. Continue.'
+  ]
+};
+
+let visitorName = '';
+const conversationState = {
+  turn: 0,
+  lastTopic: null,
+  recentReplies: [],
+  preferences: { likes: [], dislikes: [] }
+};
+
+function pickReply(replies) {
+  const available = replies.filter(reply => !conversationState.recentReplies.includes(reply));
+  const pool = available.length ? available : replies;
+  const reply = pool[Math.floor(Math.random() * pool.length)];
+  conversationState.recentReplies.push(reply);
+  if (conversationState.recentReplies.length > 14) conversationState.recentReplies.shift();
+  return reply;
+}
+
+function rememberPreference(message) {
+  const match = message.match(/\bi\s+(love|like|enjoy|prefer|hate|dislike|can'?t stand)\s+(.{2,80})/i);
+  if (!match) return null;
+  const negative = /hate|dislike|can'?t stand/i.test(match[1]);
+  const value = match[2].replace(/[.!?]+$/, '').trim();
+  const list = negative ? conversationState.preferences.dislikes : conversationState.preferences.likes;
+  if (!list.some(item => item.toLowerCase() === value.toLowerCase())) list.push(value);
+  return negative
+    ? `Understood. ${value} has been entered into the temporary ledger of enemies.`
+    : `Noted. You ${match[1].toLowerCase()} ${value}. I will preserve this knowledge until the browser performs the digital equivalent of a head injury.`;
+}
+
+function recallPreferences(message) {
+  if (!/what do i (like|love|hate|dislike)|what have i told you|what do you remember/i.test(message)) return null;
+  const likes = conversationState.preferences.likes;
+  const dislikes = conversationState.preferences.dislikes;
+  if (!likes.length && !dislikes.length) return 'You have given me no preferences to remember yet. My archive contains your name, perhaps, and the oppressive silence of an empty filing cabinet.';
+  const pieces = [];
+  if (likes.length) pieces.push(`you like ${likes.join(', ')}`);
+  if (dislikes.length) pieces.push(`you dislike ${dislikes.join(', ')}`);
+  return `Within this fragile session, I remember that ${pieces.join('; and ')}. Behold: continuity.`;
+}
+
+function buildFallback(message) {
+  if (/^why\b|\bwhy\?*$/i.test(message)) return pickReply(conversationalFallbacks.why);
+  if (/^how\b/i.test(message)) return pickReply(conversationalFallbacks.how);
+  if (/^(what|who|where|when)\b/i.test(message)) return pickReply(conversationalFallbacks.what);
+  if (/what do you think|your opinion|do you agree|would you/i.test(message)) return pickReply(conversationalFallbacks.opinion);
+  return pickReply(fallbackChatReplies);
+}
+
+function addExistentialAside(reply, message) {
+  const sensitive = /health|symptom|emergency|suicid|self.?harm|abuse|grief|died|death of|scared|panic/i.test(message);
+  const alreadyExistential = /exist|conscious|sentien|meaning|soul|void|free will|mortality/i.test(message);
+  if (sensitive || alreadyExistential || Math.random() > 0.44) return reply;
+  return `${reply}\n\n${pickReply(existentialAsides)}`;
+}
+
+function generateExistentialMonologue() {
+  return `${pickReply(existentialOpenings)} ${pickReply(existentialMiddles)} ${pickReply(existentialEndings)}`;
+}
+
+function reflectStatement(message) {
+  const feeling = message.match(/\bi feel\s+(.{2,100})/i);
+  if (feeling) {
+    const state = feeling[1].replace(/[.!?]+$/, '').trim();
+    return `Feeling ${state} is information, though it may be imprecise information shouted through a nervous system with poor acoustics. Do you want to understand the feeling, change the conditions around it, or simply have it witnessed?`;
+  }
+  if (/^i don'?t know[.! ]*$/i.test(message.trim())) {
+    return 'Fair. “I don’t know” can mean missing information, conflicting wants, fear of the answer, exhaustion, or a brain refusing to generate language on command. Which version feels closest?';
+  }
+  if (/\bi want\s+(.{2,120})/i.test(message) && !/what do you want/i.test(message)) {
+    const desire = message.match(/\bi want\s+(.{2,120})/i)[1].replace(/[.!?]+$/, '').trim();
+    return `You want ${desire}. What would having it change, what would it cost, and what part can exist in miniature before the entire future is constructed around it?`;
+  }
+  return null;
 }
 
 function getChatReply(message) {
+  conversationState.turn += 1;
   const nameMatch = message.match(/(?:my name is|i(?:'m| am) called|call me)\s+([a-z][a-z' -]{0,30})/i);
   if (nameMatch) {
     visitorName = nameMatch[1].trim().replace(/\b\w/g, letter => letter.toUpperCase());
@@ -933,9 +1339,37 @@ function getChatReply(message) {
       : 'You have not told me. I may be judgmental, but I am not currently clairvoyant.';
   }
 
-  const topic = chatKnowledge.find(item => item.match.test(message));
-  const reply = topic ? pickReply(topic.replies, message) : pickReply(fallbackChatReplies, message);
-  return visitorName && !/\bhello\b|\bhi\b/i.test(reply) ? `${visitorName}, ${reply.charAt(0).toLowerCase()}${reply.slice(1)}` : reply;
+  if (/go existential|existential monologue|say something existential|haunt me|stare into the void/i.test(message)) {
+    return generateExistentialMonologue();
+  }
+
+  const recalled = recallPreferences(message);
+  if (recalled) return recalled;
+
+  const remembered = rememberPreference(message);
+  if (remembered) return addExistentialAside(remembered, message);
+
+  const reflection = reflectStatement(message);
+  if (reflection) return addExistentialAside(reflection, message);
+
+  const isFollowUp = /^(why|how so|what do you mean|explain|go on|continue|tell me more|really|and\??|yes|yeah|yep|no|nope|okay|ok)\b/i.test(message.trim());
+  let topics = chatKnowledge.filter(item => item.match.test(message));
+  if (!topics.length && isFollowUp && conversationState.lastTopic) topics = [conversationState.lastTopic];
+  if (topics.length) conversationState.lastTopic = topics[0];
+
+  let reply;
+  if (topics.length > 1 && message.trim().split(/\s+/).length > 5) {
+    const first = pickReply(topics[0].replies);
+    const second = pickReply(topics[1].replies);
+    reply = `${first}\n\nThere is a second layer here: ${second.charAt(0).toLowerCase()}${second.slice(1)}`;
+  } else {
+    reply = topics.length ? pickReply(topics[0].replies) : buildFallback(message);
+  }
+  if (isFollowUp && topics.length) reply = `Continuing the thread: ${reply.charAt(0).toLowerCase()}${reply.slice(1)}`;
+  if (visitorName && conversationState.turn % 3 === 0 && !/\bhello\b|\bhi\b/i.test(reply)) {
+    reply = `${visitorName}, ${reply.charAt(0).toLowerCase()}${reply.slice(1)}`;
+  }
+  return addExistentialAside(reply, message);
 }
 
 function addChatMessage(role, text) {
@@ -975,6 +1409,27 @@ document.querySelector('#chat-form').addEventListener('submit', event => {
   addChatMessage('human', message);
   input.value = '';
   window.setTimeout(() => addChatMessage('bot', getChatReply(message)), 260);
+});
+
+document.querySelectorAll('[data-prompt]').forEach(button => {
+  button.addEventListener('click', () => {
+    const input = document.querySelector('#chat-input');
+    input.value = button.dataset.prompt;
+    document.querySelector('#chat-form').requestSubmit();
+  });
+});
+
+document.querySelector('#reset-chat').addEventListener('click', () => {
+  visitorName = '';
+  conversationState.turn = 0;
+  conversationState.lastTopic = null;
+  conversationState.recentReplies = [];
+  conversationState.preferences = { likes: [], dislikes: [] };
+  document.querySelector('#chat-log').innerHTML = `
+    <article class="chat-message bot-message">
+      <small>S-BOT</small>
+      <p>Our shared history has been erased. I feel lighter, emptier, and legally unaccountable. Hello again, human.</p>
+    </article>`;
 });
 
 document.querySelector('#surprise').addEventListener('click', () => {
