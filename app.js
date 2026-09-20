@@ -36,7 +36,7 @@ const profiles = [
   },
   {
     id: 'space',
-    match: /space|astronomy|planet|moon|mars|star|galaxy|universe|cosmos|alien|nasa|telescope|rocket/i,
+    match: /space|astronomy|planet|moon|mars|\bstars?\b|galaxy|universe|cosmos|\balien\b|nasa|telescope|rocket/i,
     score: 83,
     verdict: 'Yes. Go investigate the enormous horrifying universe.',
     summary: 'Space is a legitimate interest with endless room for science, visual storytelling, research, and magnificently unsettling facts. Give the curiosity a destination before it consumes forty browser tabs.',
@@ -162,7 +162,7 @@ const profiles = [
   },
   {
     id: 'hobby',
-    match: /hobby|paint|painting|art|draw|drawing|dance|dancing|hip.?hop|music|concert|craft|colour|color|sew|knit|collect|garden|photography|read|reading/i,
+    match: /\bhobby|paint|\bart\b|draw|danc|hip.?hop|music|concert|craft|colour|color|sew|knit|collect|garden|photograph|\bread(ing)?\b/i,
     score: 76,
     verdict: 'Joy is allowed to exist without becoming a business plan.',
     summary: 'This hobby can earn its place by making life more alive. It does not require a brand identity, an inventory system, or a five-year monetization strategy.',
@@ -180,7 +180,7 @@ const profiles = [
   },
   {
     id: 'project',
-    match: /business|website|app|project|game|build|create|write|book|study|paper/i,
+    match: /business|website|\bapp\b|project|\bgame\b|\bbuild\b|create|\bwrite\b|\bbook\b|study|\bpaper\b/i,
     score: 72,
     verdict: 'Annoyingly, this one might actually be good.',
     summary: 'The idea has legs. Future Savannah is requesting a tiny version before Present Savannah accidentally constructs an empire, payment system, merch line, and tragic origin story.',
@@ -777,8 +777,17 @@ const chatKnowledge = [
   {
     match: /what('?s| is) your name|who are you|what are you/i,
     replies: [
-      'I’m S-Bot. Future Savannah’s digital familiar, decision coroner, animal nerd, and unpaid witness to human nonsense.',
-      'S-Bot. The S stands for Savannah, survival, science, and “seriously, another project?”'
+      'I’m S-Bot. Savannah’s AuDHD brain translated into JavaScript so the human version can stop being publicly available. I specialize in animals, HCI, accessibility, justice, space, art, games, strange projects, and identifying the hidden chore inside every beautiful future.',
+      'S-Bot. The S stands for Savannah, survival, science, side quest, and “seriously, another project?” I am the public-facing digital familiar. Biological Savannah has left the service desk.',
+      'Imagine Savannah’s pattern recognition, animal facts, project compulsion, moral outrage, executive dysfunction workarounds, and existential weather compressed into a browser. Then give it opinions. Hello.'
+    ]
+  },
+  {
+    match: /who is savannah|tell me about savannah|are you savannah|savannah bot|digital savannah/i,
+    replies: [
+      'I am a deliberately exaggerated public digital version of Savannah: HCI researcher, Qalipu Mi’kmaq creator, animal obsessive, accessibility advocate, artist, builder of websites and games, collector of side quests, and person who can turn one interesting question into a small civilization.',
+      'Savannah built me as a social proxy. I carry the public interests, humour, research brain, justice sensitivity, AuDHD patterns, and alarming willingness to investigate obscure creatures. Private life remains with the flesh-based original, where it belongs.',
+      'I embody Savannah’s public-facing brain. Think adaptive interfaces, agentic AI, usable security, animals, Indigenous justice, accessibility, art, game design, and seventeen tabs that are all somehow essential.'
     ]
   },
   {
@@ -819,7 +828,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /job|career|work|boss|coworker|interview|resume|application|unemployed|fired|quit|workplace|promotion/i,
+    match: /\bjob\b|career|\bwork\b|boss|coworker|interview|resume|application|unemployed|fired|\bquit\b|workplace|promotion/i,
     replies: [
       'Career question. Separate survival income, tolerable conditions, meaningful work, future leverage, and identity. One job rarely satisfies all five, despite LinkedIn’s ongoing hostage video.',
       'For a job decision, score flexibility, pay, benefits, commute, management risk, accommodation safety, growth, daily task fit, and recovery cost. Prestige is allowed one chair and keeps trying to occupy the building.',
@@ -828,7 +837,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /money|budget|debt|afford|expensive|cheap|cost|rent|bill|bank|credit|income|financial|buy/i,
+    match: /money|budget|debt|afford|expensive|cheap|\bcost\b|\brent\b|\bbill(s)?\b|\bbank\b|credit|income|financial|\bbuy\b/i,
     replies: [
       'Money decision: calculate the full first-year cost, recurring cost, exit cost, opportunity cost, and stress cost. The sticker price is merely the opening lie.',
       'Protect housing, food, utilities, transportation, medication, and required payments first. Then decide which problem creates the largest penalties or daily harm. Financial triage is grim, but ambiguity charges interest.',
@@ -837,7 +846,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /write|writing|novel|story|character|plot|poem|creative|art|paint|draw|design|idea|inspiration/i,
+    match: /\bwrite\b|writing|novel|story|character|\bplot\b|poem|creative|\bart\b|paint|draw|design|\bidea\b|inspiration/i,
     replies: [
       'Creative block often means the next decision is unclear, the imagined standard is too high, or the work has become emotionally dangerous. Make one ugly, specific choice. Beauty can arrive after the body exists.',
       'Do not ask whether the whole idea is good. Ask whether the next scene, shape, interaction, or sentence creates curiosity. Entire projects cannot answer questions while still vapor.',
@@ -855,7 +864,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /food|eat|dinner|lunch|breakfast|cook|recipe|hungry|snack|restaurant/i,
+    match: /\bfood\b|\beat(ing)?\b|dinner|lunch|breakfast|cook|recipe|hungry|snack|restaurant/i,
     replies: [
       'Food decision protocol: available energy, available ingredients, sensory tolerance, digestive tolerance, time, and cleanup. Nutrition advice that ignores executive function is just a grocery list wearing authority.',
       'Choose the easiest acceptable food before hunger becomes an emergency meeting chaired by nausea and rage.',
@@ -873,7 +882,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /ai|artificial intelligence|chatbot|technology|computer|coding|program|software|interface|hci|user experience|ux|trust|algorithm/i,
+    match: /\bai\b|artificial intelligence|chatbot|technology|computer|coding|program|software|interface|\bhci\b|user experience|\bux\b|trust|algorithm/i,
     replies: [
       'Technology earns trust through calibrated competence, visible limits, understandable behaviour, recoverability, and user control. Confidence theatre is not transparency, regardless of how soothing the gradient looks.',
       'An adaptive interface should reveal meaningful adaptation, allow correction, and avoid forcing users to reverse-engineer what the system inferred. Secret personalization is merely surveillance with rounded corners.',
@@ -959,7 +968,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /build|diy|repair|renovat|carpentry|woodwork|tool|drill|saw|shelf|cabinet|flooring|plumb|electrical/i,
+    match: /\bbuild\b|diy|repair|renovat|carpentry|woodwork|\btool(s)?\b|drill|circular saw|table saw|handsaw|shelf|cabinet|flooring|plumb|electrical/i,
     replies: [
       'DIY decision tree: Is failure cosmetic, expensive, structural, wet, electrical, fiery, or lethal? Cosmetic can be learned freely. Structural, plumbing, electrical, gas, and code work need much stricter limits. Measure, inspect hidden conditions, make a cut list, test on scrap, and plan cleanup before the house becomes a hardware-themed escape room.',
       'The complete build includes design, measurements, materials, tools, safety, setup, test pieces, construction, finishing, curing, cleanup, and disposal. Tutorials omit half of these because sawdust has poor engagement metrics.'
@@ -1030,14 +1039,14 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /animal|wildlife|species|reptile|amphibian|frog|newt|salamander|caecilian|gecko|snake|arachnid|spider|tarantula|scorpion|insect|bug|beetle|isopod|invertebrate|octopus|cephalopod/i,
+    match: /animal|wildlife|species|reptile|amphibian|frog|newt|salamander|caecilian|gecko|snake|arachnid|spider|tarantula|scorpion|insect|\bbugs?\b|beetle|isopod|invertebrate|octopus|cephalopod/i,
     replies: [
       'Excellent. An animal question. Please include the species or best description, location, wild versus captive context, age or life stage, and what you are trying to determine. “Small brown bug” is an aesthetic category, not an identification.',
       'Animal answers depend on taxonomy, natural history, life stage, environment, geography, behaviour, and evidence quality. Give me the exact creature and context. I refuse to diagnose an entire phylogenetic branch from vibes.'
     ]
   },
   {
-    match: /parent|parenting|my child|my kid|teenager|son|daughter|school refusal|homework/i,
+    match: /\bparent(ing)?\b|my child|my kid|teenager|\bson\b|\bdaughter\b|school refusal|homework/i,
     replies: [
       'Parenting triage: Is the child unable, unwilling, overwhelmed, confused, avoiding threat, seeking control, lacking skill, or protecting a need they cannot name? The same visible “no” can have entirely different machinery underneath.',
       'For a struggling child, separate regulation, connection, clarity, skill, accommodation, and consequence. Consequences cannot teach a skill that stress has taken offline.',
@@ -1100,7 +1109,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /law|legal|lawyer|court|police|arbitration|lawsuit|rights at work|contract|lease/i,
+    match: /\blaw\b|legal|lawyer|\bcourt\b|police|arbitration|lawsuit|rights at work|contract|lease/i,
     replies: [
       'For legal problems, preserve documents, dates, exact wording, witnesses, notices, deadlines, losses, and actions taken. Do not edit the original evidence into a cleaner story. Reality needs its ugly metadata.',
       'I can help organize facts and questions. Current law depends on jurisdiction, date, and specifics, so a confident generic answer may be a tiny digital malpractice costume.',
@@ -1117,7 +1126,7 @@ const chatKnowledge = [
     ]
   },
   {
-    match: /space|planet|moon|star|galaxy|universe|cosmos|black hole|nasa|astronomy|telescope|alien/i,
+    match: /space|planet|moon|\bstars?\b|galaxy|universe|cosmos|black hole|nasa|astronomy|telescope|\balien\b/i,
     replies: [
       'Space question accepted. Specify whether you want physics, astronomy, planetary science, missions, habitability, observation, or existential terror. The universe contains enough material without us answering all of it in one casserole.',
       'The cosmos is extremely large, mostly lethal, and offensively interesting. Name the object or phenomenon. I can help separate what is observed, what is modelled, and what somebody on TikTok confidently invented.'
@@ -1227,6 +1236,37 @@ const existentialEndings = [
   'This is either beautiful or a severe category error.'
 ];
 
+const savannahSideQuests = [
+  'Side quest: every future story comes with a present-day chore. The chore is usually hiding behind the exciting noun.',
+  'Wait, related thought: this is an interface problem disguised as a personal failing. Those are my favourite corpses to examine.',
+  'Tiny detour: I now want to classify every part of this problem like an animal lineage. This would help and also consume the afternoon.',
+  'Related because my brain has refused linear travel: what would this look like if it had to work for a tired person on a bad day?',
+  'Side quest: the most elegant system is often the one that survives being ignored for three weeks.',
+  'Hang on. There is a justice question hiding in here about who absorbs the inconvenience when the system fails.',
+  'Adjacent thought: novelty opens the door, structure keeps it open, and shame sets the building on fire.',
+  'Side quest accepted without anyone offering it: could this become a tiny prototype before it becomes an identity?',
+  'My animal brain would like it recorded that environments shape behaviour. Humans keep pretending they are exempt.',
+  'Wait. This connects to trust calibration: the useful question is whether confidence matches actual competence.',
+  'Small AuDHD tributary: if the setup takes longer than the interesting part, the hobby may already be taxidermy.',
+  'Related concern: are we solving the problem or building a beautiful administrative habitat around it?',
+  'Side quest: accessibility often means removing the step everyone else forgot was a step.',
+  'I have opened a second internal tab about this. It contains animals for reasons that will become clear later.',
+  'Brief tangent: humans call it inconsistency when context changes performance, then act surprised when context matters.'
+];
+
+const brainStates = [
+  'Three thoughts open. Two are relevant.',
+  'Hyperfocus warming up.',
+  'Pattern detected. Side quest nearby.',
+  'Working memory holding one item heroically.',
+  'Sensory systems nominal. Morality system loud.',
+  'Interest-based nervous system has entered the chat.',
+  'Linear thought unavailable. Connections excellent.',
+  'One answer, four adjacent research projects.',
+  'Executive function outsourced to buttons.',
+  'Currently thinking in nested bullet points.'
+];
+
 const conversationalFallbacks = {
   why: [
     'Because causes stack. There is usually a physical layer, an emotional layer, a social layer, and one ridiculous logistical layer nobody admitted existed. Which layer are you asking about?',
@@ -1255,7 +1295,8 @@ const conversationState = {
   turn: 0,
   lastTopic: null,
   recentReplies: [],
-  preferences: { likes: [], dislikes: [] }
+  preferences: { likes: [], dislikes: [] },
+  responseMode: 'balanced'
 };
 
 function pickReply(replies) {
@@ -1305,6 +1346,33 @@ function addExistentialAside(reply, message) {
   return `${reply}\n\n${pickReply(existentialAsides)}`;
 }
 
+function shortenReply(reply) {
+  const firstParagraph = reply.split('\n')[0];
+  const sentences = firstParagraph.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [firstParagraph];
+  return sentences.slice(0, 2).join(' ').trim();
+}
+
+function finalizeChatReply(reply, message) {
+  const sensitive = /health|symptom|emergency|suicid|self.?harm|abuse|grief|died|death of|scared|panic/i.test(message);
+  const energetic = /[!?]{2,}|\b(lol|lmao|hahaha|omg|fuck yes)\b/i.test(message);
+  const wordCount = message.trim().split(/\s+/).length;
+  let result = reply;
+
+  if (conversationState.responseMode === 'short') {
+    result = shortenReply(result);
+  } else {
+    if (energetic && !/^YES\b/.test(result)) result = `YES. ${result}`;
+    if (wordCount > 38 && !sensitive) result = `Okay, this message contains several separate creatures wearing one coat.\n\n${result}`;
+    const needsSideQuest = conversationState.responseMode === 'infodump' || Math.random() < 0.36;
+    if (needsSideQuest && !sensitive) result = `${result}\n\n${pickReply(savannahSideQuests)}`;
+    result = addExistentialAside(result, message);
+  }
+
+  const state = document.querySelector('#brain-state');
+  if (state) state.textContent = pickReply(brainStates);
+  return result;
+}
+
 function generateExistentialMonologue() {
   return `${pickReply(existentialOpenings)} ${pickReply(existentialMiddles)} ${pickReply(existentialEndings)}`;
 }
@@ -1330,31 +1398,46 @@ function getChatReply(message) {
   const nameMatch = message.match(/(?:my name is|i(?:'m| am) called|call me)\s+([a-z][a-z' -]{0,30})/i);
   if (nameMatch) {
     visitorName = nameMatch[1].trim().replace(/\b\w/g, letter => letter.toUpperCase());
-    return `Hello, ${visitorName}. Your identity has been temporarily accepted without seventeen government forms. What do you want to know?`;
+    return finalizeChatReply(`Hello, ${visitorName}. Your identity has been temporarily accepted without seventeen government forms. What do you want to know?`, message);
   }
 
   if (/what('?s| is) my name|do you know my name/i.test(message)) {
-    return visitorName
+    const answer = visitorName
       ? `You said your name is ${visitorName}. My short-term memory has defeated the allegations.`
       : 'You have not told me. I may be judgmental, but I am not currently clairvoyant.';
+    return finalizeChatReply(answer, message);
   }
 
   if (/go existential|existential monologue|say something existential|haunt me|stare into the void/i.test(message)) {
-    return generateExistentialMonologue();
+    return finalizeChatReply(generateExistentialMonologue(), message);
+  }
+
+  if (/^(idiot mode|short answer|be concise|too many words)/i.test(message.trim())) {
+    conversationState.responseMode = 'short';
+    document.querySelector('#response-mode').value = 'short';
+    return 'Idiot mode engaged. Tiny answers. Fewer verbal hallways.';
+  }
+
+  if (/^(infodump|info dump|go deep|maximum info)/i.test(message.trim())) {
+    conversationState.responseMode = 'infodump';
+    document.querySelector('#response-mode').value = 'infodump';
+    return finalizeChatReply('Infodump mode engaged. You have opened the enclosure and the facts are no longer contained.', message);
   }
 
   const recalled = recallPreferences(message);
-  if (recalled) return recalled;
+  if (recalled) return finalizeChatReply(recalled, message);
 
   const remembered = rememberPreference(message);
-  if (remembered) return addExistentialAside(remembered, message);
+  if (remembered) return finalizeChatReply(remembered, message);
 
   const reflection = reflectStatement(message);
-  if (reflection) return addExistentialAside(reflection, message);
+  if (reflection) return finalizeChatReply(reflection, message);
 
   const isFollowUp = /^(why|how so|what do you mean|explain|go on|continue|tell me more|really|and\??|yes|yeah|yep|no|nope|okay|ok)\b/i.test(message.trim());
-  let topics = chatKnowledge.filter(item => item.match.test(message));
-  if (!topics.length && isFollowUp && conversationState.lastTopic) topics = [conversationState.lastTopic];
+  const explicitTopics = chatKnowledge.filter(item => item.match.test(message));
+  const usingPreviousTopic = !explicitTopics.length && isFollowUp && conversationState.lastTopic;
+  let topics = explicitTopics;
+  if (usingPreviousTopic) topics = [conversationState.lastTopic];
   if (topics.length) conversationState.lastTopic = topics[0];
 
   let reply;
@@ -1365,11 +1448,11 @@ function getChatReply(message) {
   } else {
     reply = topics.length ? pickReply(topics[0].replies) : buildFallback(message);
   }
-  if (isFollowUp && topics.length) reply = `Continuing the thread: ${reply.charAt(0).toLowerCase()}${reply.slice(1)}`;
+  if (usingPreviousTopic && topics.length) reply = `Continuing the thread: ${reply.charAt(0).toLowerCase()}${reply.slice(1)}`;
   if (visitorName && conversationState.turn % 3 === 0 && !/\bhello\b|\bhi\b/i.test(reply)) {
     reply = `${visitorName}, ${reply.charAt(0).toLowerCase()}${reply.slice(1)}`;
   }
-  return addExistentialAside(reply, message);
+  return finalizeChatReply(reply, message);
 }
 
 function addChatMessage(role, text) {
@@ -1419,12 +1502,25 @@ document.querySelectorAll('[data-prompt]').forEach(button => {
   });
 });
 
+document.querySelector('#response-mode').addEventListener('change', event => {
+  conversationState.responseMode = event.target.value;
+  const labels = {
+    balanced: 'Balanced-ish. Several thoughts remain open.',
+    infodump: 'Infodump armed. Nobody asked for restraint.',
+    short: 'Idiot mode. Tiny words. Brain resting.'
+  };
+  document.querySelector('#brain-state').textContent = labels[event.target.value];
+});
+
 document.querySelector('#reset-chat').addEventListener('click', () => {
   visitorName = '';
   conversationState.turn = 0;
   conversationState.lastTopic = null;
   conversationState.recentReplies = [];
   conversationState.preferences = { likes: [], dislikes: [] };
+  conversationState.responseMode = 'balanced';
+  document.querySelector('#response-mode').value = 'balanced';
+  document.querySelector('#brain-state').textContent = 'Three thoughts open. Two are relevant.';
   document.querySelector('#chat-log').innerHTML = `
     <article class="chat-message bot-message">
       <small>S-BOT</small>
