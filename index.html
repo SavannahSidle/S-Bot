@@ -28,9 +28,9 @@
         <div class="options">
           <fieldset>
             <legend>How honest?</legend>
-            <label><input type="radio" name="honesty" value="gentle" /> Gentle</label>
+            <label><input type="radio" name="honesty" value="gentle" /> Gentle support</label>
             <label><input type="radio" name="honesty" value="honest" checked /> Savannah honest</label>
-            <label><input type="radio" name="honesty" value="brutal" /> Brutal</label>
+            <label><input type="radio" name="honesty" value="brutal" /> Brutal: no survivors</label>
           </fieldset>
           <button class="primary" id="simulate" type="button">Consult Future Me</button>
         </div>
@@ -40,6 +40,7 @@
       <section class="results hidden" id="results" aria-live="polite">
         <div class="verdict-card">
           <p class="eyebrow">FUTURE SAVANNAH’S VERDICT</p>
+          <p class="snip" id="snip"></p>
           <h2 id="verdict"></h2>
           <p id="verdict-copy"></p>
           <div class="meter-row">
