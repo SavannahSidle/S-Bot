@@ -25,6 +25,9 @@ body {
 
 main { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 54px 0 72px; }
 .hero { text-align: center; max-width: 740px; margin: 0 auto 38px; }
+.mode-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: min(520px, 100%); margin: 0 auto 18px; padding: 6px; border: 1px solid var(--line); border-radius: 16px; background: #100b18; }
+.mode-tab { padding: 12px 15px; border: 0; border-radius: 11px; color: var(--muted); background: transparent; cursor: pointer; }
+.mode-tab.active { color: #111; background: var(--acid); }
 .status { display: inline-flex; gap: 9px; align-items: center; color: var(--acid); font-size: .72rem; letter-spacing: .12em; font-weight: 800; }
 .status span { width: 8px; height: 8px; border-radius: 50%; background: var(--acid); box-shadow: 0 0 16px var(--acid); }
 .eyebrow { margin: 0 0 8px; color: var(--pink); font-size: .72rem; letter-spacing: .14em; font-weight: 900; }
@@ -57,6 +60,7 @@ button:hover { transform: translateY(-1px); filter: brightness(1.08); }
 
 .results { margin-top: 28px; animation: arrive .45s ease both; }
 .hidden { display: none; }
+.mode-off { display: none !important; }
 .verdict-card { padding: clamp(22px, 5vw, 38px); border-radius: 22px; border-color: #664178; }
 .verdict-card h2 { margin-bottom: 10px; font-size: clamp(1.8rem, 6vw, 3.25rem); line-height: 1.05; }
 .snip { display: inline-block; margin: 5px 0 18px; padding: 8px 12px; color: #111; background: var(--acid); border-radius: 8px; font-weight: 900; transform: rotate(-1deg); }
@@ -96,6 +100,22 @@ button:hover { transform: translateY(-1px); filter: brightness(1.08); }
 .mode-detail small { display: block; margin-bottom: 5px; color: var(--mode-color); font-size: .66rem; font-weight: 900; letter-spacing: .1em; }
 .mode-detail p { margin: 0; color: var(--muted); font-size: .87rem; line-height: 1.45; }
 .mode-step { color: var(--ink) !important; font-weight: 750; }
+.chat-shell { overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: rgba(23, 17, 33, .9); box-shadow: 0 18px 60px rgba(0, 0, 0, .22); }
+.chat-heading { padding: 25px 28px 20px; border-bottom: 1px solid var(--line); }
+.chat-heading h2 { margin-bottom: 7px; font-size: clamp(1.5rem, 5vw, 2.4rem); }
+.chat-heading > p:last-child { margin: 0; color: var(--muted); }
+.chat-log { display: flex; flex-direction: column; gap: 14px; min-height: 370px; max-height: 580px; overflow-y: auto; padding: 24px; background: #0c0912; }
+.chat-message { max-width: min(78%, 620px); padding: 14px 16px; border-radius: 16px; }
+.chat-message small { display: block; margin-bottom: 6px; font-size: .64rem; font-weight: 900; letter-spacing: .12em; }
+.chat-message p { margin: 0; line-height: 1.5; white-space: pre-line; }
+.bot-message { align-self: flex-start; border: 1px solid #49345f; background: #20162c; }
+.bot-message small { color: var(--acid); }
+.human-message { align-self: flex-end; color: #111; background: var(--pink); }
+.human-message small { color: #4c1731; }
+.chat-form { display: flex; gap: 10px; padding: 18px; border-top: 1px solid var(--line); }
+.chat-form input { flex: 1; min-width: 0; padding: 15px 16px; border: 1px solid #49345f; border-radius: 12px; color: var(--ink); background: #0e0a15; font: inherit; }
+.chat-form input:focus { outline: 2px solid var(--pink); outline-offset: 2px; }
+.chat-disclaimer { margin: 0; padding: 0 20px 17px; color: #81758d; font-size: .72rem; text-align: center; }
 footer { padding: 0 20px 32px; text-align: center; color: #776b85; font-size: .78rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
@@ -112,6 +132,7 @@ footer { padding: 0 20px 32px; text-align: center; color: #776b85; font-size: .7
   .reality-grid { grid-template-columns: 1fr; }
   .comparison-grid { grid-template-columns: 1fr; }
   .mode-summary { min-height: 0; }
+  .chat-message { max-width: 90%; }
   .next-step .secondary { align-self: flex-start; }
 }
 
@@ -120,4 +141,5 @@ footer { padding: 0 20px 32px; text-align: center; color: #776b85; font-size: .7
   .console-top .tiny-button { align-self: flex-start; }
   .action-buttons { flex-direction: column-reverse; }
   .action-buttons button { width: 100%; }
+  .chat-form { flex-direction: column; }
 }
