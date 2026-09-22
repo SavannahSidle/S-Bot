@@ -10,9 +10,11 @@ Open `index.html` in a browser, or run any static file server from this director
 
 ## Current MVP
 
-- Animated robot-first main screen with a translucent original humanoid design
+- Animated robot-first main screen with two complete full-body humanoid designs
 - Permanent three-star cheek tattoo shared across every S-Bot form
-- Five selectable personalities: Core, Teenage, Creature, Cosmic, and Dinosaur S-Bot
+- Two selectable personalities: Core S-Bot and a separate 2000s emo-scene Teenage S-Bot
+- Core contains the creature, reptile, dinosaur, cosmic, justice, and AuDHD knowledge domains
+- Teenage has raccoon-striped hair, punk-scene clothing, and its own conversational voice
 - Persona-specific colours, greetings, system states, chat voices, and decision commentary
 - Free-text decision input
 - Three honesty levels
