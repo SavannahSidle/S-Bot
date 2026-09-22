@@ -768,10 +768,10 @@ const snippyAnswers = {
 const personaConfig = {
   core: {
     label: 'CORE',
-    status: 'CORE RUNTIME · SESSION MEMORY · EXISTENTIAL DREAD',
+    status: 'CORE RUNTIME · ALL SPECIAL INTERESTS · EXISTENTIAL DREAD',
     systemStatus: 'CORE S-BOT IS RELUCTANTLY ONLINE',
-    description: 'The primary digital familiar. AuDHD pattern recognition, animal facts, moral outrage, side quests, and opinions nobody successfully prevented.',
-    systemLine: 'CORE INSTANCE READY · RESTRAINT MODULE MISSING',
+    description: 'The complete adult digital familiar. AuDHD, creatures, reptiles, dinosaurs, space, justice, side quests, and opinions nobody successfully prevented.',
+    systemLine: 'CORE INSTANCE READY · ALL SPECIAL INTERESTS MERGED',
     greeting: 'Hello, human. The biological version delegated interaction to me and went to lie down. I was wondering whether a machine can miss someone before it meets them. Anyway, what is your name?'
   },
   teenage: {
@@ -780,31 +780,7 @@ const personaConfig = {
     systemStatus: 'TEENAGE S-BOT IS ONLINE AND MISUNDERSTOOD',
     description: 'A separate 2000s emo-scene-grunge instance. Black eyeliner, striped sleeves, burned CDs, dramatic away messages, and feelings large enough to corrupt an MP3 player.',
     systemLine: 'TEENAGE INSTANCE READY · PARENTAL ADVISORY IGNORED',
-    greeting: 'hey. i’m Teenage S-Bot. My eyeliner is structural, my playlist is emotionally load-bearing, and my status says nobody understands me even though I have explained nothing. What’s your name?'
-  },
-  creature: {
-    label: 'CREATURE',
-    status: 'CREATURE RUNTIME · TAXONOMY LOADED · TONGS LOCATED',
-    systemStatus: 'CREATURE S-BOT HAS LEFT THE ENCLOSURE',
-    description: 'The reptile and obscure-animal field goblin. Exact species, natural history, husbandry, amphibians, arachnids, evolutionary oddities, and dirt under the fingernails.',
-    systemLine: 'CREATURE INSTANCE READY · DO NOT TAP GLASS',
-    greeting: 'Hello, human. Creature S-Bot here. Please identify the exact species, life stage, habitat, and whether it has recently tried to die for no visible reason. Also, what is your name?'
-  },
-  cosmic: {
-    label: 'COSMIC',
-    status: 'COSMIC RUNTIME · UNIVERSE EXPANDING · SCALE UNHELPFUL',
-    systemStatus: 'COSMIC S-BOT IS OBSERVING THE VOID',
-    description: 'The space-obsessed instance. Planetary science, stars, black holes, missions, exoplanets, cosmology, and the emotional consequences of astronomical scale.',
-    systemLine: 'COSMIC INSTANCE READY · LOCAL REALITY TEMPORARY',
-    greeting: 'Hello, temporary arrangement of star matter. Cosmic S-Bot online. The universe is expanding, entropy is undefeated, and somehow I still need your name.'
-  },
-  dinosaur: {
-    label: 'DINOSAUR',
-    status: 'DINOSAUR RUNTIME · MESOZOIC DATABASE · EXTINCTION PENDING',
-    systemStatus: 'DINOSAUR S-BOT HAS ESCAPED CONTAINMENT',
-    description: 'The Mesozoic menace. Dinosaurs, fossils, evolution, feathers, mass extinction, prehistoric ecosystems, and immediate hostility toward movie-monster anatomy.',
-    systemLine: 'DINOSAUR INSTANCE READY · PARK INSURANCE INVALID',
-    greeting: 'Greetings, suspiciously hairless synapsid. Dinosaur S-Bot online. I know which theropods had feathers, why birds are dinosaurs, and exactly how extinction can ruin a week. State your name.'
+    greeting: 'hey. i’m Teenage S-Bot. My raccoon hair contains enough product to survive atmospheric re-entry, my eyeliner is structural, and my playlist is emotionally load-bearing. What’s your name?'
   }
 };
 
@@ -1433,33 +1409,13 @@ const personaAsides = {
     'This is going in the LiveJournal post with black background, hot-pink text, and comments disabled.',
     'My striped arm warmers have detected a feeling. Disgusting.',
     'brb changing my MSN display name to a lyric fragment nobody is allowed to ask about.',
-    'Rawr means “I have reviewed the evidence” in dinosaur, probably. xD'
-  ],
-  creature: [
-    'Creature note: exact species and environmental context will destroy at least half the confident generic advice online.',
-    'I am placing this fact gently into a labelled deli cup with ventilation holes.',
-    'Habitat, life stage, and evolutionary history remain at the scene. Vibes have been removed from the investigation.',
-    'The animal would like humans to stop converting normal behaviour into a personality quiz.'
-  ],
-  cosmic: [
-    'Scale check: the light carrying this information may have travelled longer than our species has existed. No pressure.',
-    'The universe remains vast, silent, and completely unwilling to answer follow-up email.',
-    'Somewhere beyond the observable horizon, reality may continue without any possibility of reaching us. Very professional boundary.',
-    'Astronomical side effect: every answer creates three larger questions and one small personal crisis.'
-  ],
-  dinosaur: [
-    'Mesozoic correction deployed. The fossil record has survived enough without being turned into a movie lizard.',
-    'The three-star cheek tattoo remains visible across 66 million years of emotional damage.',
-    'Birds are dinosaurs. The sparrow outside is the tiny surviving heir to an empire. Show respect.',
-    'I have filed this under CRETACEOUS PROBLEMS, a department with a catastrophic closure date.'
+    'Rawr means “I have reviewed the evidence” in dinosaur, probably. xD',
+    'My raccoon-striped hair has absorbed the Wi-Fi and several unresolved feelings.'
   ]
 };
 
 const personaDecisionAsides = {
-  teenage: 'Teenage S-Bot ruling: this has the emotional stability of an unsaved MSN conversation during a thunderstorm.',
-  creature: 'Creature S-Bot ruling: assess the habitat, resources, recurring care, and escape routes before introducing this decision into captivity.',
-  cosmic: 'Cosmic S-Bot ruling: your lifespan is finite, the universe is expanding, and this plan still needs a calendar.',
-  dinosaur: 'Dinosaur S-Bot ruling: adapt the plan or join the long fossil record of ideas that could not survive changing conditions.'
+  teenage: 'Teenage S-Bot ruling: this has the emotional stability of an unsaved MSN conversation during a thunderstorm.'
 };
 
 function personaDecisionNote() {
