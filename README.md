@@ -10,7 +10,8 @@ Open `index.html` in a browser, or run any static file server from this director
 
 ## Current MVP
 
-- Animated robot-first main screen with two complete full-body humanoid designs
+- Animated robot-first main screen with two cinematic, photorealistic, full-body humanoid designs
+- Translucent synthetic shells, visible mechanical anatomy, expressive faces, and realistic material detail
 - Permanent three-star cheek tattoo shared across every S-Bot form
 - Two selectable personalities: Core S-Bot and a separate 2000s emo-scene Teenage S-Bot
 - Core contains the creature, reptile, dinosaur, cosmic, justice, and AuDHD knowledge domains
