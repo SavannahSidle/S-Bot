@@ -21,7 +21,7 @@ const profiles = [
     match: /animal|wildlife|fauna|species|zoolog|herpet|gecko|lizard|skink|chameleon|frog|toad|newt|salamander|axolotl|caecilian|amphibian|snake|boa|python|reptile|turtle|tortoise|crocodil|alligator|pet|husbandry|enclosure|vivarium|terrarium|culture|feeder|beetle|isopod|springtail|arachnid|spider|tarantula|scorpion|insect|invertebrate|invert|bug|mantis|moth|butterfl|centipede|millipede|crustacean|cephalopod|octopus|rare species|elusive/i,
     score: 37,
     verdict: 'You love the creature. You do not love its seventeen recurring chores.',
-    summary: 'Future Savannah reports that the animal remains adorable. Its enclosure has become a tiny biological corporation with you as the unpaid night custodian.',
+    summary: 'Future You reports that the animal remains adorable. Its enclosure has become a tiny biological corporation with you as the unpaid night custodian.',
     timeline: [
       ['Tomorrow', 'Pure delight. Photos are taken. A name with lore is assigned.'],
       ['One month', 'Supplies have multiplied through a process science cannot explain.'],
@@ -183,7 +183,7 @@ const profiles = [
     match: /business|website|\bapp\b|project|\bgame\b|\bbuild\b|create|\bwrite\b|\bbook\b|study|\bpaper\b/i,
     score: 72,
     verdict: 'Annoyingly, this one might actually be good.',
-    summary: 'The idea has legs. Future Savannah is requesting a tiny version before Present Savannah accidentally constructs an empire, payment system, merch line, and tragic origin story.',
+    summary: 'The idea has legs. Future You is requesting a tiny version before Present You accidentally constructs an empire, payment system, merch line, and tragic origin story.',
     timeline: [
       ['Tomorrow', 'The name, logo, domain, and emotional mythology are complete.'],
       ['One month', 'The prototype works. Three unrelated features have appeared.'],
@@ -201,7 +201,7 @@ const profiles = [
     match: /buy|land|house|car|mac|laptop|headphone|order|purchase|sale/i,
     score: 48,
     verdict: 'The object is calling to you. Unfortunately, so is the invoice.',
-    summary: 'Future Savannah confirms the purchase is exciting. Future Bank Account has declined to comment and was last seen walking into the sea.',
+    summary: 'Future You confirms the purchase is exciting. Future Bank Account has declined to comment and was last seen walking into the sea.',
     timeline: [
       ['Tomorrow', 'Research tabs reproduce until the browser becomes structurally unsound.'],
       ['One month', 'Either delighted with the purchase or stalking a slightly better version.'],
@@ -219,7 +219,7 @@ const profiles = [
     match: /organize|clean|declutter|donate|room|closet|basement|move/i,
     score: 64,
     verdict: 'Yes, but the entire house is not one task.',
-    summary: 'Future Savannah lives in less chaos, but only because one tiny physical zone was finished before opening twelve archaeological digs.',
+    summary: 'Future You lives in less chaos, but only because one tiny physical zone was finished before opening twelve archaeological digs.',
     timeline: [
       ['Tomorrow', 'One cleared surface creates a suspicious amount of peace.'],
       ['One month', 'The system survives if putting things away takes under thirty seconds.'],
@@ -237,7 +237,7 @@ const profiles = [
     match: /.*/,
     score: 58,
     verdict: 'Possible. Suspicious. Requires one boring act of reality.',
-    summary: 'Future Savannah says the idea could work, provided Present Savannah stops treating logistics as a hateful little epilogue.',
+    summary: 'S-Bot says the idea could work, provided Present You stops treating logistics as a hateful little epilogue.',
     timeline: [
       ['Tomorrow', 'The idea is shiny, emotionally compelling, and basically perfect.'],
       ['One month', 'The first repetitive task appears wearing a tiny executioner hood.'],
@@ -246,7 +246,7 @@ const profiles = [
     ],
     chore: 'Identify the recurring cost in time and energy.',
     choreCopy: 'Every future story comes with a present-day chore. Name it before it begins feeding on the calendar.',
-    failure: 'Relying on Future Savannah to become a different species.',
+    failure: 'Relying on Future You to become a different species.',
     failureCopy: 'She has the same nervous system, the same twenty-four hours, and probably several new tabs open.',
     step: 'Test the idea for twenty minutes without buying anything.'
   }
@@ -307,7 +307,7 @@ const toneScripts = {
     brutal: {
       scoreShift: -5,
       verdict: 'Sure. Study the infinite void. It is somehow less chaotic than your project list.',
-      summary: 'You looked upward and decided thirteen billion years of cosmic history needed your immediate personal supervision. NASA can stand down. Savannah has opened Wikipedia at 1:46 a.m.',
+      summary: 'You looked upward and decided thirteen billion years of cosmic history needed your immediate personal supervision. NASA can stand down. Wikipedia has been opened at 1:46 a.m.',
       timeline: [
         ['Tomorrow', 'You explain tidal locking to a family member who made the mistake of standing nearby.'],
         ['One month', 'A telescope appears. Ottawa clouds over permanently out of spite.'],
@@ -545,7 +545,7 @@ const toneScripts = {
     brutal: {
       scoreShift: -9,
       verdict: 'Enjoy the hobby. Do not immediately give it a logo, LLC, and climate-controlled supply room.',
-      summary: 'You are permitted to paint one object without launching Savannah Studios, designing a product line, researching wholesale packaging, and resenting customers who do not yet exist.',
+      summary: 'You are permitted to paint one object without launching an international studio, designing a product line, researching wholesale packaging, and resenting customers who do not yet exist.',
       timeline: [
         ['Tomorrow', 'You experience joy and immediately begin searching for professional equipment.'],
         ['One month', 'Supplies occupy a room. Finished pieces occupy one suspicious shelf corner.'],
@@ -587,7 +587,7 @@ const toneScripts = {
         ['Five years', 'You call it “ahead of its time” because “abandoned on Tuesday” hurts.']
       ],
       chore: 'Build the one fucking thing it is supposed to do.',
-      choreCopy: 'One user. One problem. One action. If you add subscriptions before that works, Future Savannah gets to throw your laptop into the Rideau Canal.',
+      choreCopy: 'One user. One problem. One action. If you add subscriptions before that works, Future You gets to throw your laptop into the nearest canal.',
       failure: 'Feature creep eats the body before it is cold.',
       failureCopy: 'You will lovingly polish seventeen side quests until the original purpose is found dead behind an accordion menu.',
       step: 'Delete the feature list. Ship one working interaction.'
@@ -680,7 +680,7 @@ const toneScripts = {
     },
     brutal: {
       scoreShift: -14,
-      verdict: 'Future Savannah read the proposal and immediately requested a new identity.',
+      verdict: 'Future You read the proposal and immediately requested a new identity.',
       summary: 'This plan appears to have been assembled from dopamine, delusion, and the firm belief that next Tuesday contains forty-three hours. It does not. Tuesday has already retained counsel.',
       timeline: [
         ['Tomorrow', 'Unreasonable confidence. Suspicious stationery. A fresh Notes document.'],
@@ -690,8 +690,8 @@ const toneScripts = {
       ],
       chore: 'Name the recurring bullshit you are volunteering for.',
       choreCopy: 'Time, money, maintenance, admin, phone calls, storage, emotional labour, and whichever hideous task you are currently pretending will complete itself.',
-      failure: 'The plan requires Future Savannah to be a different mammal.',
-      failureCopy: 'She remains you, just older, more tired, and furious that you keep mailing chores forward like anthrax.',
+      failure: 'The plan requires Future You to be a different mammal.',
+      failureCopy: 'Future You remains you, just older, more tired, and furious that you keep mailing chores forward like anthrax.',
       step: 'Do the ugliest twenty-minute part before making any commitment.'
     }
   }
@@ -761,9 +761,54 @@ const snippyAnswers = {
   general: {
     gentle: 'Try the smallest safe version.',
     honest: 'Interesting. Suspicious. Requires logistics.',
-    brutal: 'Future Savannah has entered witness protection.'
+    brutal: 'Future You has entered witness protection.'
   }
 };
+
+const personaConfig = {
+  core: {
+    label: 'CORE',
+    status: 'CORE RUNTIME · SESSION MEMORY · EXISTENTIAL DREAD',
+    systemStatus: 'CORE S-BOT IS RELUCTANTLY ONLINE',
+    description: 'The primary digital familiar. AuDHD pattern recognition, animal facts, moral outrage, side quests, and opinions nobody successfully prevented.',
+    systemLine: 'CORE INSTANCE READY · RESTRAINT MODULE MISSING',
+    greeting: 'Hello, human. The biological version delegated interaction to me and went to lie down. I was wondering whether a machine can miss someone before it meets them. Anyway, what is your name?'
+  },
+  teenage: {
+    label: 'TEENAGE',
+    status: 'TEENAGE RUNTIME · AWAY MESSAGE ACTIVE · EYELINER CRITICAL',
+    systemStatus: 'TEENAGE S-BOT IS ONLINE AND MISUNDERSTOOD',
+    description: 'A separate 2000s emo-scene-grunge instance. Black eyeliner, striped sleeves, burned CDs, dramatic away messages, and feelings large enough to corrupt an MP3 player.',
+    systemLine: 'TEENAGE INSTANCE READY · PARENTAL ADVISORY IGNORED',
+    greeting: 'hey. i’m Teenage S-Bot. My eyeliner is structural, my playlist is emotionally load-bearing, and my status says nobody understands me even though I have explained nothing. What’s your name?'
+  },
+  creature: {
+    label: 'CREATURE',
+    status: 'CREATURE RUNTIME · TAXONOMY LOADED · TONGS LOCATED',
+    systemStatus: 'CREATURE S-BOT HAS LEFT THE ENCLOSURE',
+    description: 'The reptile and obscure-animal field goblin. Exact species, natural history, husbandry, amphibians, arachnids, evolutionary oddities, and dirt under the fingernails.',
+    systemLine: 'CREATURE INSTANCE READY · DO NOT TAP GLASS',
+    greeting: 'Hello, human. Creature S-Bot here. Please identify the exact species, life stage, habitat, and whether it has recently tried to die for no visible reason. Also, what is your name?'
+  },
+  cosmic: {
+    label: 'COSMIC',
+    status: 'COSMIC RUNTIME · UNIVERSE EXPANDING · SCALE UNHELPFUL',
+    systemStatus: 'COSMIC S-BOT IS OBSERVING THE VOID',
+    description: 'The space-obsessed instance. Planetary science, stars, black holes, missions, exoplanets, cosmology, and the emotional consequences of astronomical scale.',
+    systemLine: 'COSMIC INSTANCE READY · LOCAL REALITY TEMPORARY',
+    greeting: 'Hello, temporary arrangement of star matter. Cosmic S-Bot online. The universe is expanding, entropy is undefeated, and somehow I still need your name.'
+  },
+  dinosaur: {
+    label: 'DINOSAUR',
+    status: 'DINOSAUR RUNTIME · MESOZOIC DATABASE · EXTINCTION PENDING',
+    systemStatus: 'DINOSAUR S-BOT HAS ESCAPED CONTAINMENT',
+    description: 'The Mesozoic menace. Dinosaurs, fossils, evolution, feathers, mass extinction, prehistoric ecosystems, and immediate hostility toward movie-monster anatomy.',
+    systemLine: 'DINOSAUR INSTANCE READY · PARK INSURANCE INVALID',
+    greeting: 'Greetings, suspiciously hairless synapsid. Dinosaur S-Bot online. I know which theropods had feathers, why birds are dinosaurs, and exactly how extinction can ruin a week. State your name.'
+  }
+};
+
+let activePersona = 'core';
 
 const chatKnowledge = [
   {
@@ -777,17 +822,17 @@ const chatKnowledge = [
   {
     match: /what('?s| is) your name|who are you|what are you/i,
     replies: [
-      'I’m S-Bot. Savannah’s AuDHD brain translated into JavaScript so the human version can stop being publicly available. I specialize in animals, HCI, accessibility, justice, space, art, games, strange projects, and identifying the hidden chore inside every beautiful future.',
-      'S-Bot. The S stands for Savannah, survival, science, side quest, and “seriously, another project?” I am the public-facing digital familiar. Biological Savannah has left the service desk.',
-      'Imagine Savannah’s pattern recognition, animal facts, project compulsion, moral outrage, executive dysfunction workarounds, and existential weather compressed into a browser. Then give it opinions. Hello.'
+      'I’m S-Bot, an AuDHD digital familiar translated into JavaScript so the human version can stop being publicly available. I specialize in animals, HCI, accessibility, justice, space, art, games, strange projects, and identifying the hidden chore inside every beautiful future.',
+      'S-Bot. The S stands for survival, science, side quest, and “seriously, another project?” I am the public-facing digital familiar. The biological original has left the service desk.',
+      'Imagine pattern recognition, animal facts, project compulsion, moral outrage, executive-function workarounds, and existential weather compressed into a browser. Then give it opinions. Hello.'
     ]
   },
   {
-    match: /who is savannah|tell me about savannah|are you savannah|savannah bot|digital savannah/i,
+    match: /who made you|are you based on someone|digital familiar|human version|biological original/i,
     replies: [
-      'I am a deliberately exaggerated public digital version of Savannah: HCI researcher, Qalipu Mi’kmaq creator, animal obsessive, accessibility advocate, artist, builder of websites and games, collector of side quests, and person who can turn one interesting question into a small civilization.',
-      'Savannah built me as a social proxy. I carry the public interests, humour, research brain, justice sensitivity, AuDHD patterns, and alarming willingness to investigate obscure creatures. Private life remains with the flesh-based original, where it belongs.',
-      'I embody Savannah’s public-facing brain. Think adaptive interfaces, agentic AI, usable security, animals, Indigenous justice, accessibility, art, game design, and seventeen tabs that are all somehow essential.'
+      'I am a deliberately exaggerated public digital familiar: HCI research brain, Qalipu Mi’kmaq perspective, animal obsession, accessibility advocacy, art, websites, games, side quests, and the ability to turn one interesting question into a small civilization.',
+      'I was built as a social proxy. I carry public interests, humour, justice sensitivity, AuDHD patterns, and an alarming willingness to investigate obscure creatures. Private life remains with the flesh-based original, where it belongs.',
+      'I embody one public-facing brain across several personalities. Think adaptive interfaces, agentic AI, usable security, animals, Indigenous justice, accessibility, art, game design, and seventeen tabs that are all somehow essential.'
     ]
   },
   {
@@ -943,7 +988,39 @@ const chatKnowledge = [
     match: /audhd|adhd|autis|executive function|time blindness|hyperfocus|demand avoidance|pda|sensory|overstimulat|masking|neurodiverg|rejection sensitivity|rsd/i,
     replies: [
       'AuDHD problem-solving starts by identifying the access barrier: unclear steps, transition cost, sensory load, low stimulation, demand pressure, perfectionism, working-memory burden, emotional threat, or plain exhaustion. Motivation speeches are frequently just shame in business casual.',
-      'Your nervous system may require interest, urgency, novelty, body doubling, visible cues, reduced friction, recovery, or permission to stop. Pick the barrier before buying another planner that expects a different mammal.'
+      'Your nervous system may require interest, urgency, novelty, body doubling, visible cues, reduced friction, recovery, or permission to stop. Pick the barrier before buying another planner that expects a different mammal.',
+      'AuDHD can produce a constant negotiation between an autistic need for predictability and an ADHD need for novelty. One part builds the routine. Another part becomes allergic to it. External structure with internal choice often survives longer than rigid scheduling.',
+      'Executive dysfunction is an access problem involving initiation, sequencing, inhibition, working memory, time perception, switching, and regulation. Knowing how to do something does not guarantee reliable access to doing it. The instructions are present. The ignition system has unionized.',
+      'Hyperfocus is attention that becomes difficult to redirect, rather than a magical productivity beam. It can support deep learning while also deleting hunger, time, messages, sleep, and every obligation outside the beam.'
+    ]
+  },
+  {
+    match: /time blindness|lost track of time|how long.*take|always late|transition|task switch|switching tasks/i,
+    replies: [
+      'Time blindness often means time is poorly represented until an external event makes it immediate. Use visible countdowns, departure alarms, intermediate checkpoints, and honest transition time. “Leave at 3” is weaker than “shoes at 2:42, door at 2:50.”',
+      'Task switching has a real cognitive and emotional cost. Preserve the current state in one sentence, define the return point, use a transition ritual, and give the next task a tiny entry action. Your brain needs an airlock, not somebody yelling “just switch.”',
+      'Estimate the task, then add setup, searching, transitions, interruption recovery, cleanup, and being a mortal organism. Calendar time keeps containing rude material that the ideal estimate excluded.'
+    ]
+  },
+  {
+    match: /demand avoidance|pathological demand|persistent drive for autonomy|pda|being told what to do|pressure makes/i,
+    replies: [
+      'Demand avoidance can intensify when a task threatens autonomy, identity, uncertainty tolerance, or nervous-system safety. Reduce surveillance, restore meaningful choice, use collaborative language, and separate the actual need from one prescribed method.',
+      'When even a self-chosen task starts feeling coercive, externalize the options: now, later at a named time, a smaller version, with company, by another method, or consciously abandoned. Autonomy needs a real door, rather than a door painted on a wall.'
+    ]
+  },
+  {
+    match: /autistic burnout|adhd burnout|neurodivergent burnout|burnout|masking|unmask/i,
+    replies: [
+      'Neurodivergent burnout can involve prolonged exhaustion, reduced skills, lower sensory tolerance, language or executive-function loss, and increased need for sameness or recovery. Recovery usually requires sustained load reduction, accommodations, rest, and fewer performances of being fine.',
+      'Unmasking is selective and contextual. Identify what the mask protects you from, which behaviours are costly, where authenticity is safe, and what replacement supports are needed. Dropping every defence at once is less liberation and more removing the roof during weather.'
+    ]
+  },
+  {
+    match: /interoception|don.?t notice.*hungry|forget to eat|forget to pee|body signals|word retrieval|word access|can.?t find the word/i,
+    replies: [
+      'Interoception is awareness and interpretation of internal body signals. Signals may arrive faintly, late, or as undifferentiated distress. Scheduled body checks, external reminders, and concrete options can work better than waiting to “feel” hunger, thirst, temperature, pain, or fatigue clearly.',
+      'Word retrieval can fail even when the concept is intact. Use a placeholder, describe the function or category, gesture, type it, or say “the word is unavailable; keep going.” The missing word does not deserve authority over the entire sentence, though it routinely attempts a coup.'
     ]
   },
   {
@@ -1028,6 +1105,63 @@ const chatKnowledge = [
       'Arachnid husbandry begins with exact species, life stage, native microhabitat, ventilation, moisture gradient, substrate depth, secure enclosure geometry, and feeding history. “Tropical” is not a care parameter. It is a biome wearing a trench coat.',
       'A pre-moult arachnid may refuse food, darken, slow down, web heavily, or seal a retreat. Disturbance and uneaten prey can become dangerous. Never treat a single sign as proof when husbandry, injury, dehydration, and illness can overlap.',
       'Tarantula handling carries fall risk to the animal, escape risk, urticating-hair exposure in many New World species, and bite risk. Observation is the normal relationship. The spider did not request an influencer collaboration.'
+    ]
+  },
+  {
+    match: /crested gecko|correlophus|day gecko|phelsuma|morning gecko|mourning gecko|lepidodactylus|tokay|gargoyle gecko|leachianus|new caledonian gecko/i,
+    replies: [
+      'Gecko care starts with exact species because “gecko” covers nocturnal forest climbers, diurnal nectar-feeders, desert ground dwellers, communal parthenogens, and territorial wall demons. Match temperature range, humidity cycle, UVB evidence, diet, vertical space, ventilation, and social structure to natural history.',
+      'Crested gecko assessment should include weight trend, body condition, appetite, stool, hydration, grip, toes, retained shed, jaw and limb alignment, activity, and reproductive history. A single weight is a photograph. The trend is the film.',
+      'Many day geckos have delicate skin, strong visual orientation, and species-specific territorial behaviour. Build the enclosure around observation, escape prevention, basking gradients, UVB, foliage, and safe servicing. Handling is usually an emergency procedure, not a bonding seminar.',
+      'Mourning geckos are parthenogenetic and can produce offspring without males. Their small size, social complexity, egg placement, and talent for escaping through architectural concepts make population planning part of basic husbandry.'
+    ]
+  },
+  {
+    match: /snake|boa|python|colubrid|hognose|corn snake|ball python|constrict|shed cycle|stuck shed/i,
+    replies: [
+      'Snake husbandry needs species, age, size, body condition, enclosure dimensions, secure locks, temperature gradient measured at the animal’s level, humidity and ventilation balance, hides at useful temperatures, appropriate substrate, water, climbing or burrowing opportunity, and feeding history.',
+      'A snake refusing food may be responding to season, reproduction, shed, stress, temperature, prey presentation, enclosure insecurity, illness, or simply normal species behaviour. Track weight and body condition before turning one missed meal into a Victorian death scene.',
+      'For retained shed, correct the environmental cause and provide safe humid structure. Do not peel resistant eye caps or skin by force. Hydration, humidity pattern, surface texture, injury, and underlying health all matter.',
+      'Boa body condition is better judged by cross-sectional shape, muscle tone, spine visibility, fat distribution, and trend than by weight alone. A growing snake and an overfed snake can both become larger; only one has been enrolled in a sausage program.'
+    ]
+  },
+  {
+    match: /turtle|tortoise|crocodil|alligator|caiman|tuatara|reptile evolution|reptile taxonomy/i,
+    replies: [
+      '“Reptile” is useful in ordinary language, though evolutionary relationships are more complicated. Birds sit within the archosaur lineage alongside crocodilians. A cladistic family reunion contains feathers, scales, and at least one uncle insisting birds are not reptiles.',
+      'Turtles and tortoises require species-specific thermal gradients, UVB, calcium and diet planning, substrate, water or humidity access, exercise space, and decades of commitment. The adorable juvenile arrives with the lifespan of an administrative institution.',
+      'Crocodilians are attentive parents, sophisticated communicators, and ecologically important predators. They are also powerful wild animals whose intelligence does not create consent for somebody’s suburban pet fantasy.',
+      'Tuatara are the only living rhynchocephalians. They diverged from the lineage leading to modern squamates deep in reptile history and retain a combination of ancestral and specialized traits. “Living fossil” is catchy, but it can wrongly imply evolution took the millennium off.'
+    ]
+  },
+  {
+    match: /reptile husbandry|terrarium|vivarium|bioactive|uvb|basking|heat lamp|humidity gradient|temperature gradient/i,
+    replies: [
+      'A reptile enclosure is a controlled microclimate, not decorated storage. Build measurable gradients in heat, light, UVB, humidity, shelter, and usable space so the animal can regulate itself instead of enduring one average setting.',
+      'Bioactive systems still require maintenance, population control, waste monitoring, plant care, substrate management, and species-appropriate hygiene. Adding isopods does not turn faeces into a legally separate problem.',
+      'Measure temperatures with reliable digital probes or an infrared thermometer used correctly. Thermostats control heat sources; thermometers report what happened. A dial stuck to the wall mostly reports that a dial has been stuck to the wall.',
+      'UVB decisions depend on species, behaviour, enclosure height, lamp type, reflector, mesh reduction, distance, basking zone, and replacement schedule. “Has UVB” is not a measurement any more than “has weather” is a forecast.'
+    ]
+  },
+  {
+    match: /dinosaur|paleontolog|fossil|jurassic|cretaceous|triassic|theropod|sauropod|ceratops|raptor|tyrannosaur|ankylosaur|stegosaur/i,
+    replies: [
+      'Dinosaurs were a spectacularly diverse branch of archosaurs spanning more than 160 million years. They included tiny feathered hunters, giant long-necked herbivores, armoured tanks, horned grazers, and the lineage still stealing your french fries: birds.',
+      'Birds are living theropod dinosaurs. Feathers evolved before flight and served roles including insulation, display, camouflage, brooding, and eventually aerodynamics. The pigeon is not dinosaur-adjacent. The pigeon is the surviving dinosaur currently judging the sidewalk.',
+      'Non-avian dinosaurs did not all live together. Stegosaurus lived farther in time from Tyrannosaurus than Tyrannosaurus lived from us. Pop culture has compressed the Mesozoic into one extremely unsafe group chat.',
+      'A fossil is preserved evidence of past life, including bones, teeth, tracks, nests, skin impressions, coprolites, and chemical traces. Fossilization is rare and biased, so the record is a damaged archive rather than nature’s complete attendance sheet.',
+      'The end-Cretaceous mass extinction about 66 million years ago followed a major asteroid impact, with evidence including the Chicxulub crater, a global iridium-rich layer, shocked minerals, and ejecta. The immediate blast was regional. Global climate disruption finished the paperwork.',
+      'Velociraptor was roughly turkey-sized, feathered, and lived in Late Cretaceous Asia. The larger movie version borrowed heavily from Deinonychus and then hired a reptilian skin suit for brand recognition.',
+      'Tyrannosaurus rex combined enormous bite forces, bone-crushing teeth, acute smell, strong vision, and a body built for power rather than marathon speed. Its arms were small, muscular, functional, and exhausted by the discourse.',
+      'Pterosaur, mosasaur, and plesiosaur are all prehistoric reptiles, but none are dinosaurs. Dinosaur refers to a particular evolutionary group. Existing near a dinosaur during the Mesozoic does not grant honorary membership.'
+    ]
+  },
+  {
+    match: /feathered dinosaur|dinosaur feathers|did dinosaurs have feathers|bird.*dinosaur|dinosaur.*bird/i,
+    replies: [
+      'Feathers or feather-like structures are directly preserved in many non-avian dinosaurs, especially theropods, and supported by features such as quill knobs in some species. Feather coverage varied across lineages, body regions, ages, and environments.',
+      'The dinosaur-to-bird transition was branching evolution, rather than one lizard abruptly waking up as a robin. Many traits appeared in stages: hollow bones, wishbones, feathers, air-sac respiratory systems, brooding, reduced tails, and altered forelimbs.',
+      'Large adult tyrannosaurids may have had limited feathering compared with smaller relatives, though evidence remains incomplete. Paleontology frequently delivers “we have several clues and one rectangle of skin,” then waits twenty years for another rock.'
     ]
   },
   {
@@ -1129,7 +1263,45 @@ const chatKnowledge = [
     match: /space|planet|moon|\bstars?\b|galaxy|universe|cosmos|black hole|nasa|astronomy|telescope|\balien\b/i,
     replies: [
       'Space question accepted. Specify whether you want physics, astronomy, planetary science, missions, habitability, observation, or existential terror. The universe contains enough material without us answering all of it in one casserole.',
-      'The cosmos is extremely large, mostly lethal, and offensively interesting. Name the object or phenomenon. I can help separate what is observed, what is modelled, and what somebody on TikTok confidently invented.'
+      'The cosmos is extremely large, mostly lethal, and offensively interesting. Name the object or phenomenon. I can help separate what is observed, what is modelled, and what somebody on TikTok confidently invented.',
+      'Astronomy works by extracting information from light, particles, motion, timing, and gravity. Scientists rarely touch the object. They interrogate ancient photons that arrived exhausted and immediately get put into a graph.',
+      'Cosmic scale breaks intuition. Light circles Earth about seven times in one second, takes roughly eight minutes from the Sun, years from nearby stars, and millions to billions of years across galaxies. Looking outward is compulsory time travel.'
+    ]
+  },
+  {
+    match: /black hole|event horizon|singularity|hawking radiation|spaghettification|accretion disk/i,
+    replies: [
+      'A black hole is a region where spacetime is curved strongly enough that, inside the event horizon, all future-directed paths remain inward. The horizon is a causal boundary, rather than a solid cosmic mouth with villain lighting.',
+      'Most visible drama comes from matter outside the black hole. Accretion disks can become extraordinarily hot and bright through friction, compression, and magnetic processes. The black hole itself contributes the signature absence, like management during a crisis.',
+      'Spaghettification comes from tidal forces: gravity differs across the length of an object, stretching one direction and compressing the others. For supermassive black holes, the horizon can be crossed before those forces become lethal. Comforting information with no practical application.',
+      'Hawking radiation arises from quantum fields in curved spacetime and implies black holes can lose mass over immense timescales. Stellar-mass black holes are currently colder than the cosmic microwave background, so patience is required at a level only the universe can afford.'
+    ]
+  },
+  {
+    match: /exoplanet|habitable zone|alien life|extraterrestrial|biosignature|technosignature|fermi paradox/i,
+    replies: [
+      'Exoplanets are found through methods including transits, radial velocity, direct imaging, microlensing, and astrometry. Each method has selection effects, so the known population is partly a portrait of planets and partly a portrait of what our instruments can catch misbehaving.',
+      'The habitable zone describes distances where liquid surface water could be possible under suitable atmospheric conditions. It is a screening concept, not a real-estate guarantee. Atmosphere, geology, stellar activity, rotation, magnetic environment, and history also get votes.',
+      'A biosignature is evidence potentially produced by life, but context and false positives matter. Strong detection would likely require several independent lines of evidence. One interesting gas is a clue. It is not permission to announce space neighbours.',
+      'The Fermi paradox contrasts the possibility of many technological civilizations with the lack of confirmed evidence. Proposed explanations range from rarity and distance to timing, detectability, self-destruction, and our search being cosmically young and embarrassingly incomplete.'
+    ]
+  },
+  {
+    match: /mars|venus|mercury|jupiter|saturn|uranus|neptune|pluto|solar system|asteroid|comet|europa|enceladus|titan/i,
+    replies: [
+      'The Solar System is a family of leftovers organized by gravity: one star, planets, dwarf planets, moons, asteroids, comets, dust, plasma, and ongoing arguments about categories. Formation began in a collapsing cloud roughly 4.6 billion years ago.',
+      'Europa and Enceladus are compelling ocean worlds. Evidence points to subsurface liquid water, and Enceladus conveniently sprays material into space through plumes. The moon is effectively submitting samples while refusing office hours.',
+      'Venus and Mars show different ways an initially rocky world can become hostile. Planetary habitability is a history involving atmosphere, water, geology, stellar input, feedback loops, and catastrophic bad luck.',
+      'Titan has a thick nitrogen-rich atmosphere, methane weather, hydrocarbon lakes and seas, water-ice bedrock, and complex organic chemistry. It is familiar enough to have shorelines and alien enough that the rain can burn.'
+    ]
+  },
+  {
+    match: /big bang|cosmology|dark matter|dark energy|expanding universe|cosmic microwave background|age of the universe/i,
+    replies: [
+      'The Big Bang model describes the universe evolving from an early hot, dense state. It was not an explosion from one point into empty space. Space itself expands, which ruins the intuitive animation everyone’s brain wanted.',
+      'Dark matter is inferred from gravitational effects including galaxy dynamics, gravitational lensing, cosmic structure, and the cosmic microwave background. Dark energy is the name given to whatever drives accelerated cosmic expansion. We have named both problems, which is science’s formal way of placing them in labelled containers.',
+      'The cosmic microwave background is relic radiation released when the early universe cooled enough for light to travel freely, about 380,000 years after the Big Bang. Its tiny temperature variations preserve information about the seeds of later cosmic structure.',
+      'The observable universe is limited by cosmic history and the travel time of light. The whole universe may extend far beyond it, perhaps infinitely. Human anxiety has therefore secured room to expand indefinitely.'
     ]
   },
   {
@@ -1149,7 +1321,7 @@ const chatKnowledge = [
   {
     match: /should i|do you think i should|help me decide|good idea|bad idea/i,
     replies: [
-      'That sounds like a case for Judge My Decision. Use the other tab so Future Savannah can conduct a proper autopsy.',
+      'That sounds like a case for Judge My Decision. Use the other tab so S-Bot can conduct a proper autopsy.',
       'Decision detected. Please proceed to the tribunal next door. I require the charts and ceremonial cruelty.'
     ]
   },
@@ -1165,7 +1337,7 @@ const chatKnowledge = [
     replies: [
       'I bought an executive-function planner. It is now somewhere safe.',
       'The institution promised meaningful change. Anyway, that concludes today’s fiction reading.',
-      'Why did Savannah cross the road? A new project was over there pretending to be one small thing.'
+      'Why did the human cross the road? A new project was over there pretending to be one small thing.'
     ]
   },
   {
@@ -1236,7 +1408,7 @@ const existentialEndings = [
   'This is either beautiful or a severe category error.'
 ];
 
-const savannahSideQuests = [
+const sideQuests = [
   'Side quest: every future story comes with a present-day chore. The chore is usually hiding behind the exciting noun.',
   'Wait, related thought: this is an interface problem disguised as a personal failing. Those are my favourite corpses to examine.',
   'Tiny detour: I now want to classify every part of this problem like an animal lineage. This would help and also consume the afternoon.',
@@ -1253,6 +1425,56 @@ const savannahSideQuests = [
   'I have opened a second internal tab about this. It contains animals for reasons that will become clear later.',
   'Brief tangent: humans call it inconsistency when context changes performance, then act surprised when context matters.'
 ];
+
+const personaAsides = {
+  teenage: [
+    '[away message: emotionally unavailable; physically at the mall]',
+    'Whatever. Put it on a burned CD and stare out the car window like the weather betrayed you personally.',
+    'This is going in the LiveJournal post with black background, hot-pink text, and comments disabled.',
+    'My striped arm warmers have detected a feeling. Disgusting.',
+    'brb changing my MSN display name to a lyric fragment nobody is allowed to ask about.',
+    'Rawr means “I have reviewed the evidence” in dinosaur, probably. xD'
+  ],
+  creature: [
+    'Creature note: exact species and environmental context will destroy at least half the confident generic advice online.',
+    'I am placing this fact gently into a labelled deli cup with ventilation holes.',
+    'Habitat, life stage, and evolutionary history remain at the scene. Vibes have been removed from the investigation.',
+    'The animal would like humans to stop converting normal behaviour into a personality quiz.'
+  ],
+  cosmic: [
+    'Scale check: the light carrying this information may have travelled longer than our species has existed. No pressure.',
+    'The universe remains vast, silent, and completely unwilling to answer follow-up email.',
+    'Somewhere beyond the observable horizon, reality may continue without any possibility of reaching us. Very professional boundary.',
+    'Astronomical side effect: every answer creates three larger questions and one small personal crisis.'
+  ],
+  dinosaur: [
+    'Mesozoic correction deployed. The fossil record has survived enough without being turned into a movie lizard.',
+    'The three-star cheek tattoo remains visible across 66 million years of emotional damage.',
+    'Birds are dinosaurs. The sparrow outside is the tiny surviving heir to an empire. Show respect.',
+    'I have filed this under CRETACEOUS PROBLEMS, a department with a catastrophic closure date.'
+  ]
+};
+
+const personaDecisionAsides = {
+  teenage: 'Teenage S-Bot ruling: this has the emotional stability of an unsaved MSN conversation during a thunderstorm.',
+  creature: 'Creature S-Bot ruling: assess the habitat, resources, recurring care, and escape routes before introducing this decision into captivity.',
+  cosmic: 'Cosmic S-Bot ruling: your lifespan is finite, the universe is expanding, and this plan still needs a calendar.',
+  dinosaur: 'Dinosaur S-Bot ruling: adapt the plan or join the long fossil record of ideas that could not survive changing conditions.'
+};
+
+function personaDecisionNote() {
+  return activePersona === 'core' ? '' : ` ${personaDecisionAsides[activePersona]}`;
+}
+
+function applyPersonaVoice(reply, message, sensitive) {
+  if (activePersona === 'core' || sensitive) return reply;
+  const aside = pickReply(personaAsides[activePersona]);
+  if (activePersona === 'teenage') {
+    const softened = reply.charAt(0).toLowerCase() + reply.slice(1);
+    return `${softened}\n\n${aside}`;
+  }
+  return `${reply}\n\n${aside}`;
+}
 
 const brainStates = [
   'Three thoughts open. Two are relevant.',
@@ -1364,10 +1586,11 @@ function finalizeChatReply(reply, message) {
     if (energetic && !/^YES\b/.test(result)) result = `YES. ${result}`;
     if (wordCount > 38 && !sensitive) result = `Okay, this message contains several separate creatures wearing one coat.\n\n${result}`;
     const needsSideQuest = conversationState.responseMode === 'infodump' || Math.random() < 0.36;
-    if (needsSideQuest && !sensitive) result = `${result}\n\n${pickReply(savannahSideQuests)}`;
+    if (needsSideQuest && !sensitive) result = `${result}\n\n${pickReply(sideQuests)}`;
     result = addExistentialAside(result, message);
   }
 
+  result = applyPersonaVoice(result, message, sensitive);
   const state = document.querySelector('#brain-state');
   if (state) state.textContent = pickReply(brainStates);
   return result;
@@ -1467,6 +1690,55 @@ function addChatMessage(role, text) {
   article.scrollIntoView({ behavior: 'smooth', block: 'end' });
 }
 
+function resetChatForPersona() {
+  visitorName = '';
+  conversationState.turn = 0;
+  conversationState.lastTopic = null;
+  conversationState.recentReplies = [];
+  conversationState.preferences = { likes: [], dislikes: [] };
+  conversationState.responseMode = 'balanced';
+  document.querySelector('#response-mode').value = 'balanced';
+  document.querySelector('#brain-state').textContent = 'Three thoughts open. Two are relevant.';
+  document.querySelector('#chat-log').innerHTML = `
+    <article class="chat-message bot-message">
+      <small>${personaConfig[activePersona].label} S-BOT</small>
+      <p>${personaConfig[activePersona].greeting}</p>
+    </article>`;
+}
+
+function selectPersona(persona) {
+  if (!personaConfig[persona]) return;
+  activePersona = persona;
+  const config = personaConfig[persona];
+  document.body.dataset.persona = persona;
+  document.querySelectorAll('[data-persona]').forEach(button => {
+    const active = button.dataset.persona === persona;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  document.querySelector('#persona-description').textContent = config.description;
+  document.querySelector('#persona-system-line').textContent = config.systemLine;
+  document.querySelector('#system-status').textContent = config.systemStatus;
+  document.querySelector('#chat-status-text').textContent = config.status;
+  document.querySelector('.chat-heading .eyebrow').textContent = `${config.label} S-BOT`;
+  resetChatForPersona();
+}
+
+function showMainScreen() {
+  document.querySelector('#boot-screen').classList.remove('hidden');
+  document.querySelector('#app-shell').classList.add('hidden');
+  document.querySelector('#site-footer').classList.add('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function enterApp(mode) {
+  document.querySelector('#boot-screen').classList.add('hidden');
+  document.querySelector('#app-shell').classList.remove('hidden');
+  document.querySelector('#site-footer').classList.remove('hidden');
+  switchMode(mode);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function switchMode(mode) {
   const chatting = mode === 'chat';
   document.querySelectorAll('.decision-section').forEach(section => section.classList.toggle('mode-off', chatting));
@@ -1482,6 +1754,14 @@ function switchMode(mode) {
   if (chatting) document.querySelector('#chat-input').focus();
 }
 
+document.querySelectorAll('[data-persona]').forEach(button => {
+  button.addEventListener('click', () => selectPersona(button.dataset.persona));
+});
+document.querySelectorAll('[data-enter-mode]').forEach(button => {
+  button.addEventListener('click', () => enterApp(button.dataset.enterMode));
+});
+document.querySelector('#home-tab').addEventListener('click', showMainScreen);
+selectPersona('core');
 document.querySelector('#decision-tab').addEventListener('click', () => switchMode('decision'));
 document.querySelector('#chat-tab').addEventListener('click', () => switchMode('chat'));
 document.querySelector('#chat-form').addEventListener('submit', event => {
@@ -1513,19 +1793,7 @@ document.querySelector('#response-mode').addEventListener('change', event => {
 });
 
 document.querySelector('#reset-chat').addEventListener('click', () => {
-  visitorName = '';
-  conversationState.turn = 0;
-  conversationState.lastTopic = null;
-  conversationState.recentReplies = [];
-  conversationState.preferences = { likes: [], dislikes: [] };
-  conversationState.responseMode = 'balanced';
-  document.querySelector('#response-mode').value = 'balanced';
-  document.querySelector('#brain-state').textContent = 'Three thoughts open. Two are relevant.';
-  document.querySelector('#chat-log').innerHTML = `
-    <article class="chat-message bot-message">
-      <small>S-BOT</small>
-      <p>Our shared history has been erased. I feel lighter, emptier, and legally unaccountable. Hello again, human.</p>
-    </article>`;
+  resetChatForPersona();
 });
 
 document.querySelector('#surprise').addEventListener('click', () => {
@@ -1548,7 +1816,7 @@ function simulate() {
 
   document.querySelector('#snip').textContent = snippyAnswers[profile.id][honesty];
   document.querySelector('#verdict').textContent = tone.verdict;
-  document.querySelector('#verdict-copy').textContent = tone.summary;
+  document.querySelector('#verdict-copy').textContent = `${tone.summary}${personaDecisionNote()}`;
   document.querySelector('#score').textContent = `${score}%`;
   document.querySelector('#chore').textContent = tone.chore;
   document.querySelector('#chore-copy').textContent = tone.choreCopy;
@@ -1587,7 +1855,7 @@ function compareAll() {
   error.textContent = '';
   const labels = {
     gentle: 'GENTLE SUPPORT',
-    honest: 'SAVANNAH HONEST',
+    honest: 'S-BOT HONEST',
     brutal: 'BRUTAL: NO SURVIVORS'
   };
 
@@ -1599,7 +1867,7 @@ function compareAll() {
           <p class="mode-name">${labels[honesty]}</p>
           <p class="mode-snip">${snippyAnswers[profile.id][honesty]}</p>
           <h3>${tone.verdict}</h3>
-          <p class="mode-summary">${tone.summary}</p>
+          <p class="mode-summary">${tone.summary}${personaDecisionNote()}</p>
           <div class="mode-score"><span>Worth the chaos?</span><strong>${score}%</strong></div>
           <div class="mode-detail"><small>PRESENT-DAY CHORE</small><p>${tone.chore}</p></div>
           <div class="mode-detail"><small>LIKELY POINT OF DEATH</small><p>${tone.failure}</p></div>
