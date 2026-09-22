@@ -55,7 +55,9 @@ body {
 .form-halo::before { content: ''; position: absolute; inset: 13%; border: 1px dashed rgba(207,255,101,.18); border-radius: inherit; animation: rotate 20s linear infinite; }
 .teenage .form-halo { border-color: rgba(255,59,157,.24); box-shadow: inset 0 0 55px rgba(255,59,157,.07); }
 .teenage .form-halo::before { border-color: rgba(68,232,255,.22); animation-direction: reverse; }
-.full-robot { z-index: 1; width: min(100%, 275px); height: min(65vh, 590px); min-height: 410px; filter: drop-shadow(0 22px 24px rgba(0,0,0,.5)); }
+.robot-render { z-index: 1; display: block; width: min(100%, 350px); height: min(65vh, 610px); min-height: 430px; object-fit: contain; filter: drop-shadow(0 22px 24px rgba(0,0,0,.52)); animation: robotFloat 4.8s ease-in-out infinite; }
+.teenage .robot-render { animation-delay: -1.7s; }
+.full-robot { display: none; }
 .robot-float { transform-box: fill-box; transform-origin: center; animation: robotFloat 4.8s ease-in-out infinite; }
 .teenage-robot .robot-float { animation-delay: -1.7s; }
 .robot-eyes { transform-box: fill-box; transform-origin: center; animation: blink 6s infinite; }
@@ -189,7 +191,7 @@ footer { padding: 0 20px 32px; text-align: center; color: #776b85; font-size: .7
 @media (max-width: 700px) {
   .boot-screen { gap: 18px; padding: 24px 0 38px; }
   .boot-heading h1 { font-size: clamp(3rem, 13vw, 5rem); }
-  .full-robot { height: min(58vh, 500px); min-height: 390px; }
+  .robot-render { height: min(58vh, 520px); min-height: 400px; }
   .bot-form-card { padding-inline: 8px; }
   .bot-form-card > small { min-height: 2.4em; }
   .boot-actions { justify-content: center; }
@@ -214,7 +216,7 @@ footer { padding: 0 20px 32px; text-align: center; color: #776b85; font-size: .7
 @media (max-width: 420px) {
   .bot-roster { gap: 7px; }
   .bot-form-card { padding: 7px 5px 14px; border-radius: 17px; }
-  .full-robot { height: 390px; min-height: 350px; }
+  .robot-render { height: 410px; min-height: 360px; }
   .bot-form-card > strong { font-size: .7rem; letter-spacing: .08em; }
   .bot-form-card > small { font-size: .58rem; }
   .boot-actions { flex-direction: column; }
