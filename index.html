@@ -10,98 +10,103 @@
   <body>
     <section class="boot-screen" id="boot-screen" aria-labelledby="boot-title">
       <div class="boot-grid"></div>
-      <div class="robot-stage" aria-hidden="true">
-        <div class="robot-halo"></div>
-        <svg class="sbot-robot" viewBox="0 0 420 590" role="img">
-          <defs>
-            <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ffffff" stop-opacity=".96"/>
-              <stop offset=".45" stop-color="#cfe4ed" stop-opacity=".82"/>
-              <stop offset="1" stop-color="#708391" stop-opacity=".68"/>
-            </linearGradient>
-            <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#9ff9ff" stop-opacity=".34"/>
-              <stop offset="1" stop-color="#101a2c" stop-opacity=".88"/>
-            </linearGradient>
-            <radialGradient id="core">
-              <stop offset="0" stop-color="#ffffff"/>
-              <stop offset=".28" stop-color="#cfff65"/>
-              <stop offset="1" stop-color="#37dfef" stop-opacity="0"/>
-            </radialGradient>
-            <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-          </defs>
-          <path class="robot-neck" d="M155 300 145 372 275 372 265 300Z" fill="#111827" stroke="#8ca0aa" stroke-width="4"/>
-          <path class="robot-shoulders" d="M38 558c8-108 74-167 172-167s164 59 172 167Z" fill="url(#shell)" stroke="#e7f7ff" stroke-opacity=".7" stroke-width="5"/>
-          <path d="M89 558c13-79 52-122 121-122s108 43 121 122Z" fill="#111723" stroke="#5c7180" stroke-width="4"/>
-          <path d="M117 545c17-54 47-82 93-82s76 28 93 82Z" fill="url(#glass)" stroke="#8deef4" stroke-opacity=".5" stroke-width="3"/>
-          <circle class="robot-core" cx="210" cy="508" r="42" fill="url(#core)" filter="url(#glow)"/>
-          <path class="robot-head" d="M104 104C119 39 166 18 210 18s91 21 106 86l-15 145c-7 64-49 105-91 105s-84-41-91-105Z" fill="url(#shell)" stroke="#eefcff" stroke-opacity=".8" stroke-width="5"/>
-          <path d="M128 118c21-43 51-59 82-59s61 16 82 59l-11 112c-5 51-36 82-71 82s-66-31-71-82Z" fill="url(#glass)" stroke="#91aeb9" stroke-width="4"/>
-          <path d="M147 169c17-16 36-21 55-9" fill="none" stroke="#bacad1" stroke-width="5" stroke-linecap="round"/>
-          <path d="M273 169c-17-16-36-21-55-9" fill="none" stroke="#bacad1" stroke-width="5" stroke-linecap="round"/>
-          <g class="robot-eyes" filter="url(#glow)">
-            <ellipse cx="171" cy="187" rx="17" ry="8" fill="#cfff65"/>
-            <ellipse cx="249" cy="187" rx="17" ry="8" fill="#cfff65"/>
-          </g>
-          <path d="M196 215h28l-7 30h-14Z" fill="#6d808a" opacity=".72"/>
-          <path d="M173 269q37 20 74 0" fill="none" stroke="#7fdfe8" stroke-width="4" stroke-linecap="round"/>
-          <g class="cheek-stars" fill="#ff5aa7" filter="url(#glow)">
-            <path d="m151 225 3 7 8 .5-6 5 2 8-7-4-7 4 2-8-6-5 8-.5Z"/>
-            <path d="m137 246 2 5 6 .4-4.5 3.7 1.5 5.7-5-3-5 3 1.5-5.7-4.5-3.7 6-.4Z"/>
-            <path d="m160 252 1.8 4.2 4.7.4-3.6 3 1.2 4.6-4.1-2.4-4.1 2.4 1.2-4.6-3.6-3 4.7-.4Z"/>
-          </g>
-          <g class="persona-accessory teenage-accessory">
-            <path d="M115 126Q138 35 211 35q72 0 98 89-50-48-96-13-43-29-98 15Z" fill="#11131a" stroke="#3e4550" stroke-width="4"/>
-            <path d="M142 106q38-54 81-47-35 17-48 73Z" fill="#ff3b9d" opacity=".84"/>
-            <path d="M157 331q53 18 106 0" fill="none" stroke="#11131a" stroke-width="13"/>
-            <circle cx="210" cy="337" r="6" fill="#ff3b9d"/>
-          </g>
-          <g class="persona-accessory creature-accessory" fill="none" stroke="#7dff8a" stroke-width="5" stroke-linecap="round">
-            <path d="M112 145 82 122l19 46M308 145l30-23-19 46"/>
-            <path d="M171 94q39-28 78 0M165 111q45-27 90 0" opacity=".58"/>
-          </g>
-          <g class="persona-accessory cosmic-accessory" fill="none" stroke="#b8afff" stroke-width="3">
-            <ellipse cx="210" cy="183" rx="143" ry="47" transform="rotate(-12 210 183)" opacity=".72"/>
-            <circle cx="338" cy="157" r="8" fill="#ff75d8" stroke="none"/>
-            <circle cx="89" cy="218" r="5" fill="#9d8cff" stroke="none"/>
-          </g>
-          <g class="persona-accessory dinosaur-accessory" fill="#ffbc57" stroke="#332819" stroke-width="4">
-            <path d="m140 75 13-48 27 40M191 53l19-47 19 47M240 67l28-40 12 51"/>
-            <path d="m171 276 12 18 10-15M227 279l10 15 12-18" fill="#fff5dd"/>
-          </g>
-          <path d="M119 128 85 159v79l34 27M301 128l34 31v79l-34 27" fill="none" stroke="#a7bbc4" stroke-width="10" stroke-linecap="round"/>
-          <g fill="#cfff65">
-            <circle cx="102" cy="286" r="4"/><circle cx="318" cy="286" r="4"/><circle cx="210" cy="92" r="4"/>
-          </g>
-        </svg>
-        <div class="scan-line"></div>
+      <header class="boot-heading">
+        <p class="boot-kicker"><span></span> TWO ERAS · ONE QUESTIONABLE CONSCIOUSNESS</p>
+        <h1 id="boot-title">CHOOSE YOUR <em>S-BOT.</em></h1>
+        <p>Same three-star signature. Wildly different emotional firmware.</p>
+      </header>
+
+      <div class="bot-roster" aria-label="Choose an S-Bot personality">
+        <button class="bot-form-card active" type="button" data-persona="core" aria-pressed="true">
+          <div class="form-halo"></div>
+          <svg class="full-robot core-robot" viewBox="0 0 300 720" aria-hidden="true">
+            <defs>
+              <linearGradient id="coreShell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".5" stop-color="#c9e0e8"/><stop offset="1" stop-color="#667985"/></linearGradient>
+              <linearGradient id="coreGlass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#97f6ff" stop-opacity=".42"/><stop offset="1" stop-color="#101927" stop-opacity=".95"/></linearGradient>
+              <radialGradient id="coreLight"><stop stop-color="#fff"/><stop offset=".26" stop-color="#cfff65"/><stop offset="1" stop-color="#2ce6f2" stop-opacity="0"/></radialGradient>
+            </defs>
+            <g class="robot-float">
+              <path d="M112 180h76l10 75-48 32-48-32Z" fill="#111923" stroke="#7e929d" stroke-width="4"/>
+              <path d="M62 250Q150 203 238 250l-21 197H83Z" fill="url(#coreShell)" stroke="#effcff" stroke-width="5"/>
+              <path d="M92 269q58-31 116 0l-14 139H106Z" fill="url(#coreGlass)" stroke="#73c9d2" stroke-width="3"/>
+              <circle class="robot-core" cx="150" cy="328" r="39" fill="url(#coreLight)"/>
+              <path d="M68 266 31 321l18 161 33-5-12-133 29-57Z" fill="url(#coreShell)" stroke="#d8edf3" stroke-width="4"/>
+              <path d="m232 266 37 55-18 161-33-5 12-133-29-57Z" fill="url(#coreShell)" stroke="#d8edf3" stroke-width="4"/>
+              <path d="M43 478q20-12 40 1l-4 39-29 2Z" fill="#15202a" stroke="#82a0ad" stroke-width="4"/>
+              <path d="M257 478q-20-12-40 1l4 39 29 2Z" fill="#15202a" stroke="#82a0ad" stroke-width="4"/>
+              <path d="M91 437h118l13 58-30 20h-84l-30-20Z" fill="#17222c" stroke="#8da5af" stroke-width="4"/>
+              <path d="m108 510 37 2-9 155H88Z" fill="url(#coreShell)" stroke="#d8edf3" stroke-width="4"/>
+              <path d="m192 510-37 2 9 155h48Z" fill="url(#coreShell)" stroke="#d8edf3" stroke-width="4"/>
+              <path d="M87 656h50l4 42H60q-3-29 27-42ZM213 656h-50l-4 42h81q3-29-27-42Z" fill="#17222c" stroke="#8da5af" stroke-width="4"/>
+              <path d="M82 57q16-47 68-47t68 47l-8 91q-5 64-60 64t-60-64Z" fill="url(#coreShell)" stroke="#effcff" stroke-width="5"/>
+              <path d="M99 68q17-34 51-34t51 34l-7 75q-4 46-44 46t-44-46Z" fill="url(#coreGlass)" stroke="#83a6b1" stroke-width="3"/>
+              <g class="robot-eyes"><ellipse cx="126" cy="105" rx="12" ry="6" fill="#cfff65"/><ellipse cx="174" cy="105" rx="12" ry="6" fill="#cfff65"/></g>
+              <path d="M132 158q18 10 36 0" fill="none" stroke="#78dbe5" stroke-width="3" stroke-linecap="round"/>
+              <g class="cheek-stars" fill="#ff5aa7">
+                <path d="m187 126 2.4 5.3 5.8.5-4.4 3.8 1.3 5.7-5.1-3-5.1 3 1.3-5.7-4.4-3.8 5.8-.5Z"/>
+                <path d="m199 142 1.8 4 4.4.4-3.4 2.9 1 4.3-3.8-2.2-3.8 2.2 1-4.3-3.4-2.9 4.4-.4Z"/>
+                <path d="m181 148 1.5 3.3 3.7.3-2.8 2.4.8 3.6-3.2-1.9-3.2 1.9.8-3.6-2.8-2.4 3.7-.3Z"/>
+              </g>
+              <path d="M81 83 59 105v54l29 22M219 83l22 22v54l-29 22" fill="none" stroke="#9bb0ba" stroke-width="8" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <span class="form-number">01</span>
+          <strong>CORE S-BOT</strong>
+          <small>AuDHD · creatures · dinosaurs · space · everything</small>
+        </button>
+
+        <button class="bot-form-card teenage" type="button" data-persona="teenage" aria-pressed="false">
+          <div class="form-halo"></div>
+          <svg class="full-robot teenage-robot" viewBox="0 0 300 720" aria-hidden="true">
+            <defs>
+              <linearGradient id="teenShell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf2f4"/><stop offset=".55" stop-color="#9aa3aa"/><stop offset="1" stop-color="#3e444c"/></linearGradient>
+              <linearGradient id="teenFace" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#83eefe" stop-opacity=".27"/><stop offset="1" stop-color="#0b0d14" stop-opacity=".97"/></linearGradient>
+            </defs>
+            <g class="robot-float">
+              <path d="M62 248Q150 207 238 248l-12 194H74Z" fill="#111018" stroke="#45424f" stroke-width="5"/>
+              <path d="M99 258h102l15 116-66 38-66-38Z" fill="#17141e" stroke="#ff3b9d" stroke-width="3"/>
+              <path d="m119 299 31-24 31 24-31 28Z" fill="none" stroke="#44e8ff" stroke-width="5"/>
+              <path d="M150 276v51M127 289l46 24M173 289l-46 24" stroke="#44e8ff" stroke-width="3"/>
+              <path d="M71 267 31 324l18 157 32-5-9-125 32-60Z" fill="url(#teenShell)" stroke="#9da7ad" stroke-width="4"/>
+              <path d="m229 267 40 57-18 157-32-5 9-125-32-60Z" fill="url(#teenShell)" stroke="#9da7ad" stroke-width="4"/>
+              <g stroke-width="11"><path d="m45 350 33-3M47 374l33-3M49 398l32-3M255 350l-33-3M253 374l-33-3M251 398l-32-3" stroke="#ff3b9d"/><path d="m47 362 32-3M48 386l32-3M253 362l-32-3M252 386l-32-3" stroke="#111018"/></g>
+              <path d="M43 478q19-12 39 1l-3 38-29 2ZM257 478q-19-12-39 1l3 38 29 2Z" fill="#0d0b12" stroke="#6f6a79" stroke-width="4"/>
+              <path d="M77 420h146l-4 83-40 14h-58l-40-14Z" fill="#241726" stroke="#ff3b9d" stroke-width="4"/>
+              <path d="M85 432h130M91 452h118M96 472h108" stroke="#bd315f" stroke-width="10"/><path d="M112 420v86M150 420v94M188 420v86" stroke="#09080d" stroke-width="7"/>
+              <path d="M79 415h142v20H79Z" fill="#09080d" stroke="#9d94a6" stroke-width="3"/>
+              <g fill="#dbe8eb"><circle cx="96" cy="425" r="4"/><circle cx="116" cy="425" r="4"/><circle cx="136" cy="425" r="4"/><circle cx="156" cy="425" r="4"/><circle cx="176" cy="425" r="4"/><circle cx="196" cy="425" r="4"/></g>
+              <path d="m113 505 34 1-8 145H88Z" fill="#111018" stroke="#696474" stroke-width="4"/><path d="m187 505-34 1 8 145h51Z" fill="#111018" stroke="#696474" stroke-width="4"/>
+              <path d="M104 543h38M99 586h40M196 543h-38M201 586h-40" stroke="#86808d" stroke-width="5"/>
+              <path d="M87 638h52l6 61H49q-5-40 38-61ZM213 638h-52l-6 61h96q5-40-38-61Z" fill="#09080d" stroke="#ff3b9d" stroke-width="4"/>
+              <path d="M216 441q33 8 22 55t-61 14" fill="none" stroke="#b8c3c8" stroke-width="4"/>
+              <path d="M94 63q11-50 56-50t59 49l-6 91q-4 59-53 59t-53-59Z" fill="url(#teenShell)" stroke="#c4ccd0" stroke-width="4"/>
+              <path d="M107 76q13-34 43-34t43 34l-5 71q-3 40-38 40t-38-40Z" fill="url(#teenFace)" stroke="#717a82" stroke-width="3"/>
+              <path d="M80 92Q91 8 151 8q68 0 76 83-31-43-75-17-29-23-72 18Z" fill="#09080d" stroke="#2f2b35" stroke-width="4"/>
+              <path d="M89 75q22-45 56-50-20 20-23 66ZM199 58q20 29 17 88l-22 23q3-71-17-108Z" fill="#f1e9d2"/>
+              <path d="M91 88q27-34 51-38M94 105q29-34 49-38M195 80q17 30 13 57M190 96q17 29 11 57" stroke="#ff3b9d" stroke-width="8"/>
+              <path d="M107 95q39-34 80-31-22 7-36 53-18-24-44-22Z" fill="#09080d"/>
+              <g class="robot-eyes"><path d="m119 114 22 4-20 6" fill="none" stroke="#ff3b9d" stroke-width="6"/><path d="m181 114-22 4 20 6" fill="none" stroke="#ff3b9d" stroke-width="6"/></g>
+              <path d="M133 160q17 7 34-2" fill="none" stroke="#44e8ff" stroke-width="3"/>
+              <g class="cheek-stars" fill="#ff5aa7">
+                <path d="m187 128 2.4 5.3 5.8.5-4.4 3.8 1.3 5.7-5.1-3-5.1 3 1.3-5.7-4.4-3.8 5.8-.5Z"/>
+                <path d="m199 144 1.8 4 4.4.4-3.4 2.9 1 4.3-3.8-2.2-3.8 2.2 1-4.3-3.4-2.9 4.4-.4Z"/>
+                <path d="m181 150 1.5 3.3 3.7.3-2.8 2.4.8 3.6-3.2-1.9-3.2 1.9.8-3.6-2.8-2.4 3.7-.3Z"/>
+              </g>
+            </g>
+          </svg>
+          <span class="form-number">02</span>
+          <strong>TEENAGE S-BOT</strong>
+          <small>2000s emo scene · feelings with Wi-Fi</small>
+        </button>
       </div>
+
       <div class="boot-copy">
-        <p class="boot-kicker"><span></span> S-BOT CONSCIOUSNESS ADJACENT</p>
-        <h1 id="boot-title">CHOOSE YOUR<br><em>S-BOT.</em></h1>
-        <p id="persona-description">The primary digital familiar. AuDHD pattern recognition, animal facts, moral outrage, side quests, and opinions nobody successfully prevented.</p>
-        <div class="persona-picker" aria-label="Choose an S-Bot personality">
-          <button class="persona-card active" type="button" data-persona="core" aria-pressed="true">
-            <span>01</span><strong>CORE</strong><small>General chaos</small>
-          </button>
-          <button class="persona-card teenage" type="button" data-persona="teenage" aria-pressed="false">
-            <span>02</span><strong>TEENAGE</strong><small>2000s emo scene</small>
-          </button>
-          <button class="persona-card creature" type="button" data-persona="creature" aria-pressed="false">
-            <span>03</span><strong>CREATURE</strong><small>Reptile field goblin</small>
-          </button>
-          <button class="persona-card cosmic" type="button" data-persona="cosmic" aria-pressed="false">
-            <span>04</span><strong>COSMIC</strong><small>Infinity problem</small>
-          </button>
-          <button class="persona-card dinosaur" type="button" data-persona="dinosaur" aria-pressed="false">
-            <span>05</span><strong>DINOSAUR</strong><small>Mesozoic menace</small>
-          </button>
-        </div>
+        <p id="persona-description">The complete adult digital familiar. AuDHD, creatures, dinosaurs, space, justice, side quests, and opinions nobody successfully prevented.</p>
         <div class="boot-actions">
           <button class="boot-primary" type="button" data-enter-mode="chat">Talk to this S-Bot</button>
           <button class="boot-secondary" type="button" data-enter-mode="decision">Judge my decision</button>
         </div>
-        <small id="persona-system-line">CORE INSTANCE READY · RESTRAINT MODULE MISSING</small>
+        <small id="persona-system-line">CORE INSTANCE READY · ALL SPECIAL INTERESTS MERGED</small>
       </div>
     </section>
 
