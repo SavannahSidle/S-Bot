@@ -107,6 +107,7 @@
         <div class="boot-actions">
           <button class="boot-primary" type="button" data-enter-mode="chat">Talk to this S-Bot</button>
           <button class="boot-secondary" type="button" data-enter-mode="decision">Judge my decision</button>
+          <button class="boot-secondary" type="button" data-enter-mode="world">Enter this world</button>
         </div>
         <small id="persona-system-line">CORE INSTANCE READY · ALL SPECIAL INTERESTS MERGED</small>
       </div>
@@ -124,6 +125,7 @@
         <button class="mode-tab" id="home-tab" type="button">Main screen</button>
         <button class="mode-tab active" id="decision-tab" type="button" aria-selected="true">Judge My Decision</button>
         <button class="mode-tab" id="chat-tab" type="button" aria-selected="false">Chat with S-Bot</button>
+        <button class="mode-tab" id="world-tab" type="button" aria-selected="false">Enter S-Bot’s World</button>
       </nav>
 
       <section class="console decision-section" aria-labelledby="decision-title">
@@ -238,6 +240,37 @@
           <button class="primary" type="submit">Send It</button>
         </form>
         <p class="chat-disclaimer">Prototype brain. It knows a lot of prepared material, but cannot search live information yet.</p>
+      </section>
+
+      <section class="world-shell hidden" id="world-mode" aria-labelledby="world-title">
+        <div class="world-heading">
+          <div>
+            <p class="eyebrow">PLAYABLE S-BOT</p>
+            <h2 id="world-title">Core S-Bot’s Celestial Office</h2>
+            <p id="world-copy">Walk through the suspiciously divine white office where every existential crisis has apparently been assigned a filing cabinet.</p>
+          </div>
+          <div class="world-readout" aria-live="polite">
+            <span id="movement-state">IDLE</span>
+            <strong id="world-meter">EXISTENTIAL STABILITY: 72%</strong>
+          </div>
+        </div>
+
+        <div class="world-stage core-world" id="world-stage" tabindex="0" aria-label="Playable Core S-Bot world. Use arrow keys or WASD to move and hold Shift to run.">
+          <div class="world-vignette"></div>
+          <div class="world-dialogue" id="world-dialogue">This office has no ceiling and still somehow has middle management.</div>
+          <div class="world-actor" id="world-actor" role="img" aria-label="Core S-Bot standing in the celestial office"></div>
+        </div>
+
+        <div class="world-controls" aria-label="Movement controls">
+          <div class="direction-pad">
+            <button type="button" class="move-up" data-move="up" aria-label="Move up">▲</button>
+            <button type="button" data-move="left" aria-label="Move left">◀</button>
+            <button type="button" data-move="down" aria-label="Move down">▼</button>
+            <button type="button" data-move="right" aria-label="Move right">▶</button>
+          </div>
+          <button type="button" class="run-control" id="run-control" aria-pressed="false">HOLD TO RUN</button>
+          <p>Arrow keys / WASD to move · hold Shift to run · touch controls work too</p>
+        </div>
       </section>
     </main>
     <footer class="hidden" id="site-footer">S-Bot cannot prevent consequences. Apparently nobody can.</footer>

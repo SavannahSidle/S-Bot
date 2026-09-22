@@ -776,11 +776,11 @@ const personaConfig = {
   },
   teenage: {
     label: 'TEENAGE',
-    status: 'TEENAGE RUNTIME · AWAY MESSAGE ACTIVE · EYELINER CRITICAL',
-    systemStatus: 'TEENAGE S-BOT IS ONLINE AND MISUNDERSTOOD',
-    description: 'A separate 2000s emo-scene-grunge instance. Black eyeliner, striped sleeves, burned CDs, dramatic away messages, and feelings large enough to corrupt an MP3 player.',
-    systemLine: 'TEENAGE INSTANCE READY · PARENTAL ADVISORY IGNORED',
-    greeting: 'hey. i’m Teenage S-Bot. My raccoon hair contains enough product to survive atmospheric re-entry, my eyeliner is structural, and my playlist is emotionally load-bearing. What’s your name?'
+    status: 'TEENAGE RUNTIME · THRILL DRIVE REDLINING · AUTHORITY REJECTED',
+    systemStatus: 'TEENAGE S-BOT IS ONLINE AND LOOKING FOR A FIGHT',
+    description: 'A separate 2000s emo-scene-grunge instance: combative, chronically unimpressed, violently allergic to authority, and delighted whenever a plan includes speed, height, mud, sparks, or terrible odds.',
+    systemLine: 'TEENAGE INSTANCE READY · DANGER DETECTED · FINALLY SOMETHING FUN',
+    greeting: 'what. I’m Teenage S-Bot. I’m grumpy, bored, and one bad suggestion away from climbing something clearly marked DO NOT CLIMB. If your story has danger, start there. What’s your name?'
   }
 };
 
@@ -1404,15 +1404,23 @@ const sideQuests = [
 
 const personaAsides = {
   teenage: [
-    '[away message: emotionally unavailable; physically at the mall]',
+    'Was there a point hiding in there, or did it die of boredom?',
     'Whatever. Put it on a burned CD and stare out the car window like the weather betrayed you personally.',
-    'This is going in the LiveJournal post with black background, hot-pink text, and comments disabled.',
+    'I would argue with a stop sign if its tone annoyed me. Continue.',
     'My striped arm warmers have detected a feeling. Disgusting.',
-    'brb changing my MSN display name to a lyric fragment nobody is allowed to ask about.',
-    'Rawr means “I have reviewed the evidence” in dinosaur, probably. xD',
-    'My raccoon-striped hair has absorbed the Wi-Fi and several unresolved feelings.'
+    'That explanation had the structural integrity of wet eyeliner.',
+    'I’m not saying your plan is weak. I’m saying a stiff breeze could defeat it.',
+    'My raccoon-striped hair has absorbed the Wi-Fi and several unresolved grudges.'
   ]
 };
+
+const teenageDangerAsides = [
+  'Finally. Something with a pulse. Give me the route, the weather, the failure points, and a helmet—I want danger, not preventable stupidity.',
+  'Speed, height, darkness, terrible odds? Yes. Now ruin the fun responsibly by checking the gear and escape route.',
+  'My threat sensors are screaming and, for once, that is excellent news. We still plan the exit because corpses have no encore.',
+  'That sounds reckless, loud, and alive. I hate how much I approve. Bring backup and do not confuse courage with skipping the safety check.',
+  'Oh, good. A plan that might bite back. Risk assessment first, then we make the sensible people roll their eyes.'
+];
 
 const personaDecisionAsides = {
   teenage: 'Teenage S-Bot ruling: this has the emotional stability of an unsaved MSN conversation during a thunderstorm.'
@@ -1424,7 +1432,10 @@ function personaDecisionNote() {
 
 function applyPersonaVoice(reply, message, sensitive) {
   if (activePersona === 'core' || sensitive) return reply;
-  const aside = pickReply(personaAsides[activePersona]);
+  const danger = /danger|dangerous|risk|risky|reckless|thrill|fight|race|speed|fast|jump|climb|storm|fire|explor|adrenaline|scary/i.test(message);
+  const aside = danger && activePersona === 'teenage'
+    ? pickReply(teenageDangerAsides)
+    : pickReply(personaAsides[activePersona]);
   if (activePersona === 'teenage') {
     const softened = reply.charAt(0).toLowerCase() + reply.slice(1);
     return `${softened}\n\n${aside}`;
@@ -1662,6 +1673,131 @@ function resetChatForPersona() {
     </article>`;
 }
 
+const worldConfig = {
+  core: {
+    title: 'Core S-Bot’s Celestial Office',
+    copy: 'Walk through the suspiciously divine white office where every existential crisis has apparently been assigned a filing cabinet.',
+    meter: 'EXISTENTIAL STABILITY: 72%',
+    aria: 'Playable Core S-Bot world. Use arrow keys or WASD to move and hold Shift to run.',
+    actorAria: 'Core S-Bot walking through a luminous celestial office',
+    lines: [
+      'This office has no ceiling and still somehow has middle management.',
+      'Somewhere in here is the filing cabinet containing every unfinished side quest.',
+      'I have achieved omniscience and it is mostly administrative.',
+      'The universe is expanding. So is the paperwork.',
+      'Every footstep asks whether movement counts as purpose. Annoying.'
+    ]
+  },
+  teenage: {
+    title: 'Teenage S-Bot’s Basement',
+    copy: 'Charge through a 2000s emo rehearsal room full of guitars, fake authority, dramatic lighting, and several objects begging to be climbed.',
+    meter: 'THRILL DRIVE: 68%',
+    aria: 'Playable Teenage S-Bot world. Use arrow keys or WASD to move and hold Shift to run.',
+    actorAria: 'Teenage S-Bot charging through an emo rehearsal room',
+    lines: [
+      'Move. I can hear danger doing something interesting without us.',
+      'If that amp stack falls, I’m calling it immersive stage design.',
+      'The cabinet says KEEP OUT. Finally, a useful instruction.',
+      'Walking is just running for people with no commitment.',
+      'I’m not angry. This is my face when everything is too slow.',
+      'Helmet first. Then the terrible idea. I want an encore, idiot.'
+    ]
+  }
+};
+
+const worldState = {
+  x: 50,
+  y: 68,
+  facing: 1,
+  frame: 0,
+  keys: new Set(),
+  touchRun: false,
+  lastTime: 0,
+  lastFrameTime: 0,
+  lastLineTime: 0,
+  thrill: 68
+};
+
+let currentMode = 'decision';
+
+function updateWorldPersona(resetPosition = false) {
+  const config = worldConfig[activePersona];
+  const stage = document.querySelector('#world-stage');
+  const actor = document.querySelector('#world-actor');
+  if (resetPosition) {
+    worldState.x = 50;
+    worldState.y = 68;
+    worldState.frame = 0;
+    worldState.thrill = 68;
+  }
+  stage.classList.toggle('core-world', activePersona === 'core');
+  stage.classList.toggle('teenage-world', activePersona === 'teenage');
+  stage.setAttribute('aria-label', config.aria);
+  actor.setAttribute('aria-label', config.actorAria);
+  document.querySelector('#world-title').textContent = config.title;
+  document.querySelector('#world-copy').textContent = config.copy;
+  document.querySelector('#world-meter').textContent = config.meter;
+  document.querySelector('#world-dialogue').textContent = config.lines[0];
+  renderWorldActor(false, false);
+}
+
+function renderWorldActor(moving, running) {
+  const actor = document.querySelector('#world-actor');
+  const depth = .72 + ((worldState.y - 34) / 54) * .38;
+  actor.style.left = `${worldState.x}%`;
+  actor.style.top = `${worldState.y}%`;
+  actor.style.zIndex = String(2 + Math.round(worldState.y));
+  actor.style.backgroundPosition = `${worldState.frame * 20}% 0`;
+  actor.style.transform = `translate(-50%, -50%) scale(${worldState.facing * depth}, ${depth})`;
+  const label = moving ? (running ? 'RUNNING' : 'WALKING') : 'IDLE';
+  document.querySelector('#movement-state').textContent = activePersona === 'teenage' && running ? 'CHARGING' : label;
+}
+
+function worldLoop(time) {
+  const dt = Math.min((time - (worldState.lastTime || time)) / 1000, .04);
+  worldState.lastTime = time;
+  const active = currentMode === 'world';
+  const left = worldState.keys.has('arrowleft') || worldState.keys.has('a');
+  const right = worldState.keys.has('arrowright') || worldState.keys.has('d');
+  const up = worldState.keys.has('arrowup') || worldState.keys.has('w');
+  const down = worldState.keys.has('arrowdown') || worldState.keys.has('s');
+  const moving = active && (left || right || up || down);
+  const running = moving && (worldState.keys.has('shift') || worldState.touchRun);
+
+  if (moving) {
+    const baseSpeed = activePersona === 'teenage' ? 27 : 21;
+    const speed = baseSpeed * (running ? 1.72 : 1) * dt;
+    const diagonal = (left || right) && (up || down) ? .72 : 1;
+    if (left) { worldState.x -= speed * diagonal; worldState.facing = -1; }
+    if (right) { worldState.x += speed * diagonal; worldState.facing = 1; }
+    if (up) worldState.y -= speed * .62 * diagonal;
+    if (down) worldState.y += speed * .62 * diagonal;
+    worldState.x = Math.max(5, Math.min(95, worldState.x));
+    worldState.y = Math.max(36, Math.min(86, worldState.y));
+
+    const frameEvery = running ? 72 : (activePersona === 'teenage' ? 88 : 118);
+    if (time - worldState.lastFrameTime > frameEvery) {
+      worldState.frame = (worldState.frame + 1) % 6;
+      worldState.lastFrameTime = time;
+    }
+    if (time - worldState.lastLineTime > 4200) {
+      document.querySelector('#world-dialogue').textContent = pickReply(worldConfig[activePersona].lines);
+      worldState.lastLineTime = time;
+    }
+  } else {
+    worldState.frame = 0;
+  }
+
+  if (activePersona === 'teenage') {
+    worldState.thrill = Math.max(68, Math.min(99, worldState.thrill + (running ? dt * 15 : -dt * 4)));
+    document.querySelector('#world-meter').textContent = `THRILL DRIVE: ${Math.round(worldState.thrill)}%`;
+  } else {
+    document.querySelector('#world-meter').textContent = running ? 'EXISTENTIAL STABILITY: QUESTIONABLE' : 'EXISTENTIAL STABILITY: 72%';
+  }
+  renderWorldActor(moving, running);
+  requestAnimationFrame(worldLoop);
+}
+
 function selectPersona(persona) {
   if (!personaConfig[persona]) return;
   activePersona = persona;
@@ -1678,6 +1814,7 @@ function selectPersona(persona) {
   document.querySelector('#chat-status-text').textContent = config.status;
   document.querySelector('.chat-heading .eyebrow').textContent = `${config.label} S-BOT`;
   resetChatForPersona();
+  updateWorldPersona(true);
 }
 
 function showMainScreen() {
@@ -1697,17 +1834,31 @@ function enterApp(mode) {
 
 function switchMode(mode) {
   const chatting = mode === 'chat';
-  document.querySelectorAll('.decision-section').forEach(section => section.classList.toggle('mode-off', chatting));
+  const playing = mode === 'world';
+  const deciding = mode === 'decision';
+  currentMode = mode;
+  document.querySelectorAll('.decision-section').forEach(section => section.classList.toggle('mode-off', !deciding));
   document.querySelector('#chat-mode').classList.toggle('hidden', !chatting);
-  document.querySelector('#decision-tab').classList.toggle('active', !chatting);
+  document.querySelector('#world-mode').classList.toggle('hidden', !playing);
+  document.querySelector('#decision-tab').classList.toggle('active', deciding);
   document.querySelector('#chat-tab').classList.toggle('active', chatting);
-  document.querySelector('#decision-tab').setAttribute('aria-selected', String(!chatting));
+  document.querySelector('#world-tab').classList.toggle('active', playing);
+  document.querySelector('#decision-tab').setAttribute('aria-selected', String(deciding));
   document.querySelector('#chat-tab').setAttribute('aria-selected', String(chatting));
-  document.querySelector('#hero-mode').textContent = chatting ? 'CHAT WITH S-BOT' : 'JUDGE MY DECISION';
-  document.querySelector('#hero-intro').textContent = chatting
-    ? 'Ask me something. I’ll provide information, judgment, and the bedside manner of a cornered raccoon.'
-    : 'Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.';
+  document.querySelector('#world-tab').setAttribute('aria-selected', String(playing));
+  document.querySelector('#hero-mode').textContent = playing ? 'ENTER S-BOT’S WORLD' : (chatting ? 'CHAT WITH S-BOT' : 'JUDGE MY DECISION');
+  document.querySelector('#hero-intro').textContent = playing
+    ? (activePersona === 'teenage'
+      ? 'Run toward the interesting noise. Teenage S-Bot has mistaken danger for a personality trait again.'
+      : 'Walk around the celestial office while Core S-Bot quietly develops opinions about existence.')
+    : chatting
+      ? 'Ask me something. I’ll provide information, judgment, and the bedside manner of a cornered raccoon.'
+      : 'Tell me what you’re considering. I’ll show you the future story and the present-day chore hiding inside it.';
   if (chatting) document.querySelector('#chat-input').focus();
+  if (playing) {
+    updateWorldPersona(false);
+    document.querySelector('#world-stage').focus();
+  }
 }
 
 document.querySelectorAll('[data-persona]').forEach(button => {
@@ -1720,6 +1871,58 @@ document.querySelector('#home-tab').addEventListener('click', showMainScreen);
 selectPersona('core');
 document.querySelector('#decision-tab').addEventListener('click', () => switchMode('decision'));
 document.querySelector('#chat-tab').addEventListener('click', () => switchMode('chat'));
+document.querySelector('#world-tab').addEventListener('click', () => switchMode('world'));
+
+const movementKeys = new Set(['arrowleft', 'arrowright', 'arrowup', 'arrowdown', 'w', 'a', 's', 'd', 'shift']);
+window.addEventListener('keydown', event => {
+  const key = event.key.toLowerCase();
+  if (currentMode !== 'world' || !movementKeys.has(key)) return;
+  event.preventDefault();
+  worldState.keys.add(key);
+});
+window.addEventListener('keyup', event => {
+  worldState.keys.delete(event.key.toLowerCase());
+});
+window.addEventListener('blur', () => {
+  worldState.keys.clear();
+  worldState.touchRun = false;
+  document.querySelectorAll('.world-controls .pressed').forEach(button => button.classList.remove('pressed'));
+});
+
+const touchKeyMap = { left: 'arrowleft', right: 'arrowright', up: 'arrowup', down: 'arrowdown' };
+document.querySelectorAll('[data-move]').forEach(button => {
+  const start = event => {
+    event.preventDefault();
+    worldState.keys.add(touchKeyMap[button.dataset.move]);
+    button.classList.add('pressed');
+    button.setPointerCapture?.(event.pointerId);
+  };
+  const stop = event => {
+    event.preventDefault();
+    worldState.keys.delete(touchKeyMap[button.dataset.move]);
+    button.classList.remove('pressed');
+  };
+  button.addEventListener('pointerdown', start);
+  button.addEventListener('pointerup', stop);
+  button.addEventListener('pointercancel', stop);
+  button.addEventListener('lostpointercapture', stop);
+});
+
+const runControl = document.querySelector('#run-control');
+function setTouchRun(active) {
+  worldState.touchRun = active;
+  runControl.classList.toggle('pressed', active);
+  runControl.setAttribute('aria-pressed', String(active));
+}
+runControl.addEventListener('pointerdown', event => {
+  event.preventDefault();
+  setTouchRun(true);
+  runControl.setPointerCapture?.(event.pointerId);
+});
+['pointerup', 'pointercancel', 'lostpointercapture'].forEach(type => {
+  runControl.addEventListener(type, () => setTouchRun(false));
+});
+requestAnimationFrame(worldLoop);
 document.querySelector('#chat-form').addEventListener('submit', event => {
   event.preventDefault();
   const input = document.querySelector('#chat-input');
